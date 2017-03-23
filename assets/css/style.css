@@ -1,0 +1,139 @@
+*{
+    margin:0;
+    padding:0;
+}
+body,html{
+    background-color: #eeb8cb!important;
+    margin: 0 auto!important;
+}
+.clear-fix{
+    display: block;
+    clear:both;
+}
+#header{
+    background-color: white;
+    width:1000px;
+    margin:0 auto;
+}
+#header a{
+    text-decoration: none;
+}
+#header .logo{
+    width:20%;
+    float: left;
+}
+#header .main-menu{
+    height:90px;
+    float: left;
+    padding: 20px 40px;
+    width:80%;
+}
+#header .main-menu .contact{
+    border:1px solid #df6f9f;
+    padding:2px 20px;
+    text-align: center;
+    float: right;
+}
+#header .main-menu .contact a{
+    color: #e072a1;
+}
+#header .main-menu .contact .fa-envelope{
+    color:#df6f9f;
+    font-size: 20px;
+    margin-right:5px;
+}
+#header .main-menu .menu-list{
+    padding: 5px 20px;
+    float: right;
+}
+#header .main-menu .menu-list a{
+    color: #666666;
+}
+#header .main-menu .menu-list .fa-play{
+    color:#df6f9f;
+    background-color: #df6f9f ;
+    padding: 0 25px 0 5px;
+    margin-right:5px;
+    border-radius: 2px;
+}
+#header .main-menu .menu-list .fa-play::before {
+    font-size: 7px;
+    position: relative;
+    top: -2PX;
+    color: #ffffff;
+}
+#header .main-menu .menu-list li{
+    list-style: none;
+    display: inline-block;
+    margin-left:15px
+}
+#header .scroll-menu{
+    margin-top: 15px;
+    float: left;
+    width: 100%;
+    padding: 0 30px;
+}
+#header .scroll-menu .item-menu{
+    border-right: 1px solid #b3b3b3;
+    width: 19.667%;
+    list-style: none;
+    text-align: center;
+    /*height: 35px;*/
+    display: inline-block;
+    float: left;
+    padding-top: 5px;
+}
+#header .scroll-menu .item-menu a{
+    font-size: 16px;
+    font-weight: 700;
+    color: black;
+    height: inherit;
+}
+#header .scroll-menu .item-menu span{
+    border: 3px solid #e072a1;
+    display: block;
+    margin-top: 5px;
+    width: 90%;
+    margin-left: 5%;
+}
+#header .scroll-menu .col-md-offset-1{
+    margin-left: 0.66667%;
+}
+#header .scroll-menu .item-menu:first-child{
+    border-left :1px solid black;
+    margin-left: 0.66667%;
+}
+#header .button-header{
+    margin-top:30px;
+    float: left;
+    width:100%;
+}
+#header .button-header .middle-button{
+    width:275px;
+    height:40px;
+    background-color: #df6f9f;
+    float: left;
+    border: none;
+    border-radius:5px;
+    margin-left:35%;
+}
+#header .button-header .box-link{
+    float: right;
+    margin-right:40px
+}
+#header .button-header .box-link a:first-child{
+    border-right: none;
+}
+#header .button-header .box-link a{
+    color: #df6f9f;
+    padding:3px 10px;
+    border: 1px solid #e072a1;
+    float: left;
+}
+#header .line-top{
+    border: 3px solid #e072a1;
+    display: block;
+    width: 100%;
+    float: left;
+    margin-top: 25px;
+}
