@@ -15,6 +15,7 @@ body,html{
     display: block;
     clear:both;
 }
+/*header*/
 #header{
     background-color: white;
     width:1000px;
@@ -157,3 +158,16 @@ body,html{
     float: left;
     margin-top: 25px;
 }
+
+/*container-content*/
+#container-content{
+    background-color: white;
+    width:1000px;
+    margin:0 auto;
+}
+#container-content .content{
+    width:800px;
+    margin:0 auto;
+}
+
+/*Mọi người không chỉnh sửa vào phần trên*/
