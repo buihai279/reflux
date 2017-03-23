@@ -2,7 +2,12 @@
     margin:0;
     padding:0;
 }
+@font-face {
+    font-family: Garamond;
+    src: url(../fonts/NotoSansJP-light.otf);
+}
 body,html{
+    font-family:Garamond!important;
     background-color: #eeb8cb!important;
     margin: 0 auto!important;
 }
@@ -83,9 +88,16 @@ body,html{
     float: left;
     padding-top: 5px;
 }
+#header .scroll-menu .item-menu .fa-play{
+    display: block;
+    font-size: 8px;
+    transform: rotate(90deg);
+    margin-top: -20px;
+    margin-bottom:5px;
+    color:#e072a1;
+}
 #header .scroll-menu .item-menu a{
-    font-size: 16px;
-    font-weight: 700;
+    font-size: 15px;
     color: black;
     height: inherit;
 }
@@ -109,17 +121,25 @@ body,html{
     width:100%;
 }
 #header .button-header .middle-button{
-    width:275px;
-    height:40px;
-    background-color: #df6f9f;
+    width: 275px;
+    height: 40px;
     float: left;
     border: none;
-    border-radius:5px;
-    margin-left:35%;
+    border-radius: 5px;
+    margin-left: 35%;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 18px;
+    background: #e072a1; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(#e072a1,#de6b9c,#cd3e7e); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#e072a1,#de6b9c,#cd3e7e); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#e072a1,#de6b9c,#cd3e7e); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#e072a1,#de6b9c,#cd3e7e); /* Standard syntax */
 }
 #header .button-header .box-link{
     float: right;
-    margin-right:40px
+    margin-right:40px;
+    padding-top:6px;
 }
 #header .button-header .box-link a:first-child{
     border-right: none;
