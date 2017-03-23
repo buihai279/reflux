@@ -164,10 +164,36 @@ body,html{
     background-color: white;
     width:1000px;
     margin:0 auto;
+    padding:0 100px;
 }
-#container-content .content{
-    width:800px;
-    margin:0 auto;
+#container-content .top-image{
+    padding: 60px 0;
 }
-
+#container-content .content .content-title .circle{
+    float: left;
+    margin-top:5px;
+}
+#container-content .content .content-title{
+    display: table;
+    margin: 0 auto;
+}
+#container-content .content .content-title h1{
+    float: left;
+    margin: 0 40px;
+    border-bottom: 3px solid #e072a1;
+    padding-bottom: 20px;
+    font-size: 29px;
+}
+#container-content .content .content-title .circle-1{
+    font-size: 15px;
+    color: #fcf1f6;
+}
+#container-content .content .content-title .circle-2{
+    font-size: 20px;
+    color: #faeaf1;
+}
+#container-content .content .content-title .circle-3{
+    font-size: 25px;
+    color: #f9e3ec;
+}
 /*Mọi người không chỉnh sửa vào phần trên*/
