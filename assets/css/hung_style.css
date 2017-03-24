@@ -76,7 +76,7 @@
 	background-color: #4991d3;
 	border-radius: 5px;
 	padding: 8px 15px;
-	margin-bottom: 30px;
+	margin-bottom: 23px;
 }
 .group .group_panel h2{
 	padding-left: 12px;
@@ -90,13 +90,14 @@
 .group_body_dashed_row span{
     margin-left: 40px;
     position: relative;
-    top: 15px;
+    top: 2px;
     color: #e072a1;
 }
 .group_body_dashed_row .group_body_dashed_row_detail{
     margin-left: 80px;
     position: relative;
-    top: -10px;
+    top: -25px;
+    margin-bottom: -23px;
 }
 .group_body_dashed_row:last-child{
     border-bottom: none;
@@ -107,7 +108,7 @@
 
 span.bottom-line {
 	display: block;
-	margin-top: 120px;
+	margin-top: 110px;
     padding-bottom:140px !important;
     border-top: 5px solid #b3b3b3 !important ;
 }
