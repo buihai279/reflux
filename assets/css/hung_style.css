@@ -1,0 +1,124 @@
+@font-face {
+    font-family: NotoSansJP-Bold;
+    src: url(../fonts/NotoSansJP-Bold.otf);
+}
+
+/*start css group_1*/
+#group_1{
+	margin-top: 60px;
+}
+.text_1{
+	/*width: 100%;*/
+	height: 42px;
+	border: 1px solid #e072a1;
+	line-height: 42px;
+	padding-left: 15px;
+}
+
+.text_2{
+	padding: 30px 0px;
+	text-align: justify;
+}
+.text_3{
+	width: 100%;
+}
+
+.text_3_1{
+	width: 395px;
+	height: 100px;
+	background-color: #fcf1f6;
+	float: left;
+	overflow: hidden;
+}
+.text_3_1:nth-child(odd){
+	margin-right: 10px;
+}
+.text_3_1:nth-child(n + 0){
+	margin-bottom: 10px;
+}
+.text_3_1 p{
+	color:#e072a1;
+	text-align: center;
+}
+.number_item{
+	font-family:NotoSansJP-Bold!important;
+	width: 40px;
+	height: 40px;
+	line-height: 40px;
+	background-color: white;
+	border-radius: 50%;
+	color: #4991d3;
+	font-weight: bold;
+	font-size: 13px;
+	text-align: center;
+	position: relative;
+	right: 10px;
+	top:-25px;
+}
+.number_item span{
+	    position: relative;
+    	bottom: -10px;
+}
+
+
+.text_4{
+    font-family:NotoSansJP-Bold!important;
+    text-align: justify;
+	font-weight: bold;
+	font-size: 13px;
+	margin-top: 20px;
+}
+/*End style group_1*/
+
+/*Start style group_2*/
+.group{
+	margin-top: 60px;
+
+}
+.group .group_panel{
+	height: 35px;
+	color: #fff;
+	background-color: #4991d3;
+	border-radius: 5px;
+	padding: 8px 15px;
+	margin-bottom: 30px;
+}
+.group .group_panel h2{
+	padding-left: 12px;
+	border-left: 5px solid #fff;
+	margin: 0px;
+	font-size: 17px;
+}
+.group_body_dashed_row{
+    border-bottom: 1px dashed #e072a1;
+}
+.group_body_dashed_row span{
+    margin-left: 40px;
+    position: relative;
+    top: 15px;
+    color: #e072a1;
+}
+.group_body_dashed_row .group_body_dashed_row_detail{
+    margin-left: 80px;
+    position: relative;
+    top: -10px;
+}
+.group_body_dashed_row:last-child{
+    border-bottom: none;
+}
+.group .group_body{
+	text-align: justify;
+}
+
+span.bottom-line {
+	display: block;
+	margin-top: 120px;
+    padding-bottom:140px !important;
+    border-top: 5px solid #b3b3b3 !important ;
+}
+
+#footer{
+	height: 143px;
+	background-color: #e072a1;
+}
+
