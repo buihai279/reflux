@@ -52,8 +52,8 @@
 	font-size: 13px;
 	text-align: center;
 	position: relative;
-	right: 10px;
-	top:-25px;
+    bottom: -10px;
+    left: 2px;
 }
 .number_item span{
 	    position: relative;
@@ -118,7 +118,7 @@ span.bottom-line {
 }
 
 #footer{
-	height: 143px;
+	height: 145px;
 	background-color: #e072a1;
 }
 
