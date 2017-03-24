@@ -66,12 +66,22 @@
 	margin: 36px 0 50px 0;
 }
 #container-content .content .box-info .left-aside {
-	width: 187px;
-	padding: 16px 18px 18px;
 	float: left;
+	padding: 16px 18px 18px;
+	width: 187px;
 }
 #container-content .content .box-info .right-aside {
-	width: 187px;
-	padding: 16px 18px 18px;
 	float: left;
+	padding: 18px 150px 18px 18px;
+	word-break: break-all;
+}
+#container-content .content .box-info .right-aside table {
+	width: 412px;
+}
+#container-content .content .box-info .right-aside table .date {
+	padding: 0 18px;
+	width: 96px;
+}
+#container-content .content .box-info .right-aside table .text {
+	width: 315px;
 }
