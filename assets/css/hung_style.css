@@ -41,10 +41,10 @@
 	text-align: center;
 }
 .number_item{
-	font-family:NotoSansJP-Bold!important;
-	width: 40px;
-	height: 40px;
-	line-height: 40px;
+	font-family: NotoSansJP-Bold!important;
+	width: 30px;
+	height: 30px;
+	line-height: 30px;
 	background-color: white;
 	border-radius: 50%;
 	color: #4991d3;
@@ -52,15 +52,9 @@
 	font-size: 13px;
 	text-align: center;
 	position: relative;
-    bottom: -10px;
-    left: 2px;
+	top: -9px;
+	left: -9px;
 }
-.number_item span{
-	    position: relative;
-    	bottom: -10px;
-}
-
-
 .text_4{
     font-family:NotoSansJP-Bold!important;
     text-align: justify;
