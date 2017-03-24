@@ -1,4 +1,6 @@
-
+#container-content .top-image{
+	padding: 0 0 60px;
+}
 #container-content .top-content {
     background: #ffffff;
     margin: 0 auto;
@@ -8,6 +10,7 @@
 	border-bottom: 2px dashed #eaa1c0;
 	padding-top: 25px;
 	padding-bottom: 23px;
+	color: #ffffff;
 }
 #container-content .top-content .d-box-head .recruit {
 	background-image: url("../images/top_recruit.png");
@@ -15,12 +18,47 @@
 	height: 94px;
 	width: 430px; 
 }
+#container-content .top-content .d-box-head .recruit .label-image {
+	float: left;
+	height: 94px;
+	width: 118px;
+	padding: 17px 29px;
+}
+#container-content .top-content .d-box-head .recruit .label-content {
+	float: left;
+	text-align: center;
+	padding-right: 40px;
+	width: 72%;	
+}
+#container-content .top-content .d-box-head .recruit .label-content .up {
+	border-bottom: 1px solid #ffffff;
+	padding: 20px 0 9px;
+	font-weight: bold;
+}
 #container-content .top-content .d-box-head .aplcal-blog {
 	background-image: url("../images/top_aplcal-blog.png");
 	float: left;
 	height: 94px;
 	margin-left: 10px;
 	width: 262px;
+}
+#container-content .top-content .d-box-head .aplcal-blog .label-image {
+	float: left;
+	height: 94px;
+	margin: auto;
+	width: 83px;
+	padding: 25px 22px;
+}
+#container-content .top-content .d-box-head .aplcal-blog .label-content {
+	float: left;
+	text-align: center;
+	padding-right: 23px;
+	width: 68%;	
+}
+#container-content .top-content .d-box-head .aplcal-blog .label-content .up {
+	border-bottom: 1px solid #ffffff;
+	padding: 20px 0 10px;
+	font-weight: bold;
 }
 #container-content .top-content .d-box-head .video {
 	background-image: url("../images/top_video.jpg");
@@ -48,40 +86,81 @@
 	margin: 0 6px;
 	padding: 13px 15px 0 13px;
 	width: 176px;
+	background: #ffffff; /* For browsers that do not support gradients */
+  	background: -webkit-linear-gradient(left top, #ffffff, #fae6ee); /* For Safari 5.1 to 6.0 */
+  	background: -o-linear-gradient(bottom right, #ffffff, #fae6ee); /* For Opera 11.1 to 12.0 */
+  	background: -moz-linear-gradient(bottom right, #ffffff, #fae6ee); /* For Firefox 3.6 to 15 */
+  	background: linear-gradient(to bottom right, #ffffff, #f5d5e3); /* Standard syntax */
+}
+#container-content .top-content .d-box-list .box .box-item p {
+	float: left;
+	color: #e072a1; 
+}
+#container-content .top-content .d-box-list .box .box-item img {
+	float: right;
+}
+#container-content .top-content .d-box-list .box .box-item .heading {
+	border-bottom: 1px dashed #e072a1;
+	display: inline-block;
+	padding-bottom: 13px;
+    width: 100%;
+
+}
+#container-content .top-content .d-box-list .box .box-item .heading span {
+	float: left;
+}
+#container-content .top-content .d-box-list .box .box-item .heading p {
+    font-size: 13px;
+    line-height: 17px;
+    margin: 0;  
+	width: 60%;
+}
+#container-content .top-content .d-box-list .box .box-item .text p {
+	color: #000000;
+	font-size: 11px;
+	line-height: 13px;
 }
 #container-content .top-content .d-button {
-	background-color: #df6e9f;
-	height: 39px;
+	background-image: url("../images/top_button.png");
+	line-height: 39px;
     margin: 13px auto 0px;
 	width: 274px;
 }
 #container-content .top-content .d-button .text {
 	color: #ffffff;
 	font-weight: bold;
-	padding: 11px;
 	text-align: center;
 }
 #container-content .top-content .box-info {
 	border: 1px solid #e072a1;
 	margin: 36px 0 50px 0;
+	padding: 18px;
 }
 #container-content .top-content .box-info .left-aside {
 	float: left;
-	padding: 16px 18px 18px;
-	width: 187px;
+	margin-right: 36px;
+	color: #e072a1;
 }
 #container-content .top-content .box-info .right-aside {
 	float: left;
-	padding: 18px 0px 18px 18px;
 	word-break: break-all;
 }
 #container-content .top-content .box-info .right-aside table {
-	width: 412px;
+	width: 685px;
+}
+#container-content .top-content .box-info .right-aside table tr {
+	vertical-align: top;
+	height: 62px;
+}
+#container-content .top-content .box-info .right-aside table td {
+    border-bottom: 1px dashed #eaa1c0;
 }
 #container-content .top-content .box-info .right-aside table .date {
-	padding: 0 17px 0 18px;
-	width: 96px;
+	word-break: keep-all;
+	padding-right: 18px;
+    width: 1%;
 }
 #container-content .top-content .box-info .right-aside table .text {
-	width: 315px;
+	width: 58%;
+	padding: 0px 253px 0px 36px;
 }
