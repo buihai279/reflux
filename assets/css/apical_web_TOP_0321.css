@@ -1,0 +1,77 @@
+
+#container-content .content {
+    background: #ffffff;
+    margin: 0 auto;
+    width: 880px;
+}
+#container-content .content .d-box-head {
+	border-bottom: 2px dashed #eaa1c0;
+	padding-top: 25px;
+	padding-bottom: 23px;
+}
+#container-content .content .d-box-head .recruit {
+	background-image: url("../images/top_recruit.png");
+	float: left;
+	height: 94px;
+	width: 430px; 
+}
+#container-content .content .d-box-head .aplcal-blog {
+	background-image: url("../images/top_aplcal-blog.png");
+	float: left;
+	height: 94px;
+	margin-left: 10px;
+	width: 262px;
+}
+#container-content .content .d-box-head .video {
+	background-image: url("../images/top_video.jpg");
+	float: left;
+	height: 94px;
+	margin-left: 11px;
+	width: 167px;
+}
+#container-content .content .d-box-list {
+	margin-top: 23px;
+}
+#container-content .content .d-box-list .box .box-item-title {
+	border-left: 2px solid #e072a1;
+	color: #e072a1;
+	float: left;
+	height: 154px;
+	margin-right: 6px;
+	padding: 0 18px 0 12px;
+	width: 127px;
+}
+#container-content .content .d-box-list .box .box-item {
+	border: 1px solid #e072a1;
+	float: left;
+	height: 154px;
+	margin: 0 6px;
+	padding: 13px 15px 0 13px;
+	width: 176px;
+}
+#container-content .content .d-button {
+	background-color: #df6e9f;
+	height: 39px;
+    margin: 13px auto 0px;
+	width: 274px;
+}
+#container-content .content .d-button .text {
+	color: #ffffff;
+	font-weight: bold;
+	padding: 11px;
+	text-align: center;
+}
+#container-content .content .box-info {
+	border: 1px solid #e072a1;
+	margin: 36px 0 50px 0;
+}
+#container-content .content .box-info .left-aside {
+	width: 187px;
+	padding: 16px 18px 18px;
+	float: left;
+}
+#container-content .content .box-info .right-aside {
+	width: 187px;
+	padding: 16px 18px 18px;
+	float: left;
+}
