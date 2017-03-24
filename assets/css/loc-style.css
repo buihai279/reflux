@@ -1,0 +1,59 @@
+.m_bor-pink
+{
+	border: 1px solid #e072a1; 
+}
+
+.m-bor-top-text
+{	
+	padding: 11px;
+	margin-top: 60px;
+}
+
+.m_text-pad
+{margin: 30px 0px 30px 0px;}
+
+.m_btn-event-scoll
+{	
+	padding: 15px;
+	width: 235px;
+	height: 68px;
+	float: left;
+	background-image: url('../images/01_bg-btn-event.jpg');
+	background-size: cover;
+}
+.m_btn-event-scoll
+{
+	color: #e072a1;
+}
+
+.m_btn-event-scoll h4, .m-bor-top-text h4, .m_01_under_titblue h5
+{
+	margin: 0;
+}
+
+.m_header-blue
+{background-color: #4991d3;
+padding: 9px 12px 9px 12px;
+border-radius: 5px;
+margin-bottom: 30px;}
+
+.m_header-blue h4
+{
+	border-left: 4px solid white;
+	color: white;
+	margin: 0;
+	padding-left: 9px;
+}
+.m_bg-pink
+{background-color: #fcf1f6}
+
+.m_01_under_titblue
+{
+	text-align: center;
+	padding:22px 55px 22px 55px;
+	color: #e072a1;
+	margin-bottom: 23px;
+}
+
+.m_text-under_pinkzone
+{}
