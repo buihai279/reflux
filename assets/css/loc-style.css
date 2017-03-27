@@ -252,3 +252,33 @@ margin-top: 20px;}
     top: -11px;
 }
 
+.m_roomi
+{
+    width: 100%;
+    display: block;
+    margin-bottom: 60px;
+}
+
+.m_roomi_left
+{
+    float: left;
+    width: 515px;
+}
+
+.m_roomi_right{
+    float: right;
+    width: 280px;
+    text-align: right;
+    position: relative;
+}
+.m_roomi_right .m_room_link
+{
+    position: absolute;
+    bottom: 0;
+    left: -100px;
+}
+ 
+.m_roomi_right .m_room_link a
+{
+    font-style: none;
+}   
