@@ -26,8 +26,8 @@ body,html{
     font-family:Garamond!important;
     background-color: #eeb8cb!important;
     margin: 0 auto!important;
-    font-size: 13px !important;
-    line-height: 27px !important;
+    font-size: 13px;
+    line-height: 27px;
 }
 .clear-fix{
     display: block;
@@ -60,6 +60,9 @@ body,html{
 }
 #header .main-menu .contact a{
     color: #e072a1;
+    font-size: 13px;
+    font-family: NotoSansJPRegular;
+    line-height: 22px;
 }
 #header .main-menu .contact .fa-envelope{
     color:#df6f9f;
@@ -72,6 +75,9 @@ body,html{
 }
 #header .main-menu .menu-list a{
     color: #666666;
+    font-size: 12px;
+    line-height: 22px;
+    font-family: NotoSansJPDemiLight;
 }
 #header .main-menu .menu-list .fa-play{
     color:#df6f9f;
@@ -116,6 +122,7 @@ body,html{
     color:#e072a1;
 }
 #header .scroll-menu .item-menu a{
+    font-family: NotoSansJPLight;
     font-size: 15px;
     color: black;
     height: inherit;
@@ -148,7 +155,8 @@ body,html{
     margin-left: 36%;
     color: #ffffff;
     font-weight: bold;
-    font-size: 18px;
+    font-family: NotoSansJPBold;
+    font-size: 17px;
     background: #e072a1; /* For browsers that do not support gradients */
     background: -webkit-linear-gradient(#e072a1,#de6b9c,#cd3e7e); /* For Safari 5.1 to 6.0 */
     background: -o-linear-gradient(#e072a1,#de6b9c,#cd3e7e); /* For Opera 11.1 to 12.0 */
@@ -165,9 +173,11 @@ body,html{
 }
 #header .button-header .box-link a{
     color: #df6f9f;
-    padding:3px 10px;
+    padding:5px 10px;
     border: 1px solid #e072a1;
     float: left;
+    font-size: 12.62px;
+    font-family: NotoSansJPLight;
 }
 #header .line-top{
     border: 3px solid #e072a1;
@@ -200,7 +210,8 @@ body,html{
     margin: 0 40px;
     border-bottom: 3px solid #e072a1;
     padding-bottom: 20px;
-    font-size: 29px;
+    font-size: 34px;
+    font-family: NotoSansJPThin;
 }
 #container-content .content .content-title .circle-1{
     font-size: 15px;
