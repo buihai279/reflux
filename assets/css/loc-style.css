@@ -116,6 +116,7 @@ margin-bottom: 30px;}
     color: #e072a1;
     font-size: 20px;
     margin-top: 0;
+    line-height: 24px;
 }
 
 .bor_dotted
@@ -189,3 +190,65 @@ margin-bottom: 30px;}
     margin-bottom: 10px;
     color: #e072a1;
 }
+
+.m_qa{
+    font-size: 14px;
+    width: 100%;
+}
+
+.m_qa .m_qa_q
+{
+    background-color: #edf4fb;
+    padding: 15px 20px 15px 20px;
+    color: #4991d3;
+}
+
+.m_qa .m_qa_a
+{
+    padding: 15px 20px 30px 20px;
+    border-bottom: 1px dotted #e072a1;
+    color: #e072a1;
+    margin-bottom: 30px;
+    display: inline-block;
+    float: left;
+}
+
+.m_qa strong
+{
+    font-size: 34px;
+    font-weight: 600;
+    float: left;
+    width: 50px;
+}
+.m_qa .m_qa_a div, .m_qa .m_qa_b div
+{
+    width: 700px; 
+    float: left;
+    line-height: 22px;
+}
+
+.m_breadcr 
+{font-size: 19px;
+color: #4991d3;
+float: left;
+margin-top: 20px;}
+
+.m_bre_tit
+{float: left;}
+
+.m_brea_greatr
+{
+    margin-right: 20px;
+    margin-left: 25px;
+    float: left;
+}
+
+.m_brea_bord
+{
+    border: 1px solid #4991d3;
+    float: left;
+    padding: 10px;
+    position: relative;
+    top: -11px;
+}
+
