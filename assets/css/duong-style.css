@@ -7,7 +7,7 @@
 	color: #ffffff;
 }
 #container-content .top-image .text .top {
-	font-family: Noto Sans JP Light;
+	font-family: NotoSansJPLight;
 	font-size: 20px;
 	font-weight: lighter;	
 	padding-left: 4px;
@@ -23,7 +23,7 @@
 }
 #container-content .top-image .text .bottom {
 	font-size: 13px;
-	font-family: Noto Sans JP DemiLight;
+	font-family: NotoSansJPDemiLight;
 	padding-left: 2px;
 	width: 245px;
 }
@@ -52,7 +52,7 @@
 }
 #container-content .top-content .d-box-head .recruit .label-content {
 	float: left;
-	font-family: Noto Sans JP Bold;
+	font-family: NotoSansJPBold;
 	text-align: center;
 	padding-right: 40px;
 	width: 72%;	
@@ -79,7 +79,7 @@
 }
 #container-content .top-content .d-box-head .apical-blog .label-content {
 	float: left;
-	font-family: Noto Sans JP Bold;
+	font-family: NotoSansJPBold;
 	text-align: center;
 	padding-right: 23px;
 	width: 68%;	
@@ -107,17 +107,20 @@
 	font-family: NotoSansJPThin;
 	font-size: 22px;
 	height: 154px;
-	margin-right: 6px;
 	padding: 0 18px 0 12px;
 	width: 127px;
+}
+#container-content .top-content .d-box-list .box .box-item-container {
+	display: flex;
+	width: 753px;
 }
 #container-content .top-content .d-box-list .box .box-item {
 	border: 1px solid #e072a1;
 	float: left;
 	height: 154px;
-	margin: 0 6px;
-	padding: 13px 15px 0 16px;
-	width: 176px;
+	padding: 12px 13px 12px 14px;
+	width: 26%;
+	margin-right: 2%;
 	background: #ffffff; /* For browsers that do not support gradients */
   	background: -webkit-linear-gradient(left top, #ffffff, #fae6ee); /* For Safari 5.1 to 6.0 */
   	background: -o-linear-gradient(bottom right, #ffffff, #fae6ee); /* For Opera 11.1 to 12.0 */
@@ -136,26 +139,33 @@
 }
 #container-content .top-content .d-box-list .box .box-item .heading {
 	border-bottom: 1px dashed #e072a1;
-	display: inline-block;
-	font-family: Noto Sans JP Thin;
-	padding-bottom: 13px;
+	display: inline-table;
+	font-family: NotoSansJPThin;
+	padding-bottom: 12px;
     width: 100%;
 
 }
 #container-content .top-content .d-box-list .box .box-item .heading span {
 	float: left;
+	line-height: 24px;
 }
 #container-content .top-content .d-box-list .box .box-item .heading p {
     font-size: 20px;
     line-height: 24px;
-    margin: 0;  /*
-	width: 60%;*/
+    margin: 0;
+}
+#container-content .top-content .d-box-list .box .box-item .heading img {
+	float: right;
+}
+#container-content .top-content .d-box-list .box .box-item .text {
+	display: flex;
+	margin-top: 10px;
 }
 #container-content .top-content .d-box-list .box .box-item .text p {
 	color: #000000;
 	font-family: NotoSansJPLight;
 	font-size: 11px;
-	line-height: 13px;
+	line-height: 16px;
 }
 #container-content .top-content .d-button {
 	background-image: url("../images/top_button.png");
@@ -166,43 +176,51 @@
 }
 #container-content .top-content .d-button .text {
 	color: #ffffff;
-	font-family: Noto Sans JP Bold;
+	font-family: NotoSansJPBold;
 	font-weight: bold;
 	text-align: center;
 }
 #container-content .top-content .box-info {
 	border: 1px solid #e072a1;
 	margin: 36px 0 50px 0;
-	padding: 18px;
 }
 #container-content .top-content .box-info .left-aside {
 	float: left;
-	font-family: Noto Sans JP Thin;
-	font-size: 15px;
-	margin-right: 22px;
+	font-family: NotoSansJPThin;
+	font-size: 17px;
 	color: #e072a1;
+	padding: 18px;
 }
 #container-content .top-content .box-info .right-aside {
 	float: left;
-	font-family: Noto Sans JP Thin;
+	font-family: NotoSansJPThin;
+	margin-left: 35px;
 	word-break: break-all;
+	width: 70%;
+	padding: 7px;
 }
 #container-content .top-content .box-info .right-aside table {
 	width: 685px;
+	padding: 11px 0px;
 }
 #container-content .top-content .box-info .right-aside table tr {
+	display: block;
 	vertical-align: top;
-	height: 62px;
+	padding: 11px 0px;
 }
 #container-content .top-content .box-info .right-aside table td {
     border-bottom: 1px dashed #eaa1c0;
 }
 #container-content .top-content .box-info .right-aside table .date {
-	word-break: keep-all;
+    font-size: 13px;
 	padding-right: 18px;
     width: 1%;
+	word-break: keep-all;
 }
 #container-content .top-content .box-info .right-aside table .text {
+	font-size: 13px;
+	font-family: NotoSansJPThin;
+	line-height: 19px;
+	padding: 0px 253px 11px 36px;
 	width: 60%;
-	padding: 0px 253px 0px 36px;
 }
