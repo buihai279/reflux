@@ -1,5 +1,31 @@
-#container-content .top-image{
+#container-content .top-image {
 	padding: 0 0 60px;
+}
+#container-content .top-image .text {
+	padding: 148px 0px 152px 38px;
+	position: absolute;
+	color: #ffffff;
+}
+#container-content .top-image .text .top {
+	font-family: Noto Sans JP Light;
+	font-size: 20px;
+	font-weight: lighter;	
+	padding-left: 4px;
+	width: 220px;
+	}
+#container-content .top-image .text .banner {
+	font-family: Garamond Bold;
+	font-size: 58px;	
+	font-weight: bold;
+	line-height: 60px;
+	letter-spacing: 5px;
+	text-shadow: 0px 0px 9px rgba(250, 250, 250, 1);
+}
+#container-content .top-image .text .bottom {
+	font-size: 13px;
+	font-family: Noto Sans JP DemiLight;
+	padding-left: 2px;
+	width: 245px;
 }
 #container-content .top-content {
     background: #ffffff;
@@ -26,39 +52,43 @@
 }
 #container-content .top-content .d-box-head .recruit .label-content {
 	float: left;
+	font-family: Noto Sans JP Bold;
 	text-align: center;
 	padding-right: 40px;
 	width: 72%;	
 }
 #container-content .top-content .d-box-head .recruit .label-content .up {
 	border-bottom: 1px solid #ffffff;
-	padding: 20px 0 9px;
+	font-size: 26px;
 	font-weight: bold;
+	padding: 20px 0 9px;
 }
-#container-content .top-content .d-box-head .aplcal-blog {
-	background-image: url("../images/top_aplcal-blog.png");
+#container-content .top-content .d-box-head .apical-blog {
+	background-image: url("../images/top_apical-blog.png");
 	float: left;
 	height: 94px;
 	margin-left: 10px;
 	width: 262px;
 }
-#container-content .top-content .d-box-head .aplcal-blog .label-image {
+#container-content .top-content .d-box-head .apical-blog .label-image {
 	float: left;
 	height: 94px;
 	margin: auto;
 	width: 83px;
 	padding: 25px 22px;
 }
-#container-content .top-content .d-box-head .aplcal-blog .label-content {
+#container-content .top-content .d-box-head .apical-blog .label-content {
 	float: left;
+	font-family: Noto Sans JP Bold;
 	text-align: center;
 	padding-right: 23px;
 	width: 68%;	
 }
-#container-content .top-content .d-box-head .aplcal-blog .label-content .up {
+#container-content .top-content .d-box-head .apical-blog .label-content .up {
 	border-bottom: 1px solid #ffffff;
-	padding: 20px 0 10px;
 	font-weight: bold;
+	font-size: 20px;
+	padding: 20px 0 10px;
 }
 #container-content .top-content .d-box-head .video {
 	background-image: url("../images/top_video.jpg");
@@ -74,6 +104,8 @@
 	border-left: 2px solid #e072a1;
 	color: #e072a1;
 	float: left;
+	font-family: NotoSansJPThin;
+	font-size: 22px;
 	height: 154px;
 	margin-right: 6px;
 	padding: 0 18px 0 12px;
@@ -84,13 +116,16 @@
 	float: left;
 	height: 154px;
 	margin: 0 6px;
-	padding: 13px 15px 0 13px;
+	padding: 13px 15px 0 16px;
 	width: 176px;
 	background: #ffffff; /* For browsers that do not support gradients */
   	background: -webkit-linear-gradient(left top, #ffffff, #fae6ee); /* For Safari 5.1 to 6.0 */
   	background: -o-linear-gradient(bottom right, #ffffff, #fae6ee); /* For Opera 11.1 to 12.0 */
   	background: -moz-linear-gradient(bottom right, #ffffff, #fae6ee); /* For Firefox 3.6 to 15 */
-  	background: linear-gradient(to bottom right, #ffffff, #f5d5e3); /* Standard syntax */
+  	background: linear-gradient(to bottom right, #ffffff, #f5d5e3); /* Standard*/
+}
+#container-content .top-content .d-box-list .box .box-item span {
+	width: 70%;
 }
 #container-content .top-content .d-box-list .box .box-item p {
 	float: left;
@@ -102,6 +137,7 @@
 #container-content .top-content .d-box-list .box .box-item .heading {
 	border-bottom: 1px dashed #e072a1;
 	display: inline-block;
+	font-family: Noto Sans JP Thin;
 	padding-bottom: 13px;
     width: 100%;
 
@@ -110,24 +146,27 @@
 	float: left;
 }
 #container-content .top-content .d-box-list .box .box-item .heading p {
-    font-size: 13px;
-    line-height: 17px;
-    margin: 0;  
-	width: 60%;
+    font-size: 20px;
+    line-height: 24px;
+    margin: 0;  /*
+	width: 60%;*/
 }
 #container-content .top-content .d-box-list .box .box-item .text p {
 	color: #000000;
+	font-family: NotoSansJPLight;
 	font-size: 11px;
 	line-height: 13px;
 }
 #container-content .top-content .d-button {
 	background-image: url("../images/top_button.png");
+	font-size: 17px;
 	line-height: 39px;
     margin: 13px auto 0px;
 	width: 274px;
 }
 #container-content .top-content .d-button .text {
 	color: #ffffff;
+	font-family: Noto Sans JP Bold;
 	font-weight: bold;
 	text-align: center;
 }
@@ -138,11 +177,14 @@
 }
 #container-content .top-content .box-info .left-aside {
 	float: left;
-	margin-right: 36px;
+	font-family: Noto Sans JP Thin;
+	font-size: 15px;
+	margin-right: 22px;
 	color: #e072a1;
 }
 #container-content .top-content .box-info .right-aside {
 	float: left;
+	font-family: Noto Sans JP Thin;
 	word-break: break-all;
 }
 #container-content .top-content .box-info .right-aside table {
@@ -161,6 +203,6 @@
     width: 1%;
 }
 #container-content .top-content .box-info .right-aside table .text {
-	width: 58%;
+	width: 60%;
 	padding: 0px 253px 0px 36px;
 }
