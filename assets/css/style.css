@@ -3,23 +3,23 @@
     padding:0;
 }
 @font-face {
-    font-family: Noto Sans JP Regular;
+    font-family: NotoSansJPRegular;
     src: url(../fonts/NotoSansJP-Regular.otf);
 }
 @font-face {
-    font-family: Noto Sans JP Thin;
+    font-family: NotoSansJPThin;
     src: url(../fonts/NotoSansJP-Thin.otf);
 }
 @font-face {
-    font-family: Noto Sans JP Bold;
+    font-family: NotoSansJPBold;
     src: url(../fonts/NotoSansJP-Bold.otf);
 }
 @font-face {
-    font-family: Noto Sans JP Light;
+    font-family: NotoSansJPLight;
     src: url(../fonts/NotoSansJP-Light.otf);
 }
 @font-face {
-    font-family: Noto Sans JP DemiLight;
+    font-family: NotoSansJPDemiLight;
     src: url(../fonts/NotoSansJP-DemiLight.otf);
 }
 body,html{
