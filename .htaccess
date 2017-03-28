@@ -1,4 +1,0 @@
-AuthType Basic
-AuthName "My Protected Area"
-AuthUserFile /var/www/html/cookstar/public/reflux/.htpasswd
-Require valid-user
