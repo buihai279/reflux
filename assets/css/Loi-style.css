@@ -219,7 +219,7 @@
     font-family: NotoSansJPLight!important;
 }
 
-/*apical_web_04jisseki.html*/
+/*apical_web_08privacy.html*/
 #container-content .article-content-08{
     margin-top:60px;
 }
@@ -229,4 +229,187 @@
 }
 #container-content .article-content-08 p:first-child{
     margin-bottom: 5px!important;
+}
+
+/*apical_web_05consul.html*/
+#container-content .article-content-05 p{
+    font-family: NotoSansJPLight;
+    margin: 0!important;
+    line-height: 27px;
+}
+#container-content .article-content-05{
+    margin-top:60px;
+}
+#container-content .article-content-05 .top-consul-box{
+    margin-top:15px;
+    margin-bottom: 25px;
+    display: flex;
+}
+#container-content .article-content-05 .top-consul-box .left-box{
+    width: 330px;
+    float: left;
+}
+#container-content .article-content-05 .top-consul-box .left-box p{
+    color: #4991d3;
+}
+#container-content .article-content-05 .top-consul-box i{
+    float: left;
+    margin: 64px 20px 0 10px;
+    font-size: 30px;
+    color: #4991d3;
+}
+#container-content .article-content-05 .top-consul-box .right-box{
+    float: left;
+}
+#container-content .article-content-05 .top-consul-box .right-box .right-box-border {
+    padding: 20px;
+    border: 1px solid #4991d3;
+}
+.first-consul-box {
+    background-color: #e4eff8;
+    padding: 20px;
+    float: left;
+    width:100%;
+}
+.first-consul-box .circle-consul{
+    float: left;
+    width: 100px;
+    height: 100px;
+    background: #ffffff;
+    border-radius: 50%;
+    margin-left: 15px;
+    margin-top: 60px;
+    text-align: center;
+}
+.first-consul-box .circle-consul p{
+    display: table-cell;
+    height: 100px;
+    vertical-align: middle;
+    width: 100px;
+    color: #4991d3;
+    font-family: NotoSansJPBold;
+}
+.first-consul-box .list-consul-number{
+    float: right;
+}
+.first-consul-box .list-consul-number .box_numchild{
+    float: none!important;
+    background-color: #ffffff;
+    width:610px;
+    font-size: 18px;
+    line-height: 24px;
+    padding: 17px 20px;
+    color: #4991d3;
+    margin-top:-10px;
+    margin-bottom: 0!important;
+    margin-right: 0!important;
+}
+.first-consul-box .list-consul-number .box_numchild:first-child {
+    margin-top: 0 !important;
+}
+.first-consul-box .list-consul-number .number_item{
+    background-color: #e4eff8;
+}
+.first-consul-box .list-consul-number .fa-angle-down{
+    font-size: 32px;
+    width: 100%;
+    text-align: center;
+    color: #4991d3;
+    line-height: 18px;
+}
+.middle-consul-box{
+    margin-bottom:60px;
+}
+.middle-consul-box i.middle-arrow{
+    float: left;
+    font-size: 32px;
+    width: 100%;
+    text-align: right;
+    color: #4991d3;
+    line-height: 5px;
+    position: relative;
+    right: 315px;
+}
+.second-consul-box {
+    background-color: #fcf1f6;
+    padding: 20px;
+    float: left;
+    width:100%;
+}
+.second-consul-box .list-consul-number{
+    float: right;
+    width:610px;
+}
+.second-consul-box .list-consul-number .box_numchild{
+    background-color: #ffffff;
+    float: none;
+    color: #e072a1;
+    font-size: 18px;
+    line-height: 24px;
+    width:100%;
+    margin-bottom: 5px!important;
+    margin-top: -5px;
+    padding: 17px 20px;
+}
+.second-consul-box .list-consul-number .number_item{
+    background-color: #fcf1f6;
+}
+.second-consul-box .cover_box_numchild{
+    width: 100%;
+}
+.second-consul-box .cover_box_numchild .box_numchild:first-child{
+    margin-top: 0 !important;
+    width: 235px;
+    float: left;
+    padding: 17px 0;
+    text-align: center;
+    position: relative;
+}
+.second-consul-box .cover_box_numchild .box_numchild:last-child{
+    margin-top: 0 !important;
+    width: 365px;
+    float: right;
+    padding: 17px 0;
+    text-align: center;
+}
+.second-consul-box .list-consul-number .fa-angle-down{
+    font-size: 32px;
+    width: 100%;
+    text-align: center;
+    color: #eaa1c0;
+    line-height: 18px;
+}
+.second-consul-box .circle-consul{
+    float: left;
+    width: 100px;
+    height: 100px;
+    background: #ffffff;
+    border-radius: 50%;
+    margin-left: 15px;
+    text-align: center;
+    margin-top:170px;
+}
+.second-consul-box .circle-consul p{
+    display: table-cell;
+    height: 100px;
+    vertical-align: middle;
+    width: 100px;
+    color: #e072a1;
+    font-family: NotoSansJPBold;
+}
+.text-consul{
+    margin-bottom: 10px!important;
+}
+.text-consul p:first-child{
+    font-family: "Noto Sans JP Regular" !important;
+    font-size: 18px!important;
+    line-height: 24px!important;
+}
+.text-consul p:last-child{
+    line-height: 31px!important;
+    padding-left: 35px;
+}
+.last-text-consul p{
+    font-family: NotoSansJPDemiLight;
+    line-height: 27px!important;
 }
