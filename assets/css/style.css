@@ -23,6 +23,7 @@
     src: url(../fonts/NotoSansJP-DemiLight.otf);
 }
 body,html{
+    font-family:NotoSansJPRegular!important;
     background-color: #eeb8cb!important;
     margin: 0 auto!important;
     font-size: 13px;
