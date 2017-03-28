@@ -1,10 +1,11 @@
 /*apical_web_03event_170322.html*/
-#container-content .content .main-content h2{
-    font-size: 16px;
-    font-weight: bold;
+#container-content .content .main-content h2 {
+    font-size: 19px;
     border: 1px solid #e072a1;
     padding: 10px 15px;
-    margin-top: 60px;
+}
+#container-content .content .article-content-03 h2{
+    margin-top:60px;
 }
 #container-content .content .main-content .small-title{
     color:white;
@@ -183,6 +184,11 @@
     margin-left:13px;
     text-decoration: none;
 }
+#container-content .article-content-04 .info-text p{
+    line-height: 27px!important;
+    font-family: NotoSansJPLight;
+    margin: 0!important;
+}
 .font-size-12{
     font-size: 12px!important;
 }
@@ -195,22 +201,32 @@
 .font-size-18{
     font-size:18px!important;
 }
+.line-height-20{
+    line-height: 20px;
+}
 .line-height-24{
     line-height: 24px;
 }
 .line-height-26{
     line-height: 26px;
 }
-.line-height-20{
-    line-height: 20px;
+.line-height-31{
+    line-height: 31px;
 }
 .td-col-span-2{
     padding: 0!important;
     color:black!important;
     font-family: NotoSansJPLight!important;
 }
-.info-text p{
-    line-height: 27px!important;
+
+/*apical_web_04jisseki.html*/
+#container-content .article-content-08{
+    margin-top:60px;
+}
+#container-content .article-content-08 p{
     font-family: NotoSansJPLight;
-    margin: 0!important;
+    margin-bottom: 50px!important;
+}
+#container-content .article-content-08 p:first-child{
+    margin-bottom: 5px!important;
 }
