@@ -118,5 +118,30 @@ span.bottom-line {
     border-top: 5px solid #b3b3b3 !important ;
 }
 
+/*style web_06*/
+
+.second-col-apica{
+	padding-left: 30px;
+}
+
+.title-one{
+	color: #e072a1;
+	padding-left: 40px;
+	word-break: keep-all;
+	width: auto;
+}
+.title-two{
+	color: #e072a1;
+	word-break: keep-all;
+	padding: 0 15px;
+}
+.title-three{
+	color: #e072a1;
+	padding-right: 15px;
+}
+.content-table{
+	width:640px;
+}
+
 
 
