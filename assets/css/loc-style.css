@@ -292,8 +292,8 @@ margin-top: 20px;}
 
 #back-to-top {
     position: fixed;
-    bottom: 50px;
-    right: 225px;
+    bottom: 100px;
+    left: 74%;
     z-index: 9999;
     width: 85px;
     height: 32px;
