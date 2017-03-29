@@ -90,7 +90,7 @@
 	font-size: 17px;
 }
 .group_body_dashed_row{
-    border-bottom: 1px dashed #e072a1;
+    border-bottom: 1px dashed #eaa1c0;
 }
 .group_body_dashed_row span{
     margin-left: 40px;
@@ -118,30 +118,94 @@ span.bottom-line {
     border-top: 5px solid #b3b3b3 !important ;
 }
 
-/*style web_06*/
+/*style web 06*/
 
-.second-col-apica{
-	padding-left: 30px;
+.t_title{
+	font-size: 14px;
+	font-family: NotoSansJPDemiLight;
+	line-height: 21px;
 }
-
-.title-one{
-	color: #e072a1;
-	padding-left: 40px;
-	word-break: keep-all;
-	width: auto;
-}
-.title-two{
-	color: #e072a1;
-	word-break: keep-all;
-	padding: 0 15px;
-}
-.title-three{
-	color: #e072a1;
-	padding-right: 15px;
-}
-.content-table{
-	width:640px;
+.t_content{
+	padding-left: 28px !important;
+	font-size: 13px;
+	line-height: 21px;
+	font-family: NotoSansJPLight;
 }
 
+/*style web_07*/
+.m-content-1{
+    border-bottom: 1px dashed #eaa1c0;
+    height: auto;
+}
+.m-content-1-title{
+    width: 126px;
+    float: left;
+    color: #e072a1;
+    font-size: 14px;
+    line-height: 31px;
+    font-family:NotoSansJPDemiLight;
+    padding-left: 42px;
+}
+.m-content-1-des{
+    width: 674px;
+    float: right;
+    font-size: 13px;
+    line-height: 31px;
+    font-family:NotoSansJPLight;
+    padding-left: 14px;
+}
+.m-line-height-21{
+    line-height: 21px !important;
+    padding-top: 5px !important;
+}
+.m-line-height-31{
+    margin-top: -4px;
+    line-height: 31px;
+    font-size: 14px;
+}
+.m-content-2{
+    border-bottom: 1px dashed #eaa1c0;
+}
+.m-content-2-title{
+    width: 150px;
+}
+.m-content-2-title-1{
+    width:70px;
+    float: left;
+    color: #e072a1;
+    text-align: right;
+    font-size: 14px;
+    line-height: 31px;
+    font-family:NotoSansJPDemiLight;
+}
+.m-content-2-title-2{
+    width:40px;
+    float: left;
+    color: #e072a1;
+    text-align: right;
+    font-size: 14px;
+    line-height: 31px;
+    font-family:NotoSansJPDemiLight;
+}
+.m-content-2-title-3{
+    width:40px;
+    float: left;
+    color: #e072a1;
+    text-align: right;
+    font-size: 14px;
+    line-height: 31px;
+    font-family:NotoSansJPDemiLight;
+}
+.m-content-2-des{
+    width:650px;
+    float: right;
+    font-size: 13px;
+    line-height: 31px;
+    font-family:NotoSansJPLight;
+    padding-left: 20px;
+}
+.m-padding{
+    margin-top: -9px;
+}
 
 
