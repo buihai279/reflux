@@ -1,3 +1,4 @@
+/* top page*/
 #container-content .top-image {
 	padding: 0 0 60px;
 }
@@ -223,4 +224,104 @@
 	line-height: 19px;
 	padding: 0px 253px 11px 36px;
 	width: 60%;
+}
+/* 09 pages */
+#container-content .content .main-content .d-contact-info .phone {
+	font-family: NotoSansJPThin;
+	font-size: 27px;
+	letter-spacing: 4px;
+}
+#container-content .content .main-content .d-contact-info .time {
+	font-family: NotoSansJPLight;
+	font-size: 13px;
+	line-height: 27px;
+}
+#container-content .content .main-content .d-form .note {
+	font-family: NotoSansJPLight;
+	font-size: 13px;
+	line-height: 27px;
+}
+#container-content .content .main-content .d-form .survey-info .title {
+	font-family: NotoSansJPRegular;
+	font-size: 18px;
+	line-height: 24px;
+	border-bottom: 1px solid #eaa1c0;
+}
+#container-content .content .main-content .form .survey-info .detail {
+	font-family: NotoSansJPLight;
+	font-size: 13px;
+	line-height: 31px;
+}
+#container-content .content .main-content .d-form .survey-info .detail p {
+	float: left;
+	padding: 0 9px 0 41px;
+}
+#container-content .content .main-content .form .survey-info .detail .circle {
+	height: 17px;
+	width: 17px;
+	border-radius: 17px;
+	border: solid 1px #737373;
+	-moz-border-radius: 17px;
+	-webkit-border-radius: 17px;
+}
+#container-content .content .main-content .d-form .input-field .title {
+	font-family: NotoSansJPRegular;
+	font-size: 18px;
+	line-height: 24px;
+	border-bottom: 1px solid #eaa1c0;
+	margin-top: 17px;
+}
+#container-content .content .main-content .d-form .input-field .form-club {
+	margin-top: 10px;
+	font-family: NotoSansJPLight;
+	font-size: 13px;
+}
+#container-content .content .main-content .d-form .input-field .form-club label {
+	margin-left: 41px;
+	width: 78px;
+	line-height: 31px;
+}
+#container-content .content .main-content .d-form .input-field .form-club .form-input {
+	margin-left: 14px;
+	width: 403px;
+}
+#container-content .content .main-content .d-form .input-field select {
+	margin-left: 14px;
+	padding-left: 6px;
+	line-height: 20px;
+	width: 130px;
+	border-radius: 3px;
+    border:none;
+    background:url(../images/09_select-box-arrow.png) 0 0 no-repeat;
+    -webkit-appearance: none;
+}
+input[type="radio"] {
+    margin-right: 10px;
+}
+#container-content .content .main-content .d-form .input-field .form-input-note {
+	margin: 10px 0 9px 136px;
+	padding-left: 6px;
+	width: 403px;
+}
+#container-content .content .main-content .d-form .input-field .form-club .items {
+	margin-left: 136px;
+	margin-top: 10px;
+	font-family: NotoSansJPLight;
+	font-size: 13px;
+	line-height: 31px;
+}
+#container-content .content .main-content .d-form .input-field .form-club .items .item-detail {
+	margin-right: 50px;
+	float: left;
+}
+#container-content .content .main-content .d-form .input-field .submit-button {
+	background-image: url("../images/09_button.png");
+	border: none;
+	border-radius: 4px;
+	color: #ffffff;
+	float: right;
+	font-family: NotoSansJPBold;
+	height: 40px;
+	margin: 31px 261px 0 0;
+	width: 274px;
 }
