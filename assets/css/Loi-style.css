@@ -3,6 +3,8 @@
     font-size: 19px;
     border: 1px solid #e072a1;
     padding: 10px 15px;
+    line-height:24px;
+    font-family: NotoSansJPRegular;
 }
 #container-content .content .article-content-03 h2{
     margin-top:60px;
@@ -23,6 +25,7 @@
     margin:0;
     padding:0 12px;
     font-family: NotoSansJPDemiLight;
+    line-height: 24px;
 }
 #container-content .content .main-content p{
     font-size: 13px;
@@ -158,6 +161,7 @@
 #container-content .article-content-04 .description td:first-child {
     color:#e072a1;
     font-family: NotoSansJPDemiLight;
+    font-size: 14px;
 }
 #container-content .article-content-04 .left-position{
     font-size: 13px;
@@ -175,6 +179,8 @@
     margin:0;
     padding:0;
     font-family: NotoSansJPRegular;
+    font-size:13px;
+    line-height: 24px;
 }
 #container-content .article-content-04 p.left-position{
     margin-bottom: 0 !important;
@@ -226,6 +232,7 @@
 #container-content .article-content-08 p{
     font-family: NotoSansJPLight;
     margin-bottom: 50px!important;
+    line-height: 27px;
 }
 #container-content .article-content-08 p:first-child{
     margin-bottom: 5px!important;
@@ -235,7 +242,7 @@
 #container-content .article-content-05 p{
     font-family: NotoSansJPLight;
     margin: 0!important;
-    line-height: 27px;
+    line-height: 27px!important;
 }
 #container-content .article-content-05{
     margin-top:60px;
@@ -287,7 +294,9 @@
     vertical-align: middle;
     width: 100px;
     color: #4991d3;
-    font-family: NotoSansJPBold;
+    font-family: NotoSansJPBold!important;
+    font-size: 20px!important;
+    line-height: 24px!important;
 }
 .first-consul-box .list-consul-number{
     float: right;
@@ -395,21 +404,23 @@
     vertical-align: middle;
     width: 100px;
     color: #e072a1;
-    font-family: NotoSansJPBold;
+    font-family: NotoSansJPBold!important;
+    font-size: 20px!important;
+    line-height: 24px!important;
 }
-.text-consul{
+#container-content .article-content-05 .text-consul{
     margin-bottom: 10px!important;
 }
-.text-consul p:first-child{
-    font-family: "Noto Sans JP Regular" !important;
+#container-content .article-content-05 .text-consul p:first-child{
+    font-family: NotoSansJPRegular !important;
     font-size: 18px!important;
     line-height: 24px!important;
 }
-.text-consul p:last-child{
+#container-content .article-content-05 .text-consul p:last-child{
     line-height: 31px!important;
     padding-left: 35px;
 }
-.last-text-consul p{
+#container-content .article-content-05 .last-text-consul p{
     font-family: NotoSansJPDemiLight;
     line-height: 27px!important;
 }
