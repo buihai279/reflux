@@ -31,6 +31,7 @@
     font-size: 13px;
     margin-bottom: 5px;
     line-height: 30px;
+    font-family: NotoSansJPLight;
 }
 #container-content .content .main-content .group-span {
     border-collapse: separate;
@@ -52,15 +53,24 @@
     color:#e072a1;
     word-break: keep-all;
     padding-left:40px;
+    font-size: 14px;
+    font-family: NotoSansJPDemiLight;
 }
 #container-content .content .main-content .group-span .second-col {
     padding-left:70px;
     border-bottom: 1px dashed #eaa1c0;
 }
 #container-content .content .article-content-03 h4{
-    font-size:18px;
-    font-weight: bold;
+    font-size:20px;
     padding-bottom:10px;
+    font-family: NotoSansJPRegular;
+    line-height: 24px;
+}
+#container-content .content .article-content-03 table{
+    line-height: 31px!important;
+    margin-bottom: 15px;
+    border-collapse: separate;
+    border-spacing: 1px 0;
 }
 #container-content .content .main-content .border-solid-bottom{
     border-bottom:1px solid #eaa1c0!important;
@@ -84,7 +94,7 @@
     float: left;
     color:#4991d3;
     font-size: 18px;
-    margin:7px 0 17px 0;
+    margin:7px 0 5px 0;
 }
 #container-content .content .main-content .down-arrow i:nth-child(2n+1){
     margin-right:5%;
@@ -93,13 +103,19 @@
     width:100%;
     height:auto;
     padding:0 20px 20px 20px!important;
+    float: left;
     color:#e072a1;
+    background-color: #fcf1f6;
+    text-align: center;
 }
 #container-content .content .main-content .text_3 .shape-half {
     width:47.5%;
     height:250px;
     padding:0 20px 20px 20px!important;
     color:#e072a1;
+    background-color: #fcf1f6;
+    float: left;
+    text-align: center;
 }
 #container-content .shape-half p,#container-content .shape-full p{
     line-height: 13px!important;
@@ -111,6 +127,7 @@
 }
 #container-content .content .article-content-03 .number_item{
     left:-30px!important;
+    position: relative;
 }
 
 

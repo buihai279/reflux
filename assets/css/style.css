@@ -126,11 +126,12 @@ body,html{
     font-size: 15px;
     color: black;
     height: inherit;
+    position: relative;
+    z-index:1000;
 }
 #header .scroll-menu .item-menu span{
     border: 3px solid #e072a1;
     display: block;
-    margin-top: 5px;
     width: 90%;
     margin-left: 5%;
 }
@@ -162,6 +163,10 @@ body,html{
     background: -o-linear-gradient(#e072a1,#de6b9c,#cd3e7e); /* For Opera 11.1 to 12.0 */
     background: -moz-linear-gradient(#e072a1,#de6b9c,#cd3e7e); /* For Firefox 3.6 to 15 */
     background: linear-gradient(#e072a1,#de6b9c,#cd3e7e); /* Standard syntax */
+    opacity:1;
+}
+#header .button-header .middle-button:hover{
+    opacity: 0.5;
 }
 #header .button-header .box-link{
     float: right;
@@ -294,17 +299,17 @@ body,html{
     margin-top: 0px !important;
     margin-bottom: 10px !important;
 }
-.item-menu a>.hover-menu{
+.item-menu .hover-menu{
     display: block;
     height: 60px;
     width: 60px;
     border-radius:50% ;
-    background-color: antiquewhite;
+    background-color: #f7dce7;
     opacity: 0;
     top: -20px;
     left: 60px;
     position: absolute;
 }
-.item-menu:hover a>.hover-menu,.item-menu a.active .hover-menu{
+.item-menu:hover .hover-menu,.item-menu .active.hover-menu{
     opacity: 0.5!important;
 }
