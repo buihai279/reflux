@@ -158,6 +158,9 @@
 	width: 60%;
 }
 /* 09 pages */
+#container-content .content {
+    padding-top: 60px;
+}
 #container-content .content .main-content .d-contact-info .phone {
 	font-family: NotoSansJPThin;
 	font-size: 27px;
