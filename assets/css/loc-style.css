@@ -293,10 +293,10 @@ margin-top: 20px;}
 #back-to-top {
     position: fixed;
     bottom: 100px;
-    left: 74%;
+    right: 13.9%;
     z-index: 9999;
-    width: 85px;
-    height: 32px;
+    width: 55px;
+    height: 43px;
     text-align: center;
     line-height: 30px;
     color: #444;
@@ -305,10 +305,11 @@ margin-top: 20px;}
     text-decoration: none;
     transition: opacity 0.2s ease-out;
     opacity: 0;
+    background: url(../images/back-top.png);
+    background-repeat: no-repeat;
 }
 #back-to-top.show {
     opacity: 1;
-    border-bottom: 1px solid black;
 }
 
 #back-to-top span
