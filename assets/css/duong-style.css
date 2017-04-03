@@ -1,32 +1,6 @@
 /* top page*/
-#container-content .top-image {
-	padding: 0 0 60px;
-}
-#container-content .top-image .text {
-	padding: 148px 0px 152px 38px;
-	position: absolute;
-	color: #ffffff;
-}
-#container-content .top-image .text .top {
-	font-family: NotoSansJPLight;
-	font-size: 20px;
-	font-weight: lighter;	
-	padding-left: 4px;
-	width: 220px;
-	}
-#container-content .top-image .text .banner {
-	font-family: Garamond Bold;
-	font-size: 58px;	
-	font-weight: bold;
-	line-height: 60px;
-	letter-spacing: 5px;
-	text-shadow: 0px 0px 9px rgba(250, 250, 250, 1);
-}
-#container-content .top-image .text .bottom {
-	font-size: 13px;
-	font-family: NotoSansJPDemiLight;
-	padding-left: 2px;
-	width: 245px;
+#container-content .d-top-image {
+	padding: 0;
 }
 #container-content .top-content {
     background: #ffffff;
@@ -40,56 +14,11 @@
 	color: #ffffff;
 }
 #container-content .top-content .d-box-head .recruit {
-	background-image: url("../images/top_recruit.png");
 	float: left;
-	height: 94px;
-	width: 430px; 
-}
-#container-content .top-content .d-box-head .recruit .label-image {
-	float: left;
-	height: 94px;
-	width: 118px;
-	padding: 17px 29px;
-}
-#container-content .top-content .d-box-head .recruit .label-content {
-	float: left;
-	font-family: NotoSansJPBold;
-	text-align: center;
-	padding-right: 40px;
-	width: 72%;	
-}
-#container-content .top-content .d-box-head .recruit .label-content .up {
-	border-bottom: 1px solid #ffffff;
-	font-size: 26px;
-	font-weight: bold;
-	padding: 20px 0 9px;
 }
 #container-content .top-content .d-box-head .apical-blog {
-	background-image: url("../images/top_apical-blog.png");
 	float: left;
-	height: 94px;
 	margin-left: 10px;
-	width: 262px;
-}
-#container-content .top-content .d-box-head .apical-blog .label-image {
-	float: left;
-	height: 94px;
-	margin: auto;
-	width: 83px;
-	padding: 25px 22px;
-}
-#container-content .top-content .d-box-head .apical-blog .label-content {
-	float: left;
-	font-family: NotoSansJPBold;
-	text-align: center;
-	padding-right: 23px;
-	width: 68%;	
-}
-#container-content .top-content .d-box-head .apical-blog .label-content .up {
-	border-bottom: 1px solid #ffffff;
-	font-weight: bold;
-	font-size: 20px;
-	padding: 20px 0 10px;
 }
 #container-content .top-content .d-box-head .video {
 	background-image: url("../images/top_video.jpg");
@@ -127,6 +56,9 @@
   	background: -o-linear-gradient(bottom right, #ffffff, #fae6ee); /* For Opera 11.1 to 12.0 */
   	background: -moz-linear-gradient(bottom right, #ffffff, #fae6ee); /* For Firefox 3.6 to 15 */
   	background: linear-gradient(to bottom right, #ffffff, #f5d5e3); /* Standard*/
+}
+#container-content .top-content .d-box-list .box .box-item a {
+	text-decoration: none;
 }
 #container-content .top-content .d-box-list .box .box-item span {
 	width: 70%;
@@ -226,6 +158,9 @@
 	width: 60%;
 }
 /* 09 pages */
+#container-content .content {
+    padding-top: 60px;
+}
 #container-content .content .main-content .d-contact-info .phone {
 	font-family: NotoSansJPThin;
 	font-size: 27px;
