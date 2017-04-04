@@ -118,8 +118,10 @@ body,html{
     font-size: 8px;
     transform: rotate(90deg);
     margin-top: -20px;
-    margin-bottom:5px;
-    color:#e072a1;
+    margin-bottom: 5px;
+    color: #e072a1;
+    width: 5%;
+    margin-left: 47%;
 }
 #header .scroll-menu .item-menu a{
     font-family: NotoSansJPLight;
