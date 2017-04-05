@@ -58,8 +58,8 @@
 	height: auto;
 	position: relative;
 	text-align: center;
-	font-size: 13px;
-	color: #e794b8;
+	font-size: 17px;
+	color: #e072a1;
 }
 
 
@@ -106,6 +106,10 @@
     top: -25px;
     margin-bottom: -23px;
     font-family: NotoSansJPLight;
+    line-height: 21px!important;
+}
+.group_body_dashed_row .group_body_dashed_row_detail p{
+    margin: 0;
 }
 .group_body_dashed_row:last-child{
     border-bottom: none;
