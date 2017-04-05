@@ -237,7 +237,7 @@ body,html{
 
 /*Style cho menu footer*/
 #footer{
-    height: 145px;
+    height: 155px;
     background-color: #e072a1;
 }
 .menu ul {
@@ -254,13 +254,12 @@ body,html{
   text-decoration: none;
   color: #fff;
   display: block;
-  
 }
-/*.menu li:hover {
-  background: #F1F1F1;
-  color: #333;
-}*/
-.menu-first {margin-top: 17px;}
+.menu-first {
+    font-family: NotoSansJPDemiLight;
+    font-size: 12px;
+    margin-top: 17px;
+}
 .menu ul li a{
     line-height: 13px!important;
     border-bottom: 1px solid #f5d3e2;
@@ -277,26 +276,30 @@ body,html{
 .menu ul li:last-child i{
     border-right: none;
 }
-
+.menu .menu-second {
+    font-family: NotoSansJPDemiLight;
+    font-size: 12px;
+}
 .menu .menu-second li a{
     border-bottom: 2px solid #f5d3e2;
 }
 
 
 .apical{
-    font-size: 16px !important;
-    font-weight: bold;
+    font-size: 23px;
+    font-family: GaramondRegular;
     text-align: center;
     text-transform: uppercase;
     padding-top: 17px;
     margin-top: 0px !important;
     margin-bottom: 0px !important;
     color: #fff;
-    letter-spacing: 8px;
+    letter-spacing: 6px;
 }
 .copyright{
     color: #fff;
     text-align: center;
+    font-family: NotoSansJPLight;
     font-size: 10px;
     margin-top: 0px !important;
     margin-bottom: 10px !important;
