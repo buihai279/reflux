@@ -136,6 +136,7 @@
 #container-content .top-content .box-info .right-aside table {
 	width: 625px;
 	padding: 11px 0px;
+	border-collapse: separate;
 }
 #container-content .top-content .box-info .right-aside table tr {
 	display: block;
@@ -228,6 +229,7 @@
     border:none;
     background:url(../images/09_select-box-arrow.png) 0 0 no-repeat;
     -webkit-appearance: none;
+    -moz-appearance: none;
 }
 input[type="radio"] {
     margin-right: 10px;

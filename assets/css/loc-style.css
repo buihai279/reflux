@@ -10,7 +10,10 @@
 }
 
 .m_text-pad
-{margin: 30px 0px 30px 0px;}
+{
+    margin: 30px 0px 30px 0px;
+    width: 110%;
+}
 
 .m_btn-event-scoll
 {	
