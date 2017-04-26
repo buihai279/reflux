@@ -97,7 +97,7 @@ body,html{
     font-family: NotoSansJPBold;
     font-size: 13px;
     margin: 3px 52px 0px 40px;
-    padding: 8px 12px;
+    padding: 3px 12px;
 }
 #header .scroll-menu .header-button .button-item {
     background-image: url('../images/personal-top-button-inactive.png');
@@ -117,14 +117,14 @@ body,html{
     font-family: NotoSansJPLight;
     font-size: 13px;
     margin: 3px 0px 0px 54px;
-    padding: 8px 16px 6px 16px;
+    padding: 3px 16px;
 }
 #header .scroll-menu .box-link .question-and-answer {
     border-right: 1px solid #ffbb86;
     color: #ff9c4e;
     padding-right: 16px;
 }
-#header .scroll-menu .box-link .sthing {
+#header .scroll-menu .box-link .blog {
     color: #ff9c4e;
     padding-left: 16px;
 }
@@ -141,7 +141,6 @@ body,html{
     background-color: white;
     width:1000px;
     margin:0 auto;
-    padding:0 100px;
 }
 #container-content .content .content-title .circle{
     float: left;
