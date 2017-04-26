@@ -1,0 +1,71 @@
+/* kansai page */
+#container-content .content	.d-head-box	{
+	margin: 58px 0px 31px 255px;
+}
+#container-content .content	.d-head-box	.grandma {
+	border: 1px solid #ff9c4e;
+	background: #ffffff; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(right, #ffe0c8, #ffffff); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(left, #ffe0c8, #ffffff); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(left, #ffe0c8, #ffffff); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(left, #ffe0c8, #ffffff); /* Standard syntax */
+    float: left;
+    margin-right: 16px;
+    width: 234px;
+}
+#container-content .content	.d-head-box	.q-and-a {
+	border: 1px solid #ff9c4e;
+	background: #ffffff; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(right, #ffe0c8, #ffffff); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(left, #ffe0c8, #ffffff); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(left, #ffe0c8, #ffffff); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to left, #ffe0c8, #ffffff); /* Standard syntax */
+	float: left;
+    width: 234px;
+}
+#container-content .content	.d-head-box .title {
+	font-family: NotoSansJPRegular;
+}
+#container-content .content .d-main-content {
+	padding: 0px 100px;
+}
+#container-content .content .d-main-content .intro {
+	font-family: NotoSansJPLight;
+	font-size: 13px;
+	line-height: 31px;
+}
+#container-content .content .d-main-content .introduction h3 {
+	border-bottom: 1px solid #ffbe8a;
+	font-family: NotoSansJPRegular;
+	font-size: 18px;
+	line-height: 24px;
+}
+#container-content .content .d-main-content .introduction .text {
+	font-family: NotoSansJPLight;
+	font-size: 13px;
+	line-height: 27px;
+}
+#container-content .content .d-main-content .text-block {
+	margin-top: 49px;
+}
+#container-content .content .d-main-content .text-block .text-block-title {
+	border: 1px solid #ff9c4e;
+	font-family: NotoSansJPRegular;
+	font-size: 19px;
+	line-height: 24px;
+	margin-bottom: 30px;
+	padding: 7px 0px 7px 16px;
+}
+#container-content .content .d-main-content .small-title {
+	background: #3da899;
+	border-radius: 5px;
+	color: #ffffff;
+	margin-top: 63px;
+	padding: 6px 0px 1px 12px;
+}
+#container-content .content .d-main-content .small-title p {
+	border-left: 3px solid #ffffff;
+	font-family: NotoSansJPDemiLight;
+	font-size: 18px;
+	padding: 0 12px;
+}
