@@ -61,6 +61,7 @@
 	border-radius: 5px;
 	color: #ffffff;
 	margin-top: 63px;
+	margin-bottom: 30px;
 	padding: 6px 0px 1px 12px;
 }
 #container-content .content .d-main-content .small-title p {
@@ -68,4 +69,83 @@
 	font-family: NotoSansJPDemiLight;
 	font-size: 18px;
 	padding: 0 12px;
+}
+#container-content .content .d-main-content .how-to-use .group-item {
+	background-color: #fff5ed;
+}
+#container-content .content .d-main-content .how-to-use .group-item .item-title {
+	border-bottom: 1px dashed #ffbe8a;
+	color: #ff8933;
+	font-family: NotoSansJPRegular;
+	font-size: 20px;
+	line-height: 24px;
+	padding-bottom: 17px;
+	text-align: center;
+}
+#container-content .content .d-main-content .how-to-use .group-item .item-content {
+	padding: 15px 0px 25px 61px;
+	font-family: NotoSansJPLight;
+	font-size: 13px;
+	line-height: 27px;
+}
+#container-content .content .d-main-content .how-to-use .fa-angle-down {
+	font-size: 32px;
+    width: 100%;
+    text-align: center;
+    color: #4991d3;
+    line-height: 28px;
+}
+#container-content .content .d-main-content .expense {
+	font-family: NotoSansJPLight;
+	font-size: 13px;
+	line-height: 27px;
+
+}
+#container-content .content .d-main-content .item-list .item-list-title {
+	border-bottom: 1px solid #ffbe8a;
+	font-family: NotoSansJPRegular;
+	font-size: 18px;
+	line-height: 29px;
+	margin-top: 30px;
+}
+#container-content .content .d-main-content .item-list .item-list-content table {
+	font-family: NotoSansJPLight;
+	font-size: 13px;
+	line-height: 31px;
+	width: 800px;
+}
+#container-content .content .d-main-content .item-list .item-list-content table tbody {
+	vertical-align: bottom;
+	text-align: center;
+}
+#container-content .content .d-main-content .item-list .item-list-content .text {
+	font-family: NotoSansJPLight;
+	padding: 0px 44px 0px 42px;
+}
+#container-content .content .d-main-content .order-content {
+	font-family: NotoSansJPLight;
+}
+#container-content .content .d-main-content .cancel {
+	font-family: NotoSansJPLight;
+}
+#container-content .content .d-main-content .cancel table {
+	width: 100%;
+}
+#container-content .content .d-main-content .cancel table .left-side {
+	width: 15%;
+}
+#container-content .content .d-main-content .privilege {
+	font-family: NotoSansJPLight;
+}
+#container-content .content .d-main-content .privilege table {
+	width: 100%;
+}
+#container-content .content .d-main-content .privilege table tr {
+	border-bottom: 1px dashed #ffbe8a;
+}
+#container-content .content .d-main-content .privilege table .left-side {
+	color: #ff8933;
+	font-family: NotoSansJPDemiLigt;
+	padding-left: 42px;
+	width: 36%;
 }
