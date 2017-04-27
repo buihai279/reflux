@@ -85,7 +85,28 @@
 }
 #container-content .content .d-main-content .how-to-use .group-item {
 	background-color: #fff5ed;
+	position: relative;
 }
+#container-content .content .d-main-content .how-to-use .group-item .item-title {
+	padding-top: 30px;
+}
+#container-content .content .d-main-content .how-to-use .group-item .number_item {
+	color: #3da899;
+	width: 30px;
+    height: 30px;
+    line-height: 23px;
+    background-color: white;
+	border: 0px solid #000000;
+    text-align: center;
+    font-family: FuturalPTHeavy;
+    font-size: 18px;
+    position: absolute;
+    top: -9px;
+    left: -10px;
+    border-radius: 0px 0px 22px 0px;
+	-moz-border-radius: 0px 0px 22px 0px;
+	-webkit-border-radius: 0px 0px 22px 0px;
+} 
 #container-content .content .d-main-content .how-to-use .group-item-bonus {
 	background-color: #ffffff;
 	border: 2px solid #ffdfc5;
