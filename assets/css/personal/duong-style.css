@@ -34,8 +34,27 @@
 #container-content .content .d-main-content {
 	padding: 0px 100px;
 }
+#container-content .content .d-main-content .relative-pattern {
+	position: relative;
+}
 #container-content .content .d-main-content:last-child {
 	padding: 0px 100px 1px 100px;
+}
+#container-content .content .d-main-content .right-pattern {
+	position: absolute;
+	right: -155px;
+	top: -9px;
+}
+#container-content .content .d-main-content .right-pattern img {
+	border-radius: 48%;
+}
+#container-content .content .d-main-content .left-pattern {
+	position: absolute;
+	left: -155px;
+	top: -9px;
+}
+#container-content .content .d-main-content .left-pattern img {
+	border-radius: 48%;
 }
 #container-content .content .d-main-content .intro {
 	font-family: NotoSansJPLight;
@@ -155,7 +174,7 @@
 	border-bottom: 1px solid #ffbe8a;
 	font-family: NotoSansJPRegular;
 	font-size: 18px;
-	line-height: 29px;
+	line-height: 24px;
 	margin-top: 30px;
 }
 #container-content .content .d-main-content .item-list .item-list-content table {
