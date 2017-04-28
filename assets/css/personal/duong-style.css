@@ -1,7 +1,10 @@
 /* Kansai page */
 #container-content .content	.d-head-box	{
-	color: #ff8933;
 	margin: 58px 0px 0px 282px;
+}
+#container-content .content	.d-head-box	a {
+	color: #ff8933;
+	text-decoration: none;
 }
 #container-content .content	.d-head-box	.grandma {
 	border: 1px solid #ff9c4e;
