@@ -3,6 +3,10 @@
     padding:0;
 }
 @font-face {
+    font-family: FuturalPTHeavy;
+    src: url(../fonts/FuturalPT-Heavy.otf);
+}
+@font-face {
     font-family: NotoSansJPRegular;
     src: url(../fonts/NotoSansJP-Regular.otf);
 }
@@ -129,7 +133,7 @@ body,html{
     padding-left: 16px;
 }
 #header .line-top{
-    border: 3px solid #ff9c4e;
+    border: 5px solid #ff9c4e;
     display: block;
     width: 100%;
     float: left;

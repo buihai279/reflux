@@ -46,14 +46,15 @@
 .d-box-list .box .box-item-container .box-item .heading span p.one-line{
     padding: 18px 5px 5px 41px;
 }
-.sthing {
+.blog {
     color: #FF9C50;
 }
 #header .scroll-menu .business-customer , #header .scroll-menu .business-customer#header .scroll-menu .header-button .button-item {
     font-weight: bold;
 }
-/*----------------------------------------*/
-/* top page*/
+/**************************************************************************/
+/*************************       top page        **************************/
+/**************************************************************************/
 #container-content .d-top-image {
     padding: 0;
 }
@@ -323,4 +324,107 @@ input[type="radio"] {
     height: 40px;
     margin: 31px 261px 0 0;
     width: 274px;
+}
+/**************************************************************************/
+/*************************       Kumamoto        **************************/
+/**************************************************************************/
+#container-content .content .d-main-content .contact-detail .detail {
+    float: left;
+    padding: 20px 0px 10px 56px !important;
+}
+.bottom-dash{
+    width: 475px;
+    margin-left: -40px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-bottom: 1px dashed #ffbe8a;
+}
+#container-content .content .d-main-content .contact-detail .note{
+    height: 200px;
+}
+.note img{
+    height:40px;
+    margin: 61px 5px 5px 5px;
+}
+.note button {
+    margin-left: 22.5px;
+}
+/*style for the table:*/
+#container-content .content .d-main-content .t-orange-table .t-f-table {
+    font-family: NotoSansJPLight;
+    font-size: 13px;
+    line-height: 31px;
+    width: 800px;
+}
+
+#container-content .content .d-main-content .t-orange-table .t-f-table tr {
+    border-bottom: 1px dotted #ffbe8a ;
+    text-align: center;
+}
+
+#container-content .content .d-main-content .t-orange-table .t-f-table tr td {
+    width: 33%;
+    text-align: center;
+    font-size : 13px;
+    line-height: 31px;
+}
+
+#container-content .content .d-main-content .t-orange-table .t-f-table .t-table-title {
+    color : #ff8933 ;
+    border-right: 1px solid #ffbe8a ;
+    font-size: 14px;
+    line-height: 31px;
+    font-family: NotoSansDemiLight;
+}
+
+#container-content .content .d-main-content .t-orange-table .t-s-table {
+    font-family: NotoSansJPLight;
+    font-size: 13px;
+    line-height: 31px;
+    width: 800px;
+    margin-top: 10px;
+}
+
+#container-content .content .d-main-content .t-orange-table .t-s-table tr {
+    border-top: 1px dotted #ffbe8a ;
+    text-align: center;
+}
+
+#container-content .content .d-main-content .t-orange-table .t-s-table tr td {
+    width: 33%;
+    text-align: center;
+    font-size : 13px;
+    line-height: 31px;
+}
+
+#container-content .content .d-main-content .t-orange-table .t-s-table .t-table-title {
+    color : #ff8933 ;
+    border-right: 1px solid #ffbe8a ;
+    font-size: 14px;
+    line-height: 31px;
+    font-family: NotoSansDemiLight;
+}
+/*style for table 2*/
+#container-content .content .d-main-content .t-t-table {
+    font-family: NotoSansJPLight;
+    font-size: 13px;
+    line-height: 31px;
+    width: 100%;
+    margin-top: 10px;
+}
+
+#container-content .content .d-main-content .t-t-table tr {
+    border-bottom: 1px dotted #ffbe8a ;
+}
+
+#container-content .content .d-main-content .t-t-table tr .left-side {
+    width: 20%;
+    font-size: 14px;
+    line-height: 31px;
+    font-family: NotoSansDemiLight;
+    color: #ff8933 ;
+}
+
+#container-content .content .d-main-content .t-t-table tr .middle-side {
+    width: 20%;
 }
