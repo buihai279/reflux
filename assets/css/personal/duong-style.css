@@ -1,7 +1,7 @@
-/* kansai page */
+/* Kansai page */
 #container-content .content	.d-head-box	{
 	color: #ff8933;
-	margin: 58px 0px 0px 255px;
+	margin: 58px 0px 0px 282px;
 }
 #container-content .content	.d-head-box	.grandma {
 	border: 1px solid #ff9c4e;
@@ -66,7 +66,8 @@
 	border-bottom: 1px solid #ffbe8a;
 	font-family: NotoSansJPRegular;
 	font-size: 18px;
-	line-height: 24px;
+	line-height: 34px;
+	margin-top: 40px;
 }
 #container-content .content .d-main-content .introduction .text {
 	font-family: NotoSansJPLight;
@@ -156,6 +157,7 @@
 	font-family: NotoSansJPRegular;
 	font-size: 16px; 
 	line-height: 31px;
+	margin: 0px;
 }
 #container-content .content .d-main-content .how-to-use .fa-angle-down {
 	font-size: 32px;
@@ -174,8 +176,8 @@
 	border-bottom: 1px solid #ffbe8a;
 	font-family: NotoSansJPRegular;
 	font-size: 18px;
-	line-height: 24px;
-	margin-top: 30px;
+	line-height: 34px;
+	margin-top: 20px;
 }
 #container-content .content .d-main-content .item-list .item-list-content table {
 	font-family: NotoSansJPLight;
@@ -294,4 +296,49 @@
 #container-content .content .d-main-content .surcharge .text {
 	font-family: NotoSansJPLight;
 	padding: 0px 44px 0px 42px;
+}
+/* Kantou page*/
+#container-content .content .d-main-content .contact-address {
+	background-color: #fff5ed;
+    padding: 21px 21px 0px 21px;
+    width: 52%;
+}
+#container-content .content .d-main-content .contact-address .contact-image .text {
+	font-family: NotoSansJPLight;
+	font-size: 13px;
+	line-height: 19px;
+	margin-top: 5px;
+}
+#container-content .content .d-main-content .contact-address .contact-image {
+	float: left;
+}
+#container-content .content .d-main-content .contact-address .contact-address-detail {
+	float: left;
+	font-family: NotoSansJPRegular;
+	line-height: 24px;
+	margin: 0px;
+	margin-left: 6px
+}
+#container-content .content .d-main-content .contact-address .contact-address-detail .contact-address-detail-title {
+	color: #ff8933;
+	font-size: 16px;
+	line-height: 24px;
+}
+#container-content .content .d-main-content .contact-address .contact-address-detail .small-text {
+	color: #ff8933;
+	font-size: 13px;
+	line-height: 21px;
+}
+#container-content .content .d-main-content .contact-address .contact-address-detail p {
+	margin: 0px;
+}
+#container-content .content .d-main-content .contact-address .contact-address-detail table {
+	font-family: NotoSansJPLight;
+	line-height: 26px;
+}
+#container-content .content .d-main-content .contact-address .contact-address-detail .table-left-side {
+	color: #ff8933;
+	font-family: NotoSansJPDemiLight;
+	font-size: 14px;
+	padding-right: 10px;	
 }
