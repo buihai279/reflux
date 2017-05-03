@@ -428,3 +428,6 @@ input[type="radio"] {
 #container-content .content .d-main-content .t-t-table tr .middle-side {
     width: 20%;
 }
+#container-content .content .d-main-content{
+    padding-bottom: 1px;
+}
