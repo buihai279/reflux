@@ -25,7 +25,7 @@
 	padding: 10px 0px;
 	text-align: center;
 	font-weight: bold;
-	background-image: url('../images/mini-box-bg.png');
+	background-image: url('../../images/mini-box-bg.png');
 	background-size: 175px 95px;
 	font-family: NotoSansJPRegular;
 }
