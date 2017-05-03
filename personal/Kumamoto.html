@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="../assets/css/personal-style.css">
     <link rel="stylesheet" href="../assets/css/personal/duong-style.css">
     <link rel="stylesheet" href="../assets/css/personal/rome-style.css">
+    <link rel="stylesheet" href="../assets/css/loc-style.css">
 </head>
 <body>
 <!--header-->
@@ -84,14 +85,14 @@
         <div class="clearfix"></div>
         <!-- d-head-box -->
         <div class="d-head-box" style="margin: 58px 0px 0px 255px;">
-            <div class="grandma">
+            <a class="grandma page-scroll" href="#grandma">
                 <p class="title">グランマ−<span style="font-size:13px">（産褥シッター）</span></p>
                 <p class="note">についてはこちら</p>
-            </div>
-            <div class="q-and-a">
+            </a>
+            <a class="q-and-a page-scroll" href="#q-and-a">
                 <p class="title">Q&A</p>
                 <p class="note">についてはこちら</p>
-            </div>
+            </a>
             <div class="clear-fix"></div>
         </div>
         <!--/ d-head-box -->
@@ -340,9 +341,9 @@
             <div class="sponsor">
                 <div class="item-list">
                     <div class="item-list-title relative-pattern">●ベビーシッター育児支援事業
-                        <div class="left-pattern" style="top: -33px;">
-                            <img src="../assets/images/patterns/snowy_mint-dotted.png">
-                        </div>
+                        <!--<div class="left-pattern" style="top: -33px;">-->
+                            <!--<img src="../assets/images/patterns/snowy_mint-dotted.png">-->
+                        <!--</div>-->
                     </div>
                     <div class="item-list-content">
                         <p class="text">
@@ -422,7 +423,7 @@
             <!--/ privilege -->
         </div>
         <!--/ d-main-content -->
-        <div class="d-middle-image">
+        <div class="d-middle-image" id="grandma">
             <img src="../assets/images/kansai_middle-image.jpg" alt="">
         </div>
         <!-- d-main-content -->
@@ -492,7 +493,7 @@
                             <!--</tr>-->
                         <!--</table>-->
                     <!--</div>-->
-                    <div class="item-list-content">
+                    <div class="item-list-content relative-pattern">
                         <p>
                             ※交通費：実費<br>
                             ※お時間は９：００～１７：００の中で３時間お選びください。<br>
@@ -500,6 +501,9 @@
                             <br>
                             ◯2014年4月から適用で消費税込の料金です。
                         </p>
+                        <div class="right-pattern" style="top: -33px;">
+                            <img src="../assets/images/patterns/diagonal-blue-dashed.png">
+                        </div>
                     </div>
 
                     <!--<div class="item-list-title">●特別加算</div>-->
@@ -534,19 +538,22 @@
                         ご家族のお食事作り、ご家族のお食事後の食器洗い、片付け
                     </div>
                 </div>
-                <div class="text-block">
+                <div class="text-block relative-pattern">
                     <div class="text-block-title">掃除</div>
                     <div class="text-block-content">
                         赤ちゃんが過ごす部屋の掃除（掃除機、床拭き）、ベビーバス洗い
+                    </div>
+                    <div class="left-pattern" style="top: -33px;">
+                        <img src="../assets/images/patterns/yellow-dotted.png">
                     </div>
                 </div>
                 <div class="text-block">
                     <div class="text-block-title">洗濯</div>
                     <div class="text-block-content relative-pattern">
                         洗濯機に洗剤を入れる～干す、乾いた洗濯物を取込み～たたむ
-                        <div class="right-pattern" style="top:-155px">
-                            <img src="../assets/images/patterns/diagonal-blue-dashed.png">
-                        </div>
+                        <!--<div class="right-pattern" style="top:-155px">-->
+                            <!--<img src="../assets/images/patterns/diagonal-blue-dashed.png">-->
+                        <!--</div>-->
                     </div>
                 </div>
                 <!--/ text-block -->
@@ -554,7 +561,7 @@
             <!--/ expense -->
         </div>
         <!--/ d-main-content -->
-        <div class="d-middle-image">
+        <div class="d-middle-image" id="q-and-a">
             <img src="../assets/images/kansai_third-image.jpg" alt="">
         </div>
         <!-- d-main-content -->
@@ -576,10 +583,10 @@
             <!--/ content-title -->
             <!-- d-head-box -->
             <div class="d-head-box">
-                <div class="grandma">
+                <a class="grandma page-scroll" href="#family-care">
                     <p class="title">Q&A</p>
                     <p class="note">についてはこちら</p>
-                </div>
+                </a>
                 <div class="clear-fix"></div>
             </div>
             <!--/ d-head-box -->
@@ -691,7 +698,7 @@
             <!--/ guide -->
         </div>
         <!--/ d-main-content -->
-        <div class="d-middle-image">
+        <div class="d-middle-image" id="family-care">
             <img src="../assets/images/kansai_forth-image.jpg" alt="" style="margin-left: -20px">
         </div>
         <!-- d-main-content -->
@@ -868,6 +875,7 @@
             <!--/ d-main-content -->
         </div>
         <!--/ content  -->
+        <a href="#" id="back-to-top" title="Back to top"></a>
 </section>
 <!--/ container-content-->
 <!--footer-->
@@ -896,7 +904,11 @@
 </section>
 <!--/ footer-->
 <!-- Libs Script -->
-<script type="text/javascript" src="assets/js/jquery-3.2.0.min.js"></script>
-<script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="../assets/js/jquery-3.2.0.min.js"></script>
+<script type="text/javascript" src="../assets/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="../assets/js/scroll-top.js"></script>
+<!-- Scrolling Nav JavaScript -->
+<script type="text/javascript" src="../assets/js/jquery.easing.min.js"></script>
+<script type="text/javascript" src="../assets/js/scrolling-nav.js"></script>
 </body>
 </html>

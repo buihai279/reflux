@@ -1,5 +1,6 @@
 /* Kansai page */
 #container-content .content	.d-head-box	{
+	color: #ff8933;
 	margin: 58px 0px 0px 282px;
 }
 #container-content .content	.d-head-box	a {
@@ -35,6 +36,7 @@
 	line-height: 24px;
 }
 #container-content .content .d-main-content {
+	height: 100%;
 	padding: 0px 100px;
 }
 #container-content .content .d-main-content .relative-pattern {
@@ -94,13 +96,15 @@
 	color: #ffffff;
 	margin-top: 63px;
 	margin-bottom: 30px;
-	padding: 6px 0px 1px 12px;
+	padding: 9px 12px 9px 12px;
 }
 #container-content .content .d-main-content .small-title p {
-	border-left: 3px solid #ffffff;
+	border-left: 4px solid #ffffff;
 	font-family: NotoSansJPDemiLight;
 	font-size: 18px;
-	padding: 0 12px;
+	line-height: 1.1;
+	margin: 0px;
+	padding-left: 9px;
 }
 
 #container-content .content .d-main-content .text-block .text-block-content {
@@ -194,6 +198,7 @@
 }
 #container-content .content .d-main-content .item-list .item-list-content .text {
 	font-family: NotoSansJPLight;
+	margin-top: 8px;
 	padding: 0px 44px 0px 42px;
 }
 #container-content .content .d-main-content .order-content {
