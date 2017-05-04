@@ -3,7 +3,7 @@
 }
 
 #container-content .content {
-	padding-top: 25px;
+	padding-top: 55px;
 	padding-bottom: 120px;
 }
 
@@ -56,9 +56,20 @@
 
 #container-content .content .main-content .t-box-dotted .t-q-box {
 	width: 100%;
+	height: 60px;
+	background-color : #ecf6f5;
+	float: left;
+}
+
+#container-content .content .main-content .t-box-dotted .t-q-first-box {
+	width: 100%;
 	height: 80px;
 	background-color : #ecf6f5;
 	float: left;
+}
+
+#container-content .content .main-content .t-box-dotted .t-q-box .t-first-q-text{
+	margin-top:15px !important;
 }
 
 #container-content .content .main-content .t-box-dotted .t-a-box {
