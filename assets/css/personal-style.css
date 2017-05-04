@@ -139,6 +139,14 @@ body,html{
     float: left;
     margin-top: 25px;
 }
+.button-item a{
+    color: #fff !important;
+    text-decoration: none !important;
+}
+.business-customer a{
+    color: #ff9c4e !important;
+    text-decoration: none !important;
+}
 
 /*container-content*/
 #container-content{
