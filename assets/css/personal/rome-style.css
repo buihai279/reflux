@@ -439,3 +439,10 @@ input[type="radio"] {
     color: #ff9c4e !important;
     text-decoration: none !important;
 }
+.r-end-page-buttons .scroll-menu .header-button .button-item {
+    width: 163px;
+}
+.r-end-page-buttons .scroll-menu{
+    margin-left: -90px;
+    margin-right: -90px;
+}
