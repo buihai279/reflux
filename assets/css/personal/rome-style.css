@@ -431,3 +431,18 @@ input[type="radio"] {
 #container-content .content .d-main-content{
     padding-bottom: 1px;
 }
+.button-item a{
+    color: #fff !important;
+    text-decoration: none !important;
+}
+.business-customer a{
+    color: #ff9c4e !important;
+    text-decoration: none !important;
+}
+.r-end-page-buttons .scroll-menu .header-button .button-item {
+    width: 163px;
+}
+.r-end-page-buttons .scroll-menu{
+    margin-left: -90px;
+    margin-right: -90px;
+}

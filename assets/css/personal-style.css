@@ -133,11 +133,19 @@ body,html{
     padding-left: 16px;
 }
 #header .line-top{
-    border: 5px solid #ff9c4e;
+    border: 3px solid #ff9c4e;
     display: block;
     width: 100%;
     float: left;
     margin-top: 25px;
+}
+.button-item a{
+    color: #fff !important;
+    text-decoration: none !important;
+}
+.business-customer a{
+    color: #ff9c4e !important;
+    text-decoration: none !important;
 }
 
 /*container-content*/
@@ -221,7 +229,7 @@ body,html{
     font-size: 12px;
 }
 .menu .menu-second li a{
-    border-bottom: 2px solid #f5d3e2;
+    border-bottom: 1px solid #f5d3e2;
 }
 .apical{
     font-size: 23px;
