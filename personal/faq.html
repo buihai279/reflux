@@ -2,14 +2,15 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <title>Layout</title>
+        <title>Q&A</title>
         <!-- Lib css -->
         <link rel="stylesheet" href="../assets/css/bootstrap-theme.min.css">
         <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
         <link rel="stylesheet" href="../assets/css/font-awesome.min.css">
         <!-- Customize css -->
         <link rel="stylesheet" href="../assets/css/personal-style.css">
-        <link rel="stylesheet" href="../assets/css/tung_style.css">
+        <link rel="stylesheet" href="../assets/css/loc-style.css">
+        <link rel="stylesheet" href="../assets/css/personal/tung_style.css">
     </head>
     <body>
         <!--header-->
@@ -44,14 +45,14 @@
             <div class="scroll-menu">
                 <div class="business-customer">法人のお客様</div>
                 <div class="header-button">
-                    <button class="button-item">関西地区</button>
-                    <button class="button-item">関西地区</button>
-                    <button class="button-item">関西地区</button>
-                    <button class="button-item">関西地区</button>
+                    <button class="button-item" style="background-image: url('../assets/images/personal-top-button.png')">関東地区</button>
+                    <button class="button-item" style="background-image: url('../assets/images/personal-top-button.png')">関西地区</button>
+                    <button class="button-item" style="background-image: url('../assets/images/personal-top-button.png')">福岡地区</button>
+                    <button class="button-item" style="background-image: url('../assets/images/personal-top-button.png')">熊本地区</button>
                 </div>
                 <div class="box-link">
                     <a href="#" class="question-and-answer">Q&A</a>
-                    <a href="#" class="sthing">ブログ</a>
+                    <a href="#" class="blog">ブログ</a>
                 </div>
             </div>
             <div class="clearfix"></div>
@@ -76,24 +77,32 @@
                 </div>
                 <div class="clearfix"></div>
                 <div class="t-middle-box">
-                    <div class="t-mini-box">
-                        ベビーシッター <br>
-                        Q&A
-                    </div>
-                    <div class="t-mini-box">
-                        キッズルーム <br>
-                        Q&A
-                    </div>
-                    <div class="t-mini-box">
-                        ファミリー <br>
-                        ケアサービス<br>
-                        Q&A
-                    </div>
-                    <div class="t-mini-box">
-                        シルバー<br>
-                        サポートサービス<br>
-                        Q&A
-                    </div>
+                    <a href="#">
+                        <div class="t-mini-box">
+                            ベビーシッター <br>
+                            Q&A
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="t-mini-box">
+                            キッズルーム <br>
+                            Q&A
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="t-mini-box">
+                            ファミリー <br>
+                            ケアサービス<br>
+                            Q&A
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="t-mini-box">
+                            シルバー<br>
+                            サポートサービス<br>
+                            Q&A
+                        </div>
+                    </a>
                 </div>
                 <div class="clear-fix"></div>
                 <div class="main-content article-content-03">
@@ -101,11 +110,11 @@
                         <h3>ベビーシッター Q & A</h3>
                     </div>
                     <div class="t-box-dotted">
-                        <div class="t-q-box">
+                        <div class="t-q-box t-q-first-box">
                             <div class="t-q-title">
                                 <h2>Q</h2>
                             </div>
-                            <div class="t-q-text">
+                            <div class="t-q-text t-first-q-text">
                                 入会申込みの手続きはどのようにするのですか？<br>
                                 申込み後、何日後から利用が可能ですか？
                             </div>
@@ -628,6 +637,7 @@
                     <hr>
                 </div>
             </div>
+            <a href="#" id="back-to-top" title="Back to top"></a>
         </section>
         <!--footer-->
         <section id="footer">
@@ -655,7 +665,11 @@
         </section>
         <!--/ footer-->
         <!-- Libs Script -->
-        <script type="text/javascript" src="assets/js/jquery-3.2.0.min.js"></script>
-        <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="../assets/js/jquery-3.2.0.min.js"></script>
+        <script type="text/javascript" src="../assets/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="../assets/js/scroll-top.js"></script>
+        <!-- Scrolling Nav JavaScript -->
+        <script type="text/javascript" src="../assets/js/jquery.easing.min.js"></script>
+        <script type="text/javascript" src="../assets/js/scrolling-nav.js"></script>
     </body>
 </html>

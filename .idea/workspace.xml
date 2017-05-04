@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="da8287a6-b31c-47a3-89ae-89d24c3420ce" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/css/personal/rome-style.css" afterPath="$PROJECT_DIR$/assets/css/personal/rome-style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/personal/Kumamoto.html" afterPath="$PROJECT_DIR$/personal/Kumamoto.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/personal/index.html" afterPath="$PROJECT_DIR$/personal/index.html" />
-    </list>
+    <list default="true" id="da8287a6-b31c-47a3-89ae-89d24c3420ce" name="Default" comment="" />
     <ignored path="reflux.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
@@ -260,12 +255,12 @@
       <workItem from="1493359524473" duration="15041000" />
       <workItem from="1493378346850" duration="24000" />
       <workItem from="1493778911712" duration="3029000" />
-      <workItem from="1493881462160" duration="4709000" />
+      <workItem from="1493881462160" duration="5116000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="26195000" />
+    <option name="totallyTimeSpent" value="26602000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1378" height="754" extended-state="0" />
