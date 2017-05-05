@@ -377,7 +377,7 @@ input[type="radio"] {
     border-right: 1px solid #ffbe8a ;
     font-size: 14px;
     line-height: 31px;
-    font-family: NotoSansDemiLight;
+    font-family: NotoSansJPDemiLight;
 }
 
 #container-content .content .d-main-content .t-orange-table .t-s-table {
@@ -405,7 +405,7 @@ input[type="radio"] {
     border-right: 1px solid #ffbe8a ;
     font-size: 14px;
     line-height: 31px;
-    font-family: NotoSansDemiLight;
+    font-family: NotoSansJPDemiLight;
 }
 /*style for table 2*/
 #container-content .content .d-main-content .t-t-table {
@@ -424,7 +424,7 @@ input[type="radio"] {
     width: 20%;
     font-size: 14px;
     line-height: 31px;
-    font-family: NotoSansDemiLight;
+    font-family: NotoSansJPDemiLight;
     color: #ff8933 ;
 }
 
