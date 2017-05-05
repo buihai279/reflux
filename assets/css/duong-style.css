@@ -16,9 +16,15 @@
 #container-content .top-content .d-box-head .recruit {
 	float: left;
 }
+#container-content .top-content .d-box-head .recruit:hover {
+	opacity: 0.5;
+}
 #container-content .top-content .d-box-head .apical-blog {
 	float: left;
 	margin-left: 10px;
+}
+#container-content .top-content .d-box-head .apical-blog:hover {
+	opacity: 0.5;
 }
 #container-content .top-content .d-box-head .video {
 	background-image: url("../images/top_video.jpg");
@@ -56,6 +62,9 @@
   	background: -o-linear-gradient(bottom right, #ffffff, #fae6ee); /* For Opera 11.1 to 12.0 */
   	background: -moz-linear-gradient(bottom right, #ffffff, #fae6ee); /* For Firefox 3.6 to 15 */
   	background: linear-gradient(to bottom right, #ffffff, #f5d5e3); /* Standard*/
+}
+#container-content .top-content .d-box-list .box .box-item:hover {
+	opacity: 0.5;
 }
 #container-content .top-content .d-box-list .box .box-item a {
 	text-decoration: none;
@@ -107,6 +116,9 @@
 	line-height: 39px;
     margin: 13px auto 0px;
 	width: 274px;
+}
+#container-content .top-content .d-button:hover {
+	opacity: 0.5;
 }
 #container-content .top-content .d-button .text {
 	color: #ffffff;
