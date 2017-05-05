@@ -449,3 +449,14 @@ input[type="radio"] {
     margin-left: -90px;
     margin-right: -90px;
 }
+
+/*hover opacity*/
+#container-content .top-content .d-box-head .recruit:hover{
+    opacity:0.5;
+}
+#container-content .top-content .d-box-head .apical-blog:hover {
+    opacity:0.5;
+}
+.box-item:hover{
+    opacity:0.5;
+}
