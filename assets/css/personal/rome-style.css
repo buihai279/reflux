@@ -29,6 +29,9 @@
     height: 40px;
     width: 115px;
     color: #fff;
+}
+.r-end-page-buttons .scroll-menu .header-button .button-item:hover {
+    opacity: 0.5;
 }   
 .r-end-page-buttons{
     height: 100%;
