@@ -115,6 +115,9 @@ body,html{
     height: 40px;
     width: 115px;
 }
+#header .scroll-menu .header-button .button-item:hover {
+    opacity: 0.5;
+}
 #header .scroll-menu .box-link {
     border: 1px solid #ffbb86;
     float:left;
