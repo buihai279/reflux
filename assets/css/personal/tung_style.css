@@ -127,7 +127,7 @@
 }
 
 hr {
-	border: 3px solid #b3b3b3;
+	border-top: 5px solid #b3b3b3;
 	width: 80%;
 	margin: 120px auto;
 }
