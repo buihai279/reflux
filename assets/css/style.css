@@ -132,7 +132,7 @@ body,html{
     z-index:1000;
 }
 #header .scroll-menu .item-menu span{
-    border: 3px solid #e072a1;
+    border-top: 4px solid #e072a1;
     display: block;
     width: 90%;
     margin-left: 5%;
@@ -187,7 +187,7 @@ body,html{
     font-family: NotoSansJPLight;
 }
 #header .line-top{
-    border: 3px solid #e072a1;
+    border-top: 5px solid #e072a1;
     display: block;
     width: 100%;
     float: left;
