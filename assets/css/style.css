@@ -57,6 +57,7 @@ body,html{
     padding:2px 20px;
     text-align: center;
     float: right;
+    margin-left: 10px;
 }
 #header .main-menu .contact a{
     color: #e072a1;
@@ -313,4 +314,21 @@ body,html{
 }
 .item-menu:hover .hover-menu,.item-menu .active.hover-menu{
     opacity: 0.5!important;
+}
+.box-icon{
+    float: right;
+    margin-right: 30px;
+}
+.box-icon-content{
+    width:35px;
+    float: left;
+    height: 35px;
+    background-color: #db6397;
+    border-radius: 50%;
+    text-align: center;
+    margin-right: 15px;
+    padding-top: 2px;
+}
+.box-icon-content a{
+    color: #fff !important;
 }

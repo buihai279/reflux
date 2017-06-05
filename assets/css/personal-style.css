@@ -157,6 +157,7 @@ body,html{
     background-color: white;
     width:1000px;
     margin:0 auto;
+    padding-bottom: 10px;
 }
 #container-content .content .content-title .circle{
     float: left;
