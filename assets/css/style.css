@@ -70,8 +70,8 @@ body,html{
     margin-right:5px;
 }
 #header .main-menu .menu-list{
-    padding: 5px 20px;
-    float: right;
+    padding: 5px 115px;
+    float: left;
 }
 #header .main-menu .menu-list a{
     color: #666666;
