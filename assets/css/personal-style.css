@@ -61,6 +61,7 @@ body,html{
     padding:2px 20px;
     text-align: center;
     float: right;
+    margin-left: 10px;
 }
 #header .main-menu .contact a{
     color: #ff9c4e;
@@ -89,52 +90,134 @@ body,html{
     margin-left:15px
 }
 #header .scroll-menu{
-    color: #ffffff;
-    float: left;
     margin-top: 15px;
-    width: 100%;
-}
-#header .scroll-menu .business-customer{
-    border: 1px solid #ffbb86;
-    color: #ff9c4e;
     float: left;
-    font-family: NotoSansJPBold;
-    font-size: 13px;
-    margin: 3px 52px 0px 40px;
-    padding: 3px 12px;
+    width: 100%;
+    margin-left: 100px;
 }
-#header .scroll-menu .header-button .button-item {
-    background-image: url('../images/personal-top-button-inactive.png');
-    border: none;
-    border-radius: 4px;
-    color: #ffffff;
+#header .scroll-menu .item-menu{
+    border-right: 1px solid #b3b3b3;
+    width: 200px;
+    height: 55px;
+    list-style: none;
+    text-align: center;
+    position: relative;
     display: inline-block;
     float: left;
-    font-family: NotoSansJPBold;
-    font-size: 17px;
-    margin-left: 28px;
-    height: 40px;
-    width: 115px;
+    padding-top: 5px;
 }
-#header .scroll-menu .header-button .button-item:hover {
+#header .scroll-menu .item-menu .text-above{
+    font-size: 22px;
+    color: #666666;
+}
+#header .scroll-menu .item-menu .text-down{
+    font-size: 14px;
+    color: #666666;
+}
+#header .scroll-menu .item-menu .fa-play{
+    display: block;
+    font-size: 8px;
+    transform: rotate(90deg);
+    margin-top: -20px;
+    margin-bottom: 5px;
+    color: #ff9c4e;
+    width: 5%;
+    margin-left: 47%;
+}
+#header .scroll-menu .item-menu a{
+    font-family: NotoSansJPLight;
+    font-size: 15px;
+    color: black;
+    height: inherit;
+    position: relative;
+    z-index:1000;
+}
+#header .scroll-menu .item-menu span{
+    border-top: 2px solid #ff9c4e;
+    display: block;
+    width: 90%;
+    margin-left: 5%;
+}
+#header .scroll-menu .col-md-offset-1{
+    margin-left: 0.66667%;
+}
+#header .scroll-menu .item-menu:first-child{
+    border-left :1px solid #b3b3b3;
+    margin-left: 0.66667%;
+}
+#header .button-header{
+    margin-top:30px;
+    float: left;
+    width:100%;
+}
+#header .button-header .middle-button{
+    width: 275px;
+    height: 40px;
+    float: left;
+    border: none;
+    border-radius: 5px;
+    margin-left: 36%;
+    color: #ffffff;
+    font-weight: bold;
+    font-family: NotoSansJPBold;
+    font-size: 15px;
+    background: #e072a1; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(#e072a1,#de6b9c,#cd3e7e); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#e072a1,#de6b9c,#cd3e7e); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#e072a1,#de6b9c,#cd3e7e); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#ff9b4e,#ff9349,#ff7238); /* Standard syntax */
+    opacity:1;
+}
+#header .button-header .middle-button:hover{
     opacity: 0.5;
 }
-#header .scroll-menu .box-link {
-    border: 1px solid #ffbb86;
-    float:left;
+#header .button-header .box-link{
+    float: right;
+    margin-right:40px;
+    padding-top:6px;
+}
+#header .button-header .box-link a:first-child{
+    border-right: none;
+}
+#header .button-header .box-link a{
+    color: #df6f9f;
+    padding:5px 10px;
+    border: 1px solid #e072a1;
+    float: left;
+    font-size: 12.62px;
     font-family: NotoSansJPLight;
-    font-size: 13px;
-    margin: 3px 0px 0px 54px;
-    padding: 3px 16px;
 }
-#header .scroll-menu .box-link .question-and-answer {
-    border-right: 1px solid #ffbb86;
-    color: #ff9c4e;
-    padding-right: 16px;
+.box-icon{
+    float: right;
+    margin-right: 30px;
+    display: none;
 }
-#header .scroll-menu .box-link .blog {
-    color: #ff9c4e;
-    padding-left: 16px;
+.box-icon-content{
+    width:35px;
+    float: left;
+    height: 35px;
+    background-color: #ff9c4e;
+    border-radius: 50%;
+    text-align: center;
+    margin-right: 15px;
+    padding-top: 2px;
+}
+.box-icon-content a{
+    color: #fff !important;
+}
+.item-menu .hover-menu{
+    display: block;
+    height: 80px;
+    width: 80px;
+    border-radius:50% ;
+    background-color: #ffefe2;
+    opacity: 0;
+    top: -20px;
+    left: 60px;
+    position: absolute;
+}
+.item-menu:hover .hover-menu,.item-menu .active.hover-menu{
+    opacity: 0.5!important;
 }
 #header .line-top{
     border-top: 5px solid #ff9c4e;
@@ -191,7 +274,6 @@ body,html{
 
 /*Style cho menu footer*/
 #footer{
-    height: 155px;
     background-color: #ff9c4e;
 }
 .menu ul {
@@ -252,6 +334,177 @@ body,html{
     text-align: center;
     font-family: NotoSansJPLight;
     font-size: 10px;
-    margin-top: 0px !important;
+    margin-top: 40px !important;
     margin-bottom: 10px !important;
+}
+#footer hr {
+    width: 545px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#footer .menu {
+    width: 430px;
+    margin: auto;
+    position: relative;
+}
+#footer .menu .menu-col-1{
+     width: 35%;
+    position: absolute;
+    border-right: 1px dashed #fff;
+ }
+#footer .menu .menu-col-2{
+    width: 35%;
+    position: absolute;
+    left: 140px;
+    border-right: 1px dashed #fff;
+}
+#footer .menu .menu-col-3{
+    width: 30%;
+    position: absolute;
+    left: 300px;
+}
+#footer .footer-top {
+    height: 280px;
+    background-color: #ff9c4e;
+}
+#footer .menu-header {
+    font-size: 15px;
+    margin-bottom: 20px;
+    font-family: NotoSansJpRegular;
+}
+#footer .menu-content a{
+    font-size: 11px;
+    font-family: NotoSansJPDemiLight;
+    border-bottom: 1px solid;
+    float: left;
+    clear: both;
+}
+#footer .menu .menu-col-2 .menu-header{
+    padding-left: 65px;
+}
+#footer .menu .menu-col-2 .menu-content {
+    padding-left: 65px;
+}
+#footer .menu .menu-col-3 .menu-header{
+    padding-left: 35px;
+}
+#footer .menu .menu-col-3 .menu-content {
+    padding-left: 35px;
+}
+#footer .footer-middle{
+    background-color: #ff821f;
+    height: 150px;
+}
+#footer .footer-middle .middle-header a{
+    color: #fff;
+    margin-top: 10px;
+}
+#footer .footer-middle .middle-content a{
+    color: #fff;
+}
+#footer .footer-middle .middle-menu{
+    width: 800px;
+    margin: auto;
+    position: relative;
+}
+#footer .footer-middle .middle-header{
+    margin-bottom: 20px;
+    font-family: NotoSansJpRegular;
+    font-size: 15px;
+}
+#footer .footer-middle .middle-header a{
+    text-decoration: none;
+}
+#footer .footer-middle .col-middle-1 {
+    position: absolute;
+    width: 200px;
+    height: 90px;
+    border-right: 1px dashed #fff;
+}
+#footer .footer-middle .col-middle-2 {
+    position: absolute;
+    width: 200px;
+    height:90px;
+    left: 200px;
+    border-right: 1px dashed #fff;
+}
+#footer .footer-middle .col-middle-3 {
+    position: absolute;
+    width: 200px;
+    height: 90px;
+    right: 200px;
+    border-right: 1px dashed #fff;
+}
+#footer .footer-middle .col-middle-4 {
+    position: absolute;
+    width: 200px;
+    height: 90px;
+    right: 0px;
+}
+#footer .middle-content a{
+    font-family: NotoSansJPLight;
+    font-size: 11px;
+    text-decoration: none;
+}
+#footer .middle-content p{
+    margin-top: -20px;
+}
+#footer .col-middle-2 .middle-header{
+    padding-left: 30px;
+}
+#footer .col-middle-2 .middle-content{
+    padding-left: 40px;
+}
+#footer .col-middle-3 .middle-header{
+    padding-left: 30px;
+}
+#footer .col-middle-3 .middle-content{
+    padding-left: 40px;
+}
+#footer .col-middle-4 .middle-header{
+    padding-left: 30px;
+}
+#footer .col-middle-4 .middle-content{
+    padding-left: 40px;
+}
+#footer .footer-last {
+    height: 95px;
+    background-color: #ff9c4e;
+    color: #fff;
+    padding-top: 40px;
+    font-size: 10px;
+    font-family: NotoSansJPLight;
+}
+.item-menu {
+    position: relative;
+}
+.item-menu .col-hover{
+    position: absolute;
+    top: 40px;
+    left: 0px;
+    display:none ;
+}
+.main-hover:hover .col-hover{
+    display: block;
+}
+.col-hover-content{
+    width: 200px;
+    height: 200px;
+    background-color: #ff9c4e;
+    border-bottom: 2px solid #fff;
+    border-right: 2px solid #fff;
+    border-left: 2px solid #fff;
+    padding-top: 15px;
+}
+.main-hover .col-hover .col-hover-content a{
+    color: #fff !important;
+    border-bottom: 1px dashed #fff;
+}
+.fa-sort-asc{
+    color: #ff9c4e;
+    font-size: 30px;
+}
+.icon-sort{
+    margin-bottom: -22px;
+    margin-top: 20px;
 }
