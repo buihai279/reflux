@@ -346,6 +346,7 @@ body,html{
     width: 430px;
     margin: auto;
     position: relative;
+    margin-top: 20px;
 }
 #footer .menu .menu-col-1{
      width: 35%;
@@ -420,6 +421,7 @@ body,html{
     width: 200px;
     height: 100px;
     border-right: 1px dashed #fff;
+    margin-top: 20px;
 }
 #footer .footer-middle .col-middle-2 {
     position: absolute;
@@ -427,6 +429,7 @@ body,html{
     height:90px;
     left: 200px;
     border-right: 1px dashed #fff;
+    margin-top: 20px;
 }
 #footer .footer-middle .col-middle-3 {
     position: absolute;
@@ -434,12 +437,14 @@ body,html{
     height: 90px;
     right: 200px;
     border-right: 1px dashed #fff;
+    margin-top: 20px;
 }
 #footer .footer-middle .col-middle-4 {
     position: absolute;
     width: 200px;
     height: 90px;
     right: 0px;
+    margin-top: 20px;
 }
 #footer .middle-content a{
     font-family: NotoSansJPLight;
@@ -507,4 +512,303 @@ body,html{
 .icon-sort{
     margin-bottom: -22px;
     margin-top: 20px;
+}
+#container-content .box-infor{
+    width: 800px;
+    margin: auto;
+    padding-top: 100px;
+}
+#container-content .box-infor .box-infor-header{
+    height: 40px;
+    background-image: url("../images/bg-info.jpg");
+    background-size: cover;
+}
+#container-content .box-infor .box-infor-header p{
+    color: #fff;
+    font-family: NotoSansJPBold;
+    font-size: 19px;
+    padding-top: 7px;
+    padding-left: 15px;
+}
+#container-content .box-infor .box-infor-content{
+    height: 120px;
+    background-color: #fff2e8;
+}
+#container-content .box-infor .box-infor-content .box-infor-item{
+    width: 177px;
+    height: 75px;
+    background-image: url("../images/bg-box-infor.jpg");
+    background-size: cover;
+    float: left;
+    margin-left:19px ;
+    margin-top: 20px;
+    position: relative;
+}
+#container-content .box-infor .box-infor-content .box-infor-item .text-above{
+    font-family: NotoSansJpRegular;
+    font-size: 19px;
+    color: #ff8933;
+    padding-top: 15px;
+    padding-left: 15px;
+}
+#container-content .box-infor .box-infor-content .box-infor-item .text-under{
+    font-family: NotoSansJPDemiLight;
+    font-size:13px ;
+    color: #ff8933;
+    padding-left: 15px;
+    margin-top: -5px;
+}
+#container-content .box-infor .box-infor-content .box-infor-item .text-top{
+    font-family: NotoSansJpRegular;
+    font-size: 19px;
+    color: #ff8933;
+    padding-top: 8px;
+    padding-left: 15px;
+}
+#container-content .box-infor .box-infor-content .box-infor-item .text-middle{
+    font-family: NotoSansJpRegular;
+    font-size: 19px;
+    color: #ff8933;
+    padding-left: 15px;
+    margin-top: -5px;
+}
+#container-content .box-infor .box-infor-content .box-infor-item .text-under-3{
+    font-family: NotoSansJPDemiLight;
+    font-size:13px ;
+    color: #ff8933;
+    padding-left: 15px;
+    margin-top: -10px;
+}
+#container-content .box-infor .box-infor-content .box-infor-item .box-infor-image{
+    position: absolute;
+    width: 30px;
+    right: 8px;
+    bottom: 8px;
+}
+#container-content .horizontal-ruler{
+    width: 800px;
+    height: 5px;
+    margin: auto;
+    background-color: #b3b3b3;
+    margin-top: 100px;
+}
+#container-content .d-top-image{
+    margin-top: 20px;
+}
+#footer .footer-hr-new{
+    width: 540px;
+    height: 2px;
+    margin: auto;
+    background-color: #ffe6d3;
+    margin-top: 20px;
+}
+
+#container-content .contact-box-detail .contact-detail{
+    margin-top: 20px;
+}
+#container-content .contact-text{
+    height: 30px;
+    width: 124px;
+    background-color:#ff9c4e;
+    border-radius: 4px;
+    color: #ffffff;
+    font-family: NotoSansJPDemiLight;
+    font-size: 11px;
+    text-align: center;
+}
+#container-content .contact-detail{
+    height: 195px;
+}
+#container-content .contact-box-detail{
+    position: relative;
+}
+#container-content .contact-detail .note .img-contact img{
+    width: 117px;
+}
+#container-content .content .d-main-content .contact-detail .note-2 {
+    border-right: 1px solid #ffdfc5;
+    display: grid;
+    float: left;
+    width: 250px;
+    margin-top: 40px;
+}
+#container-content .content .d-main-content .contact-detail .note-2 .img-contact{
+    margin-left: 45px;
+}
+#container-content .content .d-main-content .contact-detail .note-2 button{
+    margin-left: 60px;
+}
+#container-content .content .d-main-content .contact-detail .note-3 {
+    border-right: 1px solid #ffdfc5;
+    display: grid;
+    float: left;
+    width: 250px;
+    margin-top: 40px;
+}
+#container-content .content .d-main-content .contact-detail .note-3 .img-contact{
+    margin-left: 45px;
+}
+#container-content .content .d-main-content .contact-detail .note-3 button{
+    margin-left: 60px;
+}
+#container-content .content .d-main-content .contact-detail .detail-2 {
+    float: left;
+    padding: 46px 0px 10px 56px;
+}
+#container-content .content .d-main-content .relative-img{
+    position: relative;
+}
+#container-content .content .d-main-content .relative-img .absolute-img{
+    position: absolute;
+    left: -155px;
+    top: -84px;
+}
+#container-content .content .d-main-content .relative-img .absolute-img-right{
+    position: absolute;
+    right: -155px;
+    top: -84px;
+}
+
+#container-content .contact-focus{
+    display: none;
+}
+#container-content .contact-detail .note .main-contact-focus button:focus .contact-focus{
+    display: block;
+}
+
+#container-content .contact-detail .note .contact-focus{
+    position: absolute;
+    width: 670px;
+    height: 1470px;
+    border: 6px solid #ff9c4e;
+    background-color: #fff;
+    top: 190px;
+    border-radius: 15px;
+    left: 0px;
+}
+#container-content .contact-detail .note .contact-focus .image-contact-box{
+    position: absolute;
+    left: 100px;
+    top: -21px;
+}
+#container-content .contact-detail .note .contact-focus .icon-close{
+    position: absolute;
+    right: 0px;
+    top: -3px;
+    color: #ff9c4e;
+}
+
+#container-content .contact-detail .note .main-contact-focus button:focus .contact-focus{
+    display: block;
+}
+
+#container-content .contact-focus-2{
+    display: none;
+}
+#container-content .contact-detail .note-2 .main-contact-focus button:focus .contact-focus-2{
+    display: block;
+}
+#container-content .contact-detail .note-2 .contact-focus-2{
+    position: absolute;
+    width: 670px;
+    height: 1470px;
+    border: 6px solid #ff9c4e;
+    background-color: #fff;
+    top: 380px;
+    border-radius: 15px;
+    left: 0px;
+}
+#container-content .contact-detail .note-2 .contact-focus-2 .image-contact-box{
+    position: absolute;
+    left: 100px;
+    top: -21px;
+}
+#container-content .contact-detail .note-2 .contact-focus-2 .icon-close{
+    position: absolute;
+    right: 0px;
+    top: -3px;
+    color: #ff9c4e;
+}
+#container-content .contact-focus-2 .content-contact-box{
+    width: 570px;
+    margin: auto;
+}
+#container-content .contact-focus-2 .content-contact-box .header-content-contact{
+    font-family: NotoSansJPBold;
+    font-size: 16px;
+    color: #ff8933;
+    text-align: left;
+    margin-top: 40px;
+    border-bottom: 1px dashed #ff8933;
+    height: 30px;
+}
+#container-content .contact-focus-2 .content-contact-box .content-contact-box-in{
+    font-family: NotoSansJPLight;
+    font-family: 13px;
+    color: #000000;
+    text-align: left;
+    margin-top: 10px;
+}
+
+#container-content .contact-focus .content-contact-box{
+    width: 570px;
+    margin: auto;
+}
+#container-content .contact-focus .content-contact-box .header-content-contact{
+    font-family: NotoSansJPBold;
+    font-size: 16px;
+    color: #ff8933;
+    text-align: left;
+    margin-top: 40px;
+    border-bottom: 1px dashed #ff8933;
+    height: 30px;
+}
+
+#container-content .contact-focus .content-contact-box .content-contact-box-in{
+    font-family: NotoSansJPLight;
+    font-family: 13px;
+    color: #000000;
+    text-align: left;
+    margin-top: 10px;
+}
+#container-content .contact-focus .content-contact-box .content-contact-box-in img{
+    margin-left: 25px;
+    margin-top: 20px;
+}
+#container-content .contact-focus .content-contact-box .content-contact-box-in .content-end{
+    font-family: NotoSansJpRegular;
+    font-size: 16px;
+    color: #ff9c4e;
+    margin: auto;
+    margin-top: 20px;
+    height: 35px;
+    width: 280px;
+    border-bottom: 1px dashed #000000;
+    text-align: center;
+}
+#container-content .contact-focus .content-contact-box .content-contact-box-in .content-lastest{
+    font-family: NotoSansJPLight;
+    font-size: 12px;
+    color: #0f0f0f;
+    text-align: center;
+    margin-top: 10px;
+}
+#container-content .contact-focus .content-contact-box .content-contact-box-in .title-content-contact-box{
+    height: 30px;
+    border: 1px solid #ff8933;
+    font-family: NotoSansJPRegular;
+    font-size: 14px;
+    color: #0f0f0f;
+    padding-top: 5px;
+    padding-left: 10px;
+    margin-top: 20px;
+}
+#container-content .contact-focus .content-contact-box .content-contact-box-in .content-box-chid{
+    margin-top: 10px;
+    font-family: NotoSansJPLight;
+    font-size: 13px;
+}
+#container-content .contact-focus .content-contact-box .content-contact-box-in .content-last-box{
+    font-family: NotoSansJPLight;
+    font-size: 10px;
 }
