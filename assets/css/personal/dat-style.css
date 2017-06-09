@@ -1,0 +1,13 @@
+#kumamoto-block {
+    margin-bottom: 0px !important;
+    float: left !important;
+    margin-left: 15px;
+    height: 200px !important;
+}
+.parent-block-lastest{
+    height:400px;
+    margin-left: -15px;
+}
+#t-box-dotted-new{
+    height: 350px;
+}

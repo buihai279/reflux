@@ -43,11 +43,27 @@
 .d-box-list .box .box-item-container .box-item .heading span{
     height: 40px;
 }
-.d-box-list .box .box-item-container .box-item .heading span p{
+/*.d-box-list .box .box-item-container .box-item .heading span p{
     padding: 9px 5px 5px 41px;
 }
 .d-box-list .box .box-item-container .box-item .heading span p.one-line{
     padding: 18px 5px 5px 41px;
+}*/
+.d-box-list .box .box-item-container .box-item .heading span p.one-line{
+    padding-top: 22px;
+    padding-left: 5px;
+}
+.d-box-list .box .box-item-container .box-item .heading span p.one-line-2{
+    padding-top: 25px;
+    padding-left: 13px;
+}
+.d-box-list .box .box-item-container .box-item .heading span p.one-line-3{
+    padding-top: 10px;
+    padding-left: 15px;
+}
+.d-box-list .box .box-item-container .box-item .heading span p.one-line-4{
+    padding-top: 10px;
+    padding-left: 15px;
 }
 .blog {
     color: #FF9C50;
@@ -88,7 +104,7 @@
 }
 #container-content .top-content .d-box-list {
     padding-bottom: 22px;
-    margin-top: 23px;
+    margin-top: 50px;
     border-bottom: 1px dashed #FF9C50;
 }
 #container-content .top-content .d-box-list .box .box-item-title {
@@ -108,8 +124,7 @@
 #container-content .top-content .d-box-list .box .box-item {
     border: 1px solid #FF9C50;
     float: left;
-    height: 150px;
-    padding: 12px 13px 12px 14px;
+    height: 160px;
     width: 240px;
     margin-right: 2%;
     background: #ffffff; /* For browsers that do not support gradients */
@@ -456,4 +471,72 @@ input[type="radio"] {
 }
 #container-content .top-content .d-box-head .apical-blog:hover {
     opacity:0.5;
+}
+.box-item-parent{
+    width: 150px;
+    margin: auto;
+}
+.baner-top{
+    width: 880px;
+    height: 104px;
+    margin: auto;
+}
+.baner-top .banner-content-top{
+    width: 240px;
+    height: 104px;
+    border-right: 1px solid #c4c4c4;
+    float: left;
+    position: relative;
+}
+.baner-top .banner-content-top-end{
+    width: 150px;
+    height: 104px;
+    float: left;
+}
+.baner-top .banner-content-top #acsa {
+    padding-top: 25px;
+}
+.baner-top .banner-content-top #child{
+    padding-top: 15px;
+    padding-left: 20px;
+}
+.baner-top .banner-content-top .content-child{
+    width: 100px;
+    position: absolute;
+    top: 25px;
+    right: 5px;
+    font-family: NotoSansJPLight;
+    font-size: 12px;
+}
+.baner-top .banner-content-top .banner-mother{
+    padding-top: 25px;
+    padding-left: 25px;
+}
+.baner-top .banner-content-top .content-mother{
+    width: 125px;
+    position: absolute;
+    top: 25px;
+    right: 15px;
+    font-family: NotoSansJPLight;
+    font-size: 12px;
+}
+.baner-top .banner-content-top-end .banner-last{
+    width: 120px;
+    height: 60px;
+    background-image: url("../../images/bg-banner-last.jpg");
+    margin-left: 20px;
+    margin-top: 20px;
+    position: relative;
+}
+.baner-top .banner-content-top-end .banner-last .icon-banner{
+    padding-top: 17px;
+    padding-left: 10px;
+}
+.baner-top .banner-content-top-end .banner-last .content-last{
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 14.5px;
+    font-family: NotoSansJpRegular;
+    color: #fff;
 }
