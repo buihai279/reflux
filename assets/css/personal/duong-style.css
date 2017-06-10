@@ -170,7 +170,7 @@
 	font-size: 32px;
     width: 100%;
     text-align: center;
-    color: #4991d3;
+	color: #3da899;
     line-height: 28px;
 }
 #container-content .content .d-main-content .expense {
@@ -350,4 +350,7 @@
 	font-family: NotoSansJPLight;
 	font-size: 13px;
 	line-height: 27px;
+}
+#container-content .content .d-main-content .how-to-use .group-item-fukuoka{
+	background-color: #fff5ed;
 }

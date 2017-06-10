@@ -58,6 +58,7 @@ body,html{
     text-align: center;
     float: right;
     margin-left: 10px;
+    color: #df6f9f;
 }
 #header .main-menu .contact a{
     color: #e072a1;
@@ -318,6 +319,7 @@ body,html{
 .box-icon{
     float: right;
     margin-right: 30px;
+    display: none;
 }
 .box-icon-content{
     width:35px;

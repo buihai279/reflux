@@ -75,6 +75,7 @@ body, html {
     text-align: center;
     float: right;
     margin-left: 10px;
+    color: #ff9c4e;
 }
 
 #header .main-menu .contact a {
@@ -249,7 +250,7 @@ body, html {
     border-radius: 50%;
     background-color: #ffefe2;
     opacity: 0;
-    top: -20px;
+    top: -55px;
     left: 60px;
     position: absolute;
 }
@@ -412,12 +413,14 @@ body, html {
 
 #footer .menu .menu-col-1 {
     width: 35%;
+    height: 150px;
     position: absolute;
     border-right: 1px dashed #fff;
 }
 
 #footer .menu .menu-col-2 {
     width: 35%;
+    height: 150px;
     position: absolute;
     left: 140px;
     border-right: 1px dashed #fff;
@@ -425,6 +428,7 @@ body, html {
 
 #footer .menu .menu-col-3 {
     width: 30%;
+    height: 150px;
     position: absolute;
     left: 300px;
 }
@@ -449,11 +453,11 @@ body, html {
 }
 
 #footer .menu .menu-col-2 .menu-header {
-    padding-left: 65px;
+    padding-left: 63px;
 }
 
 #footer .menu .menu-col-2 .menu-content {
-    padding-left: 65px;
+    padding-left: 60px;
 }
 
 #footer .menu .menu-col-3 .menu-header {
@@ -504,7 +508,7 @@ body, html {
 
 #footer .footer-middle .col-middle-2 {
     position: absolute;
-    width: 200px;
+    width: 235px;
     height: 90px;
     left: 200px;
     border-right: 1px dashed #fff;
@@ -515,14 +519,14 @@ body, html {
     position: absolute;
     width: 200px;
     height: 90px;
-    right: 200px;
+    right: 160px;
     border-right: 1px dashed #fff;
     margin-top: 20px;
 }
 
 #footer .footer-middle .col-middle-4 {
     position: absolute;
-    width: 200px;
+    width: 160px;
     height: 90px;
     right: 0px;
     margin-top: 20px;
@@ -667,7 +671,7 @@ body, html {
     font-family: NotoSansJpRegular;
     font-size: 19px;
     color: #ff8933;
-    padding-top: 8px;
+    padding-top: 5px;
     padding-left: 15px;
 }
 
@@ -704,6 +708,16 @@ body, html {
 
 #container-content .d-top-image {
     margin-top: 20px;
+}
+#container-content .d-top-image-1 {
+    border-top:4px solid #ff9c4e;
+}
+#container-content .d-text-banner{
+    width: 255px;
+    height: 165px;
+    position: absolute;
+    top: 160px;
+    left: 45px;
 }
 
 #footer .footer-hr-new {
@@ -1124,16 +1138,14 @@ body, html {
     padding-left: 6px;
 }
 
-#container-content .d-main-content .text-block .content-box-text-block .block-child-text .block-header {
-    position: relative;
-}
 
 #container-content .d-main-content .text-block .content-box-text-block .block-child-text .block-header .block-text {
-    position: absolute;
     left: 90px;
     top: 0px;
     font-family: NotoSansJpRegular;
     font-size: 14px;
+    margin-top: -25px;
+    margin-left: 100px;
 }
 #container-content .d-main-content .text-block .content-box-text-block .block-child-text .block-content{
     margin-top: 10px;
@@ -1177,4 +1189,58 @@ body, html {
 
 #container-content .note .main-contact-focus button .contact-focus .icon-close:focus .contact-focus{
     display: none;
+}
+.relative-banner{
+    position: relative;
+}
+ .relative-banner .d-text-banner{
+    position: absolute;
+    top: 162px;
+    left: 300px;
+}
+.relative-banner .d-text-banner .d-text-larg-banner{
+    font-family: NotoSansJPLight;
+    font-size: 18px;
+    color: #fff;
+}
+.relative-banner .d-text-banner .d-text-small-banner{
+    font-family: NotoSansJPDemiLight;
+    font-size: 13px;
+    color: #fff;
+}
+
+#container-content .content .d-middle-image-kantou{
+    border-top: 5px solid #ff9c4e;
+
+}
+#container-content .content .d-middle-image-kantou img{
+    padding-left: 105px;
+    padding-top: 20px;
+}
+.group-item-fukuoka .number_item{
+    color: #3da899;
+    width: 25px;
+    height: 25px;
+    line-height: 23px;
+    background-color: white;
+    border: 0px solid #000000;
+    text-align: center;
+    font-family: FuturalPTHeavy;
+    font-size: 18px;
+    /* border-radius: 50%; */
+    -webkit-border-radius: 0px 3px 30px 0px;
+    margin-top: 0px;
+}
+.group-item-fukuoka .number_item span{
+    margin-left: -15px;
+}
+#container-content .main-contact-focus .button-show{
+    width: 125px;
+    height: 30px;
+    background-color: #ff9c4e;
+    color: #fff;
+    border-radius: 5px;
+    margin: auto;
+    padding-left: 10px;
+    text-decoration: none;
 }
