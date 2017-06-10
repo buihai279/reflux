@@ -871,8 +871,8 @@ body, html {
 
 #container-content .contact-detail .note-2 .contact-focus-2 .icon-close {
     position: absolute;
-    right: 0px;
-    top: -3px;
+    right: -2px;
+    top: -5px;
     color: #ff9c4e;
 }
 
