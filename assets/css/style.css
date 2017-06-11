@@ -334,3 +334,138 @@ body,html{
 .box-icon-content a{
     color: #fff !important;
 }
+.apical {
+    font-size: 23px;
+    font-family: GaramondRegular;
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 17px;
+    margin-top: 0px !important;
+    margin-bottom: 0px !important;
+    color: #fff;
+    letter-spacing: 6px;
+}
+#footer .footer-hr-new {
+    width: 540px;
+    height: 2px;
+    margin: auto;
+    background-color: #ffe6d3;
+    margin-top: 20px;
+}
+#footer .menu {
+    width: 545px;
+    margin: auto;
+    position: relative;
+    margin-top: 20px;
+}
+#footer .footer-middle {
+    background-color: #d84c88;
+    height: 150px;
+}
+#footer .footer-last {
+    height: 95px;
+    background-color: #e072a1;
+    color: #fff;
+    padding-top: 30px;
+    font-size: 10px;
+    font-family: NotoSansJPLight;
+}
+#footer .menu .menu-col-1 {
+    width: 33%;
+    left: 10px;
+    height: 180px;
+    position: absolute;
+    border-right: 1px dashed #fff;
+}
+#footer .menu .menu-col-2 {
+    width: 30%;
+    height: 180px;
+    position: absolute;
+    left: 240px;
+    border-right: 1px dashed #fff;
+}
+#footer .menu .menu-col-3 {
+    width: 30%;
+    height: 150px;
+    position: absolute;
+    left: 450px;
+}
+#footer .footer-middle .middle-menu {
+    width: 800px;
+    margin: auto;
+    position: relative;
+}
+#footer .footer-middle .col-middle-1 {
+    position: absolute;
+    width: 200px;
+    height: 100px;
+    border-right: 1px dashed #fff;
+    margin-top: 20px;
+}
+#footer .footer-middle .col-middle-2 {
+    position: absolute;
+    width: 240px;
+    height: 90px;
+    left: 200px;
+    border-right: 1px dashed #fff;
+    margin-top: 20px;
+}
+#footer .footer-middle .col-middle-3 {
+    position: absolute;
+    width: 200px;
+    height: 90px;
+    right: 160px;
+    border-right: 1px dashed #fff;
+    margin-top: 20px;
+}
+#footer .footer-middle .col-middle-4 {
+    position: absolute;
+    width: 120px;
+    height: 90px;
+    right: 0px;
+    margin-top: 20px;
+}
+#footer .footer-top {
+    height: 315px;
+    background-color: #e072a1;
+}
+.menu a {
+    text-decoration: none;
+    color: #fff;
+    display: block;
+}
+#footer .menu-content a {
+    font-size: 11px;
+    font-family: NotoSansJPDemiLight;
+    border-bottom: 1px solid;
+    float: left;
+    clear: both;
+}
+#footer .menu-header {
+    font-size: 15px;
+    margin-bottom: 20px;
+    font-family: NotoSansJpRegular;
+}
+#footer .footer-middle .middle-header {
+    margin-bottom: 20px;
+    font-family: NotoSansJpRegular;
+    font-size: 15px;
+}
+#footer .footer-middle .middle-content a {
+    color: #fff;
+}
+#footer .middle-content a {
+    font-family: NotoSansJPLight;
+    font-size: 11px;
+    text-decoration: none;
+}
+#footer .footer-middle .middle-header {
+    margin-bottom: 0px;
+    font-family: NotoSansJpRegular;
+    font-size: 15px;
+    color: #fff !important;
+}
+#footer .footer-middle p{
+    margin: 0px;
+    margin-bottom: -10px;
+}

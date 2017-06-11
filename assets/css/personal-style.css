@@ -51,6 +51,7 @@ body, html {
     background-color: white;
     width: 1000px;
     margin: 0 auto;
+    border-bottom: 5px solid #ff8a45;
 }
 
 #header a {
@@ -602,7 +603,6 @@ body, html {
 
 .main-hover .col-hover .col-hover-content a {
     color: #fff !important;
-    border-bottom: 1px dashed #fff;
 }
 
 .fa-sort-asc {
@@ -1251,3 +1251,10 @@ body, html {
 .content-last-2 p{
     margin: 0px;
 }
+.main-hover .col-hover .col-hover-content .col-border-content{
+    width: 160px;
+    margin: auto;
+    height: 30px;
+    border-bottom: 1px dashed #fff;
+}
+
