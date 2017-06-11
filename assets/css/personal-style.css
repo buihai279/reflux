@@ -709,9 +709,7 @@ body, html {
 #container-content .d-top-image {
     margin-top: 20px;
 }
-#container-content .d-top-image-1 {
-    border-top:4px solid #ff9c4e;
-}
+
 #container-content .d-text-banner{
     width: 255px;
     height: 165px;
@@ -1203,10 +1201,6 @@ body, html {
     color: #fff;
 }
 
-#container-content .content .d-middle-image-kantou{
-    border-top: 5px solid #ff9c4e;
-
-}
 #container-content .content .d-middle-image-kantou img{
     padding-left: 105px;
     padding-top: 20px;
