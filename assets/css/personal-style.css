@@ -820,8 +820,6 @@ body, html {
     position: absolute;
     width: 670px;
     height: 1470px;
-    border: 6px solid #ff9c4e;
-    background-color: #fff;
     top: 190px;
     border-radius: 15px;
     left: 0px;
@@ -856,11 +854,7 @@ body, html {
     position: absolute;
     width: 670px;
     height: 2135px;
-    border: 6px solid #ff9c4e;
-    background-color: #fff;
-    top: 380px;
     border-radius: 15px;
-    left: 0px;
 }
 
 #container-content .contact-detail .note-2 .contact-focus-2 .image-contact-box {
@@ -871,9 +865,9 @@ body, html {
 
 #container-content .contact-detail .note-2 .contact-focus-2 .icon-close {
     position: absolute;
-    right: -2px;
-    top: -5px;
+    top: 15px;
     color: #ff9c4e;
+    right: 0px;
 }
 
 #container-content .contact-focus-2 .content-contact-box {
@@ -947,12 +941,12 @@ body, html {
 #container-content .contact-detail .note-3 .contact-focus-3 {
     position: absolute;
     width: 670px;
-    height: 2000px;
-    border: 6px solid #ff9c4e;
-    background-color: #fff;
-    top: 600px;
+    background-image: url(../images/bg-kansai-popup3.png);
+    background-size: cover;
+    background-repeat: round;
+    top: 585px;
     border-radius: 15px;
-    left: 0px;
+    left: 60px
 }
 
 #container-content .contact-detail .note-3 .contact-focus-3 .image-contact-box {
@@ -964,7 +958,7 @@ body, html {
 #container-content .contact-detail .note-3 .contact-focus-3 .icon-close {
     position: absolute;
     right: 0px;
-    top: -3px;
+    top: 15px;
     color: #ff9c4e;
 }
 
@@ -1257,4 +1251,30 @@ body, html {
     height: 30px;
     border-bottom: 1px dashed #fff;
 }
+
+#container-content .contact-detail #contact-kansai-1{
+    background-image: url("../images/bg-kasai-popup1.png");
+    background-size: cover;
+    background-repeat: round;
+    top:180px;
+    left: 60px;
+}
+#container-content .contact-detail #contact-kansai-1 #close-kansai-1{
+    top:15px;
+}
+#container-content .contact-detail .note-2 #contact-focus-2{
+    background-image: url("../images/bg-kansai-popup2.png");
+    background-size: cover;
+    background-repeat: round;
+    top: 370px;
+    left: 60px;
+}
+#container-content .note-2 .main-contact-focus #contact-fukuoka-2{
+    background-image: url("../images/bg-fukuoka2.png");
+    background-size: cover;
+    background-repeat: round;
+    top: 385px;
+    left: 60px;
+}
+
 

@@ -40,3 +40,18 @@ $('#contact-kansai-1').click(function(e){
 $(document).click(function(){
     $('#contact-kansai-1').hide();
 });
+/*show fukuoka contact 2*/
+$("#show-2").click(function (e){
+    e.stopPropagation();
+    $("#contact-fukuoka-2").show();
+});
+/*hide fukuoka contact 2*/
+$("#close-2").click(function (){
+    $("#contact-fukuoka-2").hide();
+});
+$('#contact-fukuoka-2').click(function(e){
+    e.stopPropagation();
+});
+$(document).click(function(){
+    $('#contact-fukuoka-2').hide();
+});
