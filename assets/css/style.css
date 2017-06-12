@@ -469,3 +469,23 @@ body,html{
     margin: 0px;
     margin-bottom: -10px;
 }
+.relative-banner {
+    position: relative;
+}
+#container-content .d-text-banner {
+    width: 255px;
+    height: 165px;
+    position: absolute;
+    top: 165px;
+    left: 38px;
+}
+.relative-banner .d-text-banner .d-text-larg-banner {
+    font-family: NotoSansJPLight;
+    font-size: 18px;
+    color: #fff;
+}
+.relative-banner .d-text-banner .d-text-small-banner {
+    font-family: NotoSansJPDemiLight;
+    font-size: 13px;
+    color: #fff;
+}
