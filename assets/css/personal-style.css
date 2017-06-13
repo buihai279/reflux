@@ -593,12 +593,13 @@ body, html {
 
 .col-hover-content {
     width: 200px;
-    height: 200px;
+    height: auto;
     background-color: #ff9c4e;
     border-bottom: 2px solid #fff;
     border-right: 2px solid #fff;
     border-left: 2px solid #fff;
     padding-top: 15px;
+    padding-bottom: 40px;
 }
 
 .main-hover .col-hover .col-hover-content a {
@@ -1239,7 +1240,7 @@ body, html {
     margin: 0px;
 }
 .main-hover .col-hover .col-hover-content .col-border-content{
-    width: 160px;
+    width: 165px;
     margin: auto;
     height: 30px;
     border-bottom: 1px dashed #fff;
