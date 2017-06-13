@@ -599,7 +599,7 @@ body, html {
     border-right: 2px solid #fff;
     border-left: 2px solid #fff;
     padding-top: 15px;
-    padding-bottom: 40px;
+    padding-bottom: 10px;
 }
 
 .main-hover .col-hover .col-hover-content a {
@@ -1269,6 +1269,10 @@ body, html {
     background-repeat: round;
     top: 385px;
     left: 60px;
+}
+
+.col-hover-content .col-border-content:last-child{
+    border-bottom: none !important;
 }
 
 
