@@ -51,6 +51,7 @@ body, html {
     background-color: white;
     width: 1000px;
     margin: 0 auto;
+    margin-bottom: 50px;
     border-bottom: 5px solid #ff8a45;
 }
 
@@ -155,7 +156,6 @@ body, html {
     font-size: 15px;
     color: black;
     height: inherit;
-    position: relative;
     z-index: 1000;
 }
 
@@ -191,7 +191,7 @@ body, html {
     color: #ffffff;
     font-weight: bold;
     font-family: NotoSansJPBold;
-    font-size: 15px;
+    font-size: 17px;
     background: #e072a1; /* For browsers that do not support gradients */
     background: -webkit-linear-gradient(#e072a1, #de6b9c, #cd3e7e); /* For Safari 5.1 to 6.0 */
     background: -o-linear-gradient(#e072a1, #de6b9c, #cd3e7e); /* For Opera 11.1 to 12.0 */
@@ -251,7 +251,7 @@ body, html {
     border-radius: 50%;
     background-color: #ffefe2;
     opacity: 0;
-    top: -55px;
+    top: -20px;
     left: 60px;
     position: absolute;
 }
@@ -284,6 +284,7 @@ body, html {
     width: 1000px;
     margin: 0 auto;
     padding-bottom: 10px;
+    margin-top: -50px;
 }
 
 #container-content .content .content-title .circle {
@@ -585,6 +586,7 @@ body, html {
     top: 40px;
     left: 0px;
     display: none;
+    z-index: 2;
 }
 
 .main-hover:hover .col-hover {
@@ -600,6 +602,7 @@ body, html {
     border-left: 2px solid #fff;
     padding-top: 15px;
     padding-bottom: 10px;
+    box-shadow: 3px 3px 7px #9f9e8b;
 }
 
 .main-hover .col-hover .col-hover-content a {
@@ -1184,6 +1187,7 @@ body, html {
 }
 .relative-banner{
     position: relative;
+    z-index: 3;
 }
  .relative-banner .d-text-banner{
     position: absolute;
@@ -1273,6 +1277,71 @@ body, html {
 
 .col-hover-content .col-border-content:last-child{
     border-bottom: none !important;
+}
+
+#container-content .d-top-image-1 .slide-left {
+    width: 280px;
+    height: 484px;
+    float: left;
+    position: relative;
+}
+
+#container-content .d-top-image-1 .slide-left > img {
+    position: absolute;
+    z-index: 1;
+}
+
+#container-content .d-top-image-1 .slider {
+    width: 720px;
+    height: 484px;
+    float: left;
+    position: relative;
+}
+#container-content .d-top-image-1 .slider .slide1,.slide2,.slide3,.slide4,.slide5 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+#container-content .d-top-image-1 .slider .slide1 {
+    background: url('../images/slider-personal-2.jpg')no-repeat center;
+    background-size: cover;
+    animation:fade 8s infinite;
+    -webkit-animation:fade 8s infinite;
+
+}
+#container-content .d-top-image-1 .slider .slide2 {
+    background: url('../images/slider-personal-1.jpg')no-repeat center;
+    background-size: cover;
+    animation:fade2 8s infinite;
+    -webkit-animation:fade2 8s infinite;
+}
+#container-content .d-top-image-1 .slider .slide3 {
+    background: url('../images/slider-personal-3.jpg')no-repeat center;
+    background-size: cover;
+    animation:fade3 8s infinite;
+    -webkit-animation:fade3 8s infinite;
+}
+@keyframes fade
+{
+    0%   {opacity:1}
+    33.333% { opacity: 0}
+    66.666% { opacity: 0}
+    100% { opacity: 1}
+}
+@keyframes fade2
+{
+    0%   {opacity:0}
+    33.333% { opacity: 1}
+    66.666% { opacity: 0 }
+    100% { opacity: 0}
+}
+@keyframes fade3
+{
+    0%   {opacity:0}
+    33.333% { opacity: 0}
+    66.666% { opacity: 1}
+    100% { opacity: 0}
 }
 
 

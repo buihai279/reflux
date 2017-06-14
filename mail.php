@@ -31,7 +31,6 @@ if (version_compare(PHP_VERSION, '5.1.0', '>=')) {//PHP5.1.0以上の場合の�
 
 
 //---------------------------　必須設定　必ず設定してください　-----------------------
-
 //サイトのトップページのURL　※デフォルトでは送信完了後に「トップページへ戻る」ボタンが表示されますので
 $site_top = "contact.html";
 
@@ -39,7 +38,7 @@ $site_top = "contact.html";
 $to = "dat26061994@gmail.com";
 
 //フォームのメールアドレス入力箇所のname属性の値（name="○○"　の○○部分）
-$Email = "dat26061994@gmail.com";
+$Email = "Eメール";
 
 /*------------------------------------------------------------------------------------------------
 以下スパム防止のための設定　
@@ -67,7 +66,7 @@ $userMail = 1;
 $BccMail = "";
 
 // 管理者宛に送信されるメールのタイトル（件名）
-$subject = "ホームページのお問い合わせ";
+$subject = "ホームページからお問合せ受付";
 
 // 送信確認画面の表示(する=1, しない=0)
 $confirmDsp = 1;
@@ -101,7 +100,7 @@ $remail = 0;
 $refrom_name = "";
 
 // 差出人に送信確認メールを送る場合のメールのタイトル（上記で1を設定した場合のみ）
-$re_subject = "送信ありがとうございました";
+$re_subject = "【アピカル】お問合せ受け付けました";
 
 //フォーム側の「名前」箇所のname属性の値　※自動返信メールの「○○様」の表示で使用します。
 //指定しない、または存在しない場合は、○○様と表示されないだけです。あえて無効にしてもOK
@@ -195,7 +194,6 @@ if(empty($errm)){
 		}
 	}
 }
-  
 if(($confirmDsp == 0 || $sendmail == 1) && $empty_flag != 1){
 	
 	//差出人に届くメールをセット
@@ -205,12 +203,18 @@ if(($confirmDsp == 0 || $sendmail == 1) && $empty_flag != 1){
 		$re_subject = "=?iso-2022-jp?B?".base64_encode(mb_convert_encoding($re_subject,"JIS",$encode))."?=";
 	}
 	//管理者宛に届くメールをセット
+
 	$adminBody = mailToAdmin($_POST,$subject,$mailFooterDsp,$mailSignature,$encode,$confirmDsp);
 	$header = adminHeader($userMail,$post_mail,$BccMail,$to);
 	$subject = "=?iso-2022-jp?B?".base64_encode(mb_convert_encoding($subject,"JIS",$encode))."?=";
-	
+
 	mail($to,$subject,$adminBody,$header);
-	if($remail == 1 && !empty($post_mail)) mail($post_mail,$re_subject,$userBody,$reheader);
+	if(!empty($post_mail)){
+		$userBody = mailToUser($_POST,$dsp_name,$remail_text,$mailFooterDsp,$mailSignature,$encode);
+		$reheader = userHeader($refrom_name,$to,$encode);
+		$re_subject = "=?iso-2022-jp?B?".base64_encode(mb_convert_encoding($re_subject,"JIS",$encode))."?=";
+		mail($post_mail,$re_subject,$userBody,$reheader);
+	}
 }
 else if($confirmDsp == 1){ 
 
@@ -467,18 +471,70 @@ function adminHeader($userMail,$post_mail,$BccMail,$to){
 }
 //管理者宛送信メールボディ
 function mailToAdmin($arr,$subject,$mailFooterDsp,$mailSignature,$encode,$confirmDsp){
-	$adminBody="「".$subject."」からメールが届きました\n\n";
+	$adminBody="ホームページより、お問合せがありました。\n\n";
 	$adminBody .="＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝\n\n";
-	$adminBody.= postToMail($arr);//POSTデータを関数からセット
-	$adminBody.="\n＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝\n";
-	$adminBody.="送信された日時：".date( "Y/m/d (D) H:i:s", time() )."\n";
-	$adminBody.="送信者のIPアドレス：".@$_SERVER["REMOTE_ADDR"]."\n";
-	$adminBody.="送信者のホスト名：".getHostByAddr(getenv('REMOTE_ADDR'))."\n";
-	if($confirmDsp != 1){
-		$adminBody.="問い合わせのページURL：".@$_SERVER['HTTP_REFERER']."\n";
+	$adminBody.="送信日時                     ：".date( "Y/m/d (D) H:i:s", time() )."\n";
+	$adminBody.="差出人ホスト                : ".@$_SERVER["REMOTE_ADDR"]."\n";
+	$adminBody.="件名　　　　　　　　：ホームページからお問合せ受付"."\n";
+	$adminBody.="差出人名                      : ".$_POST['お名前']."\n";
+	$adminBody.="差出人メールアドレス ：".$_POST['Eメール']."\n";
+	$adminBody.="\n＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝\n\n";
+	$adminBody.="お名前"."\n";
+	$adminBody.=$_POST['お名前']."\n";
+	$adminBody.="ふりがな"."\n";
+	$adminBody.=$_POST['ふりがな']."\n";
+	$adminBody.="ふりがな"."\n";
+	$adminBody.=$_POST['ふりがな']."\n";
+	$adminBody.="\n＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝\n\n";
+	$adminBody.="種別"."\n";
+	$adminBody.=$_POST['種別']."\n";
+	$adminBody.="\n＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝\n\n";
+	$adminBody.="Eメール"."\n";
+	$adminBody.=$_POST['Eメール']."\n";
+	$adminBody.="\n＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝\n\n";
+	$adminBody.="職業"."\n";
+	$adminBody.=$_POST['職業']."\n";
+	$adminBody.="\n＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝\n\n";
+	$adminBody.="職業"."\n";
+	$adminBody.=$_POST['職業']."\n";
+	$adminBody.="\n＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝\n\n";
+	$adminBody.="職種"."\n";
+	$adminBody.=$_POST['職種']."\n";
+	$adminBody.="\n＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝\n\n";
+	$adminBody.="法人名"."\n";
+	$adminBody.=$_POST['法人名']."\n";
+	$adminBody.="\n＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝\n\n";
+	$adminBody.="部署名"."\n";
+	$adminBody.=$_POST['部署名']."\n";
+	$adminBody.="\n＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝\n\n";
+	$adminBody.="郵便番号"."\n";
+	$adminBody.=$_POST['郵便番号']."\n";
+	$adminBody.="\n＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝\n\n";
+	$adminBody.="都道府県"."\n";
+	$adminBody.=$_POST['都道府県']."\n";
+	$adminBody.="\n＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝\n\n";
+	$adminBody.="市区町村"."\n";
+	$adminBody.=$_POST['市区町村']."\n";
+	$adminBody.="\n＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝\n\n";
+	$adminBody.="番地・ビル"."\n";
+	$adminBody.=$_POST['番地・ビル']."\n";
+	$adminBody.="\n＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝\n\n";
+	$adminBody.="お電話番号"."\n";
+	$adminBody.=$_POST['お電話番号']."\n";
+	$adminBody.="\n＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝\n\n";
+	$adminBody.="お電話連絡が可能な時間帯"."\n";
+	$adminBody.=$_POST['お電話連']."\n";
+	$adminBody.="\n＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝\n\n";
+	$adminBody.="ご質問・お問合せ区分"."\n";
+	if (isset($_POST['ご質問・お問合せ区分'])){
+		$adminBody.=$_POST['ご質問・お問合せ区分']."\n";
 	}else{
-		$adminBody.="問い合わせのページURL：".@$arr['httpReferer']."\n";
-	}
+		$adminBody.="\n";
+	};
+	$adminBody.="\n＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝\n\n";
+	$adminBody.="ご質問内容"."\n";
+	$adminBody.=$_POST['ご質問内容']."\n";
+	$adminBody.="\n＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝\n\n";
 	if($mailFooterDsp == 1) $adminBody.= $mailSignature;
 	return mb_convert_encoding($adminBody,"JIS",$encode);
 }
@@ -504,7 +560,71 @@ function mailToUser($arr,$dsp_name,$remail_text,$mailFooterDsp,$mailSignature,$e
 	if(isset($arr[$dsp_name])) $userBody = h($arr[$dsp_name]). " 様\n";
 	$userBody.= $remail_text;
 	$userBody.="\n＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝\n\n";
-	$userBody.= postToMail($arr);//POSTデータを関数からセット
+	$userBody.=$_POST['お名前']."様\n";
+	$userBody.="このたびは、株式会社アピカルへお問合せいただきありがとうございました。\n";
+	$userBody.="以下の内容で承りました。\n\n\n\n";
+	$userBody.="\n＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝\n\n";
+	$userBody.="お名前\n";
+	$userBody.=$_POST['お名前']."\n";
+	$userBody.="ふりがな\n";
+	$userBody.=$_POST['ふりがな']."\n";
+	$userBody.="\n＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝\n\n";
+	$userBody.="種別\n";
+	$userBody.=$_POST['種別']."\n";
+	$userBody.="\n＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝\n\n";
+	$userBody.="Eメール\n";
+	$userBody.=$_POST['Eメール']."\n";
+	$userBody.="\n＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝\n\n";
+	$userBody.="職業\n";
+	$userBody.=$_POST['職業']."\n";
+	$userBody.="\n＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝\n\n";
+	$userBody.="職種\n";
+	$userBody.=$_POST['職種']."\n";
+	$userBody.="\n＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝\n\n";
+	$userBody.="法人名\n";
+	$userBody.=$_POST['法人名']."\n";
+	$userBody.="\n＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝\n\n";
+	$userBody.="部署名\n";
+	$userBody.=$_POST['部署名']."\n";
+	$userBody.="\n＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝\n\n";
+	$userBody.="郵便番号\n";
+	$userBody.=$_POST['郵便番号']."\n";
+	$userBody.="\n＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝\n\n";
+	$userBody.="都道府県\n";
+	$userBody.=$_POST['都道府県']."\n";
+	$userBody.="\n＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝\n\n";
+	$userBody.="市区町村\n";
+	$userBody.=$_POST['市区町村']."\n";
+	$userBody.="\n＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝\n\n";
+	$userBody.="番地・ビル\n";
+	$userBody.=$_POST['番地・ビル']."\n";
+	$userBody.="\n＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝\n\n";
+	$userBody.="お電話番号\n";
+	$userBody.=$_POST['お電話番号']."\n";
+	$userBody.="\n＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝\n\n";
+	$userBody.="お電話連\n";
+	$userBody.=$_POST['お電話連']."\n";
+	$userBody.="\n＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝\n\n";
+	$userBody.="ご質問・お問合せ区分\n";
+	if (isset($_POST['ご質問・お問合せ区分'])){
+		$userBody.=$_POST['ご質問・お問合せ区分']."\n";
+	}else{
+		$userBody.="\n";
+	};
+	$userBody.="\n＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝\n\n";
+	$userBody.="ご質問内容\n";
+	$userBody.=$_POST['ご質問内容']."\n";
+	$userBody.="\n＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝\n\n";
+	$userBody.="内容を確認次第、3営業日以内ご連絡させていただきますので、今しばらくお待ちください。\n";
+	$userBody.="※もし期日を過ぎても連絡がない場合、大変お手数ですが\n";
+	$userBody.="Eメール"."<info@apical.jp>、もしくはお電話でご連絡ください。\n";
+	$userBody.="\n＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝\n\n";
+	$userBody.="株式会社アピカル\n";
+	$userBody.="\n＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝\n\n";
+	$userBody.="福岡市中央区六本松2丁目12-25ベルヴィ六本松5Ｆ\n";
+	$userBody.="URL: http://www.apical.jp/\n";
+	$userBody.="TEL: 092-741-1833(代表)\n";
+	$userBody.="FAX: 092-741-9580\n";
 	$userBody.="\n＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝\n\n";
 	$userBody.="送信日時：".date( "Y/m/d (D) H:i:s", time() )."\n";
 	if($mailFooterDsp == 1) $userBody.= $mailSignature;

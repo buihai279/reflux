@@ -489,3 +489,134 @@ body,html{
     font-size: 13px;
     color: #fff;
 }
+.baner-top {
+    width: 880px;
+    height: 104px;
+    margin: auto;
+}
+.baner-top .banner-content-top {
+    width: 240px;
+    height: 104px;
+    border-right: 1px solid #c4c4c4;
+    float: left;
+    position: relative;
+}
+.baner-top .banner-content-top-end {
+    width: 150px;
+    height: 104px;
+    float: left;
+}
+.baner-top .banner-content-top #acsa {
+    padding-top: 25px;
+}
+.baner-top .banner-content-top #child {
+    padding-top: 15px;
+    padding-left: 20px;
+}
+.baner-top .banner-content-top .content-child {
+    width: 100px;
+    position: absolute;
+    top: 25px;
+    right: 5px;
+    font-family: NotoSansJPLight;
+    font-size: 12px;
+}
+.baner-top .banner-content-top .banner-mother {
+    padding-top: 25px;
+    padding-left: 25px;
+}
+.baner-top .banner-content-top .content-mother {
+    width: 125px;
+    position: absolute;
+    top: 25px;
+    right: 15px;
+    font-family: NotoSansJPLight;
+    font-size: 12px;
+}
+.baner-top .banner-content-top-end .banner-last {
+    width: 120px;
+    height: 60px;
+    background-image: url(../images/bg-banner-last.jpg);
+    margin-left: 20px;
+    margin-top: 20px;
+    position: relative;
+}
+.baner-top .banner-content-top-end .banner-last .icon-banner {
+    padding-top: 17px;
+    padding-left: 10px;
+}
+.baner-top .banner-content-top-end .banner-last .content-last {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 14.5px;
+    font-family: NotoSansJpRegular;
+    color: #fff;
+}
+a:hover{
+    text-decoration: none;
+}
+#container-content .d-top-image-1 .slide-left {
+    width: 280px;
+    height: 484px;
+    float: left;
+    position: relative;
+}
+
+#container-content .d-top-image-1 .slide-left > img {
+    position: absolute;
+    z-index: 1;
+}
+
+#container-content .d-top-image-1 .slider {
+    width: 720px;
+    height: 484px;
+    float: left;
+    position: relative;
+}
+#container-content .d-top-image-1 .slider .slide1,.slide2,.slide3,.slide4,.slide5 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+#container-content .d-top-image-1 .slider .slide1 {
+    background: url('../images/slide-enterprise-1.jpg')no-repeat center;
+    background-size: cover;
+    animation:fade 8s infinite;
+    -webkit-animation:fade 8s infinite;
+
+}
+#container-content .d-top-image-1 .slider .slide2 {
+    background: url('../images/slide-enterprise-2.jpg')no-repeat center;
+    background-size: cover;
+    animation:fade2 8s infinite;
+    -webkit-animation:fade2 8s infinite;
+}
+#container-content .d-top-image-1 .slider .slide3 {
+    background: url('../images/slide-enterprise-3.jpg')no-repeat center;
+    background-size: cover;
+    animation:fade3 8s infinite;
+    -webkit-animation:fade3 8s infinite;
+}
+@keyframes fade
+{
+    0%   {opacity:1}
+    33.333% { opacity: 0}
+    66.666% { opacity: 0}
+    100% { opacity: 1}
+}
+@keyframes fade2
+{
+    0%   {opacity:0}
+    33.333% { opacity: 1}
+    66.666% { opacity: 0 }
+    100% { opacity: 0}
+}
+@keyframes fade3
+{
+    0%   {opacity:0}
+    33.333% { opacity: 0}
+    66.666% { opacity: 1}
+    100% { opacity: 0}
+}
