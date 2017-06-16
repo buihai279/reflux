@@ -1344,4 +1344,7 @@ body, html {
     100% { opacity: 0}
 }
 
+#container-content .baner-top .banner-content-top a:hover{
+    text-decoration: none;
+}
 
