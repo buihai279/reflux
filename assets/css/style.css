@@ -143,7 +143,7 @@ body,html{
     margin-left: 0.66667%;
 }
 #header .scroll-menu .item-menu:first-child{
-    border-left :1px solid black;
+    border-left : 1px solid #b3b3b3;
     margin-left: 0.66667%;
 }
 #header .button-header{
@@ -319,17 +319,17 @@ body,html{
 .box-icon{
     float: right;
     margin-right: 30px;
-    display: none;
+    display: block;
 }
 .box-icon-content{
-    width:35px;
+    width:33px;
     float: left;
-    height: 35px;
+    height: 33px;
     background-color: #db6397;
     border-radius: 50%;
     text-align: center;
     margin-right: 15px;
-    padding-top: 2px;
+    line-height: 33px;
 }
 .box-icon-content a{
     color: #fff !important;
