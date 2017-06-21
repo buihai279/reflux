@@ -307,7 +307,7 @@ p.error_messe{
 <table class="formTable">
 <?php echo confirmOutput($_POST);//入力内容を表示?>
 </table>
-<p align="center"><input type="hidden" name="mail_set" value="confirm_submit">
+<p align="center" style="margin-top: 30px"><input type="hidden" name="mail_set" value="confirm_submit">
 <input type="hidden" name="httpReferer" value="<?php echo h($_SERVER['HTTP_REFERER']);?>">
 <input type="submit" class="middle-button" value="　送信する　">
 <input type="button" class="middle-button" value="前画面に戻る" onClick="history.back()"></p>
