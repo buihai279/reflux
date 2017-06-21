@@ -226,7 +226,8 @@ body, html {
 .box-icon {
     float: right;
     margin-right: 30px;
-    display: none;
+    display: block;
+    
 }
 
 .box-icon-content {
@@ -237,11 +238,16 @@ body, html {
     border-radius: 50%;
     text-align: center;
     margin-right: 15px;
-    padding-top: 2px;
+    line-height: 35px;
+    padding-top: 1px;
 }
 
 .box-icon-content a {
     color: #fff !important;
+}
+
+.box-icon-content a i.fa{
+    vertical-align: 0;
 }
 
 .item-menu .hover-menu {
