@@ -320,6 +320,7 @@ body,html{
     float: right;
     margin-right: 30px;
     display: block;
+    padding-top: 4px;
     line-height: 40px;
 }
 .box-icon-content{

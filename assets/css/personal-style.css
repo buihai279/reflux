@@ -227,7 +227,7 @@ body, html {
     float: right;
     margin-right: 30px;
     display: block;
-    
+    padding-top: 2px;
 }
 
 .box-icon-content {
