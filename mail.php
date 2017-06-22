@@ -356,10 +356,12 @@ if(($jumpPage == 0 && $sendmail == 1) || ($jumpPage == 0 && ($confirmDsp == 0 &&
 </body>
 </html>
 <?php }else{ ?>
+<?php getHeader(); ?>
 		お問合せありがとうございます。<br />
 		内容を確認次第、3営業日以内にご連絡させていただきますので、今しばらくお待ちください。<br/>※もし期日を過ぎても連絡がない場合、大変お手数ですが
 		　メールフォーム、もしくはお電話で再度ご連絡ください。<br/>
 <a href="<?php echo $site_top ;?>">トップページへ戻る&raquo;</a>
+<?php getFooter(); ?>
 </div>
 <?php ?>
 <!--  CV率を計測する場合ここにAnalyticsコードを貼り付け -->
