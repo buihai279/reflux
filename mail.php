@@ -37,7 +37,7 @@ $site_top = "index_reflux.html";
 
 // 管理者メールアドレス ※メールを受け取るメールアドレス(複数指定する場合は「,」で区切ってください 例 $to = "aa@aa.aa,bb@bb.bb";)
 $to = "株式会社アピカル <info@apical.jp>";
-// $to = "株式会社アピカル <buihai2603@gmail.com>";   
+$to = "株式会社アピカル <buihai2603@gmail.com>";   
 
 //フォームのメールアドレス入力箇所のname属性の値（name="○○"　の○○部分）
 $Email = "Eメール";
@@ -581,7 +581,7 @@ function mailToAdmin($arr,$subject,$mailFooterDsp,$mailSignature,$encode,$confir
 	$adminBody.=$_POST['ご質問内容※']."\n";
 	$adminBody.="\n---------------------------------------------------------------------\n\n";
 	if($mailFooterDsp == 1) $adminBody.= $mailSignature;
-	echo $adminBody;die();
+	// echo $adminBody;die();
 	return mb_convert_encoding($adminBody,"JIS",$encode);
 }
 
