@@ -14,13 +14,8 @@
         <link rel="stylesheet" href="assets/css/hung_style.css">
         <link rel="stylesheet" href="assets/css/duong-style.css">
         <link rel="stylesheet" href="assets/css/scrolling-nav.css">
-        <!--[if IE]>
-        <style>
-            body{
-                background-color:red;
-            }
-        </style>
-        <![endif]-->
+
+        <!-- Fix IE browser -->
         <style type="text/css">
             @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
               input[type="text"]{
@@ -29,19 +24,9 @@
               input[type="email"]{
                 height: 29px;
               }
-                #container-content .content .main-content .d-form .input-field select{
-                /*background: none!important;*/
-                /*background-size: cover!important;
-                background-image: url('../images/09_select-box-arrow.png')!important;
-                -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/09_select-box-arrow.png', sizingMethod='scale')"!important;
-                -ms-appearance: none!important;
-                -o-appearance: none!important;
-/**/                background-image: url('https://www.google.com/images/nav_logo101.png');*/
-background: #c3c3c3 url('https://www.google.com/images/nav_logo101.png') repeat-x 0 0;
-                appearance: none!important;
-                z-index: 1000;
-                background-position:1% 45%; 
-            }
+                #container-content .content .main-content .d-form .input-field select::-ms-expand{
+                    display: none;
+                }
             }
 
         </style>
