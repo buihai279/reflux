@@ -1,3 +1,4 @@
+<pre><?php print_r($_POST); ?></pre>
 <?php header("Content-Type:text/html;charset=utf-8"); ?>
 <?php //error_reporting(E_ALL | E_STRICT);
 ##-----------------------------------------------------------------------------------------------------------------##
@@ -36,6 +37,7 @@ $site_top = "index_reflux.html";
 
 // 管理者メールアドレス ※メールを受け取るメールアドレス(複数指定する場合は「,」で区切ってください 例 $to = "aa@aa.aa,bb@bb.bb";)
 $to = "株式会社アピカル <info@apical.jp>";
+// $to = "株式会社アピカル <buihai2603@gmail.com>";   
 
 //フォームのメールアドレス入力箇所のname属性の値（name="○○"　の○○部分）
 $Email = "Eメール";
@@ -220,79 +222,67 @@ else if($confirmDsp == 1){
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>確認画面</title>
-<link rel="stylesheet" href="assets/css/style.css">
-<link rel="shortcut icon" href="assets/images/apical_web_favicon_32-32.png">
-<link rel="stylesheet" href="assets/css/bootstrap-theme.min.css">
-<link rel="stylesheet" href="assets/css/bootstrap.min.css">
-<link rel="stylesheet" href="assets/css/font-awesome.min.css">
-<!-- Custom CSS -->
-<link rel="stylesheet" href="assets/css/loc-style.css">
-<link rel="stylesheet" href="assets/css/loi-style.css">
-<link rel="stylesheet" href="assets/css/hung_style.css">
-<link rel="stylesheet" href="assets/css/duong-style.css">
-<link rel="stylesheet" href="assets/css/scrolling-nav.css">
+<?php getAsset(); ?>
 <style type="text/css">
+	body, html {
+	    background-color: #eeb8cb!important;
+	    margin: 0 auto!important;
+	    font-size: 13px;
+	    line-height: 27px;
+	}
 
-body, html {
-    background-color: #eeb8cb!important;
-    margin: 0 auto!important;
-    font-size: 13px;
-    line-height: 27px;
-}
-
-/* 自由に編集下さい */
-#formWrap {
-	width:1000px;
-    background-color: white !important;
-	margin:0 auto;
-	color:#555;
-	padding: 30px;
-}
-table.formTable{
-	width:100%;
-	margin:0 auto;
-	border-collapse:collapse;
-}
-table.formTable td,table.formTable th{
-	border:1px solid #ccc;
-	padding:10px;
-}
-table.formTable th{
-	width:30%;
-	font-weight:normal;
-	background:#efefef;
-	text-align:left;
-}
-p.error_messe{
-	margin:5px 0;
-	color:red;
-}
-.middle-button {
-    border: none;
-    border-radius: 5px;
-    color: #ffffff;
-    font-weight: bold;
-    font-family: NotoSansJPBold;
-    font-size: 17px;
-    height: 40px;
-    padding: 0 15px;
-    background: #e072a1;
-    background: -webkit-linear-gradient(#e072a1,#de6b9c,#cd3e7e);
-    background: -o-linear-gradient(#e072a1,#de6b9c,#cd3e7e);
-    background: -moz-linear-gradient(#e072a1,#de6b9c,#cd3e7e);
-    background: linear-gradient(#e072a1,#de6b9c,#cd3e7e);
-    opacity: 1;
-}
-.middle-button:hover {
-    opacity: .5;
-    cursor: pointer;
-}
+	/* 自由に編集下さい */
+	#formWrap {
+		width:1000px;
+	    background-color: white !important;
+		margin:0 auto;
+		color:#555;
+		padding: 30px;
+	}
+	table.formTable{
+		width:100%;
+		margin:0 auto;
+		border-collapse:collapse;
+	}
+	table.formTable td,table.formTable th{
+		border:1px solid #ccc;
+		padding:10px;
+	}
+	table.formTable th{
+		width:30%;
+		font-weight:normal;
+		background:#efefef;
+		text-align:left;
+	}
+	p.error_messe{
+		margin:5px 0;
+		color:red;
+	}
+	.middle-button {
+	    border: none;
+	    border-radius: 5px;
+	    color: #ffffff;
+	    font-weight: bold;
+	    font-family: NotoSansJPBold;
+	    font-size: 17px;
+	    height: 40px;
+	    padding: 0 15px;
+	    background: #e072a1;
+	    background: -webkit-linear-gradient(#e072a1,#de6b9c,#cd3e7e);
+	    background: -o-linear-gradient(#e072a1,#de6b9c,#cd3e7e);
+	    background: -moz-linear-gradient(#e072a1,#de6b9c,#cd3e7e);
+	    background: linear-gradient(#e072a1,#de6b9c,#cd3e7e);
+	    opacity: 1;
+	}
+	.middle-button:hover {
+	    opacity: .5;
+	    cursor: pointer;
+	}
 </style>
 </head>
 <body>
-
-<!-- ▲ Headerやその他コンテンツなど　※自由に編集可 ▲-->
 <?php getHeader(); ?>
+<!-- ▲ Headerやその他コンテンツなど　※自由に編集可 ▲-->
 <!-- ▼************ 送信内容表示部　※編集は自己責任で ************ ▼-->
 <div id="formWrap">
 <?php if($empty_flag == 1){ ?>
@@ -333,6 +323,7 @@ if(($jumpPage == 0 && $sendmail == 1) || ($jumpPage == 0 && ($confirmDsp == 0 &&
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>完了画面</title>
+<?php getAsset(); ?>
 <style type="text/css">
 	body, html {
     background-color: #eeb8cb!important;
@@ -347,24 +338,24 @@ if(($jumpPage == 0 && $sendmail == 1) || ($jumpPage == 0 && ($confirmDsp == 0 &&
 </style>
 </head>
 <body>
+<?php getHeader(); ?>
 <div align="center" class="text-notify">
 <?php if($empty_flag == 1){ ?>
 <h4>入力にエラーがあります。下記をご確認の上「戻る」ボタンにて修正をお願い致します。</h4>
 <div style="color:red"><?php echo $errm; ?></div>
 <br /><br /><input type="button" class="middle-button" value=" 前画面に戻る " onClick="history.back()">
 </div>
+<?php getFooter(); ?>
 </body>
 </html>
 <?php }else{ ?>
-<?php getHeader(); ?>
 		お問合せありがとうございます。<br />
 		内容を確認次第、3営業日以内にご連絡させていただきますので、今しばらくお待ちください。<br/>※もし期日を過ぎても連絡がない場合、大変お手数ですが
 		　メールフォーム、もしくはお電話で再度ご連絡ください。<br/>
 <a href="<?php echo $site_top ;?>">トップページへ戻る&raquo;</a>
-<?php getFooter(); ?>
 </div>
-<?php ?>
 <!--  CV率を計測する場合ここにAnalyticsコードを貼り付け -->
+<?php getFooter(); ?>
 </body>
 </html>
 <?php 
@@ -546,9 +537,11 @@ function mailToAdmin($arr,$subject,$mailFooterDsp,$mailSignature,$encode,$confir
 	$adminBody.="\n---------------------------------------------------------------------\n\n";
 	$adminBody.="職業"."\n";
 	$adminBody.=$_POST['職業']."\n";
+	$adminBody.=$_POST['職業2']."\n";
 	$adminBody.="\n---------------------------------------------------------------------\n\n";
 	$adminBody.="職種"."\n";
 	$adminBody.=$_POST['職種']."\n";
+	$adminBody.=$_POST['職種2']."\n";
 	$adminBody.="\n---------------------------------------------------------------------\n\n";
 	$adminBody.="法人名"."\n";
 	$adminBody.=$_POST['法人名']."\n";
@@ -572,7 +565,7 @@ function mailToAdmin($arr,$subject,$mailFooterDsp,$mailSignature,$encode,$confir
 	$adminBody.=$_POST['お電話番号']."\n";
 	$adminBody.="\n---------------------------------------------------------------------\n\n";
 	$adminBody.="お電話連絡が可能な時間帯"."\n";
-	$adminBody.=$_POST['お電話連']."\n";
+	$adminBody.=$_POST['お電話連絡が可能な時間帯']."\n";
 	$adminBody.="\n---------------------------------------------------------------------\n\n";
 	$adminBody.="ご質問・お問合せ区分"."\n";
 	if (isset($_POST['ご質問・お問合せ区分'])){
@@ -580,11 +573,15 @@ function mailToAdmin($arr,$subject,$mailFooterDsp,$mailSignature,$encode,$confir
 	}else{
 		$adminBody.="\n";
 	};
+	if (isset($_POST['項目に無いお問い合わせ区分'])){
+		$adminBody.=$_POST['項目に無いお問い合わせ区分']."\n";
+	};
 	$adminBody.="\n---------------------------------------------------------------------\n\n";
 	$adminBody.="ご質問内容"."\n";
-	$adminBody.=$_POST['ご質問内容']."\n";
+	$adminBody.=$_POST['ご質問内容※']."\n";
 	$adminBody.="\n---------------------------------------------------------------------\n\n";
 	if($mailFooterDsp == 1) $adminBody.= $mailSignature;
+	echo $adminBody;die();
 	return mb_convert_encoding($adminBody,"JIS",$encode);
 }
 
@@ -626,9 +623,11 @@ function mailToUser($arr,$dsp_name,$remail_text,$mailFooterDsp,$mailSignature,$e
 	$userBody.="\n---------------------------------------------------------------------\n\n";
 	$userBody.="職業\n";
 	$userBody.=$_POST['職業']."\n";
+	$userBody.=$_POST['職業2']."\n";
 	$userBody.="\n---------------------------------------------------------------------\n\n";
 	$userBody.="職種\n";
 	$userBody.=$_POST['職種']."\n";
+	$userBody.=$_POST['職種2']."\n";
 	$userBody.="\n---------------------------------------------------------------------\n\n";
 	$userBody.="法人名\n";
 	$userBody.=$_POST['法人名']."\n";
@@ -652,7 +651,7 @@ function mailToUser($arr,$dsp_name,$remail_text,$mailFooterDsp,$mailSignature,$e
 	$userBody.=$_POST['お電話番号']."\n";
 	$userBody.="\n---------------------------------------------------------------------\n\n";
 	$userBody.="お電話連絡が可能な時間帯\n";
-	$userBody.=$_POST['お電話連']."\n";
+	$userBody.=$_POST['お電話連絡が可能な時間帯']."\n";
 	$userBody.="\n---------------------------------------------------------------------\n\n";
 	$userBody.="ご質問・お問合せ区分\n";
 	if (isset($_POST['ご質問・お問合せ区分'])){
@@ -660,9 +659,12 @@ function mailToUser($arr,$dsp_name,$remail_text,$mailFooterDsp,$mailSignature,$e
 	}else{
 		$userBody.="\n";
 	};
+	if (isset($_POST['項目に無いお問い合わせ区分'])){
+		$userBody.=$_POST['項目に無いお問い合わせ区分']."\n";
+	};
 	$userBody.="\n---------------------------------------------------------------------\n\n";
 	$userBody.="ご質問内容\n";
-	$userBody.=$_POST['ご質問内容']."\n";
+	$userBody.=$_POST['ご質問内容※']."\n";
 	$userBody.="\n---------------------------------------------------------------------\n\n";
 	$userBody.="内容を確認次第、3営業日以内ご連絡させていただきますので、今しばらくお待ちください。\n";
 	$userBody.="※もし期日を過ぎても連絡がない場合、大変お手数ですが\n";
@@ -674,6 +676,8 @@ function mailToUser($arr,$dsp_name,$remail_text,$mailFooterDsp,$mailSignature,$e
 	$userBody.="URL: http://www.apical.jp/\n";
 	$userBody.="TEL: 092-741-1833(代表)\n";
 	$userBody.="FAX: 092-741-9580\n";
+	// echo $userBody;die();
+
 	if($mailFooterDsp == 1) $userBody.= $mailSignature;
 	return mb_convert_encoding($userBody,"JIS",$encode);
 }
@@ -918,6 +922,22 @@ function getFooter()
 <?php
 }
 
+function getAsset()
+{
+?>
+<link rel="stylesheet" href="assets/css/style.css">
+<link rel="shortcut icon" href="assets/images/apical_web_favicon_32-32.png">
+<link rel="stylesheet" href="assets/css/bootstrap-theme.min.css">
+<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+<link rel="stylesheet" href="assets/css/font-awesome.min.css">
+<!-- Custom CSS -->
+<link rel="stylesheet" href="assets/css/loc-style.css">
+<link rel="stylesheet" href="assets/css/loi-style.css">
+<link rel="stylesheet" href="assets/css/hung_style.css">
+<link rel="stylesheet" href="assets/css/duong-style.css">
+<link rel="stylesheet" href="assets/css/scrolling-nav.css">
+<?php
+}
 //----------------------------------------------------------------------
 //  関数定義(END)
 //----------------------------------------------------------------------
