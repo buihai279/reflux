@@ -320,19 +320,25 @@ body,html{
     float: right;
     margin-right: 30px;
     display: block;
+    padding-top: 4px;
+    line-height: 40px;
 }
 .box-icon-content{
-    width:33px;
+    width:32px;
     float: left;
-    height: 33px;
+    vertical-align: middle;
+    height: 32px;
     background-color: #db6397;
     border-radius: 50%;
     text-align: center;
     margin-right: 15px;
-    line-height: 33px;
+    line-height: 32px;
 }
 .box-icon-content a{
     color: #fff !important;
+}
+.box-icon-content a i.fa{
+    vertical-align: -6%;
 }
 .apical {
     font-size: 23px;
@@ -584,21 +590,21 @@ body,html{
 #container-content .d-top-image-1 .slider .slide1 {
     background: url('../images/slide-enterprise-1.jpg')no-repeat center;
     background-size: cover;
-    animation:fade 40s infinite;
-    -webkit-animation:fade 40s infinite;
+    animation:fade 30s infinite;
+    -webkit-animation:fade 30s infinite;
 
 }
 #container-content .d-top-image-1 .slider .slide2 {
     background: url('../images/slide-enterprise-2.jpg')no-repeat center;
     background-size: cover;
-    animation:fade2 40s infinite;
-    -webkit-animation:fade2 40s infinite;
+    animation:fade2 30s infinite;
+    -webkit-animation:fade2 30s infinite;
 }
 #container-content .d-top-image-1 .slider .slide3 {
     background: url('../images/slide-enterprise-3.jpg')no-repeat center;
     background-size: cover;
-    animation:fade3 40s infinite;
-    -webkit-animation:fade3 40s infinite;
+    animation:fade3 30s infinite;
+    -webkit-animation:fade3 30s infinite;
 }
 @keyframes fade
 {

@@ -35,7 +35,7 @@ if (version_compare(PHP_VERSION, '5.1.0', '>=')) {//PHP5.1.0以上の場合の�
 $site_top = "index_reflux.html";
 
 // 管理者メールアドレス ※メールを受け取るメールアドレス(複数指定する場合は「,」で区切ってください 例 $to = "aa@aa.aa,bb@bb.bb";)
-$to = "株式会社アピカル <info@apical.jp>";
+$to = "株式会社アピカル <info@apical.jp>"; 
 
 //フォームのメールアドレス入力箇所のname属性の値（name="○○"　の○○部分）
 $Email = "Eメール";
@@ -215,51 +215,84 @@ else if($confirmDsp == 1){
 
 /*　▼▼▼送信確認画面のレイアウト※編集可　オリジナルのデザインも適用可能▼▼▼　*/
 ?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja" lang="ja">
+<!DOCTYPE html>
+<html lang="ja">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>確認画面</title>
+<?php getAsset(); ?>
 <style type="text/css">
-/* 自由に編集下さい */
-#formWrap {
-	width:700px;
-	margin:0 auto;
-	color:#555;
-	line-height:120%;
-	font-size:90%;
-}
-table.formTable{
-	width:100%;
-	margin:0 auto;
-	border-collapse:collapse;
-}
-table.formTable td,table.formTable th{
-	border:1px solid #ccc;
-	padding:10px;
-}
-table.formTable th{
-	width:30%;
-	font-weight:normal;
-	background:#efefef;
-	text-align:left;
-}
-p.error_messe{
-	margin:5px 0;
-	color:red;
+	body, html {
+	    background-color: #eeb8cb!important;
+	    margin: 0 auto!important;
+	    font-size: 13px;
+	    line-height: 27px;
+	}
+
+	/* 自由に編集下さい */
+	#formWrap {
+		width:1000px;
+	    background-color: white !important;
+		margin:0 auto;
+		color:#555;
+		padding: 30px;
+	}
+	table.formTable{
+		width:100%;
+		margin:0 auto;
+		border-collapse:collapse;
+	}
+	table.formTable td,table.formTable th{
+		border:1px solid #ccc;
+		padding:10px;
+	}
+	table.formTable th{
+		width:30%;
+		font-weight:normal;
+		background:#efefef;
+		text-align:left;
+	}
+	p.error_messe{
+		margin:5px 0;
+		color:red;
+	}
+	.middle-button {
+	    border: none;
+	    border-radius: 5px;
+	    color: #ffffff;
+	    font-weight: bold;
+	    font-family: NotoSansJPBold;
+	    font-size: 17px;
+	    height: 40px;
+	    padding: 0 15px;
+	    background: #e072a1;
+	    background: -webkit-linear-gradient(#e072a1,#de6b9c,#cd3e7e);
+	    background: -o-linear-gradient(#e072a1,#de6b9c,#cd3e7e);
+	    background: -moz-linear-gradient(#e072a1,#de6b9c,#cd3e7e);
+	    background: linear-gradient(#e072a1,#de6b9c,#cd3e7e);
+	    opacity: 1;
+	}
+	.middle-button:hover {
+	    opacity: .5;
+	    cursor: pointer;
+	}
+	
+#footer a:hover {
+    text-decoration: none !important;
+    color: #fff;
+    display: block;
 }
 </style>
 </head>
 <body>
-
+<?php getHeader(); ?>
 <!-- ▲ Headerやその他コンテンツなど　※自由に編集可 ▲-->
-
 <!-- ▼************ 送信内容表示部　※編集は自己責任で ************ ▼-->
 <div id="formWrap">
 <?php if($empty_flag == 1){ ?>
 <div align="center">
 <h4>入力にエラーがあります。下記をご確認の上「戻る」ボタンにて修正をお願い致します。</h4>
-<?php echo $errm; ?><br /><br /><input type="button" value=" 前画面に戻る " onClick="history.back()">
+<?php echo $errm; ?><br /><br /><input type="button" class="middle-button" value=" 前画面に戻る " onClick="history.back()">
 </div>
 <?php }else{ ?>
 <h3>確認画面</h3>
@@ -268,16 +301,17 @@ p.error_messe{
 <table class="formTable">
 <?php echo confirmOutput($_POST);//入力内容を表示?>
 </table>
-<p align="center"><input type="hidden" name="mail_set" value="confirm_submit">
+<p align="center" style="margin-top: 30px"><input type="hidden" name="mail_set" value="confirm_submit">
 <input type="hidden" name="httpReferer" value="<?php echo h($_SERVER['HTTP_REFERER']);?>">
-<input type="submit" value="　送信する　">
-<input type="button" value="前画面に戻る" onClick="history.back()"></p>
+<input type="submit" class="middle-button" value="　送信する　">
+<input type="button" class="middle-button" value="前画面に戻る" onClick="history.back()"></p>
 </form>
 <?php } ?>
 </div><!-- /formWrap -->
 <!-- ▲ *********** 送信内容確認部　※編集は自己責任で ************ ▲-->
 
 <!-- ▼ Footerその他コンテンツなど　※編集可 ▼-->
+<?php getFooter(); ?>
 </body>
 </html>
 <?php
@@ -288,19 +322,42 @@ if(($jumpPage == 0 && $sendmail == 1) || ($jumpPage == 0 && ($confirmDsp == 0 &&
 
 /* ▼▼▼送信完了画面のレイアウト　編集可 ※送信完了後に指定のページに移動しない場合のみ表示▼▼▼　*/
 ?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja" lang="ja">
+<!DOCTYPE html>
+<html lang="ja">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>完了画面</title>
+<?php getAsset(); ?>
+<style type="text/css">
+	body, html {
+    background-color: #eeb8cb!important;
+    margin: 0 auto!important;
+}
+.text-notify {
+	width:1000px;
+    background-color: white !important;
+	margin:0 auto;
+	padding: 40px;
+}
+#footer{
+	line-height: 27px !important;
+}
+#footer a:hover {
+    text-decoration: none !important;
+    color: #fff;
+    display: block;
+}
+</style>
 </head>
 <body>
-<div align="center">
+<?php getHeader(); ?>
+<div align="center" class="text-notify">
 <?php if($empty_flag == 1){ ?>
 <h4>入力にエラーがあります。下記をご確認の上「戻る」ボタンにて修正をお願い致します。</h4>
 <div style="color:red"><?php echo $errm; ?></div>
-<br /><br /><input type="button" value=" 前画面に戻る " onClick="history.back()">
+<br /><br /><input type="button" class="middle-button" value=" 前画面に戻る " onClick="history.back()">
 </div>
+<?php getFooter(); ?>
 </body>
 </html>
 <?php }else{ ?>
@@ -309,8 +366,8 @@ if(($jumpPage == 0 && $sendmail == 1) || ($jumpPage == 0 && ($confirmDsp == 0 &&
 		　メールフォーム、もしくはお電話で再度ご連絡ください。<br/>
 <a href="<?php echo $site_top ;?>">トップページへ戻る&raquo;</a>
 </div>
-<?php ?>
 <!--  CV率を計測する場合ここにAnalyticsコードを貼り付け -->
+<?php getFooter(); ?>
 </body>
 </html>
 <?php 
@@ -320,7 +377,7 @@ if(($jumpPage == 0 && $sendmail == 1) || ($jumpPage == 0 && ($confirmDsp == 0 &&
 //確認画面無しの場合の表示、指定のページに移動する設定の場合、エラーチェックで問題が無ければ指定ページヘリダイレクト
 else if(($jumpPage == 1 && $sendmail == 1) || $confirmDsp == 0) { 
 	if($empty_flag == 1){ ?>
-<div align="center"><h4>入力にエラーがあります。下記をご確認の上「戻る」ボタンにて修正をお願い致します。</h4><div style="color:red"><?php echo $errm; ?></div><br /><br /><input type="button" value=" 前画面に戻る " onClick="history.back()"></div>
+<div align="center"><h4>入力にエラーがあります。下記をご確認の上「戻る」ボタンにて修正をお願い致します。</h4><div style="color:red"><?php echo $errm; ?></div><br /><br /><input type="button" class="middle-button" value=" 前画面に戻る " onClick="history.back()"></div>
 <?php 
 	}else{ header("Location: ".$thanksPage); }
 }
@@ -492,9 +549,11 @@ function mailToAdmin($arr,$subject,$mailFooterDsp,$mailSignature,$encode,$confir
 	$adminBody.="\n---------------------------------------------------------------------\n\n";
 	$adminBody.="職業"."\n";
 	$adminBody.=$_POST['職業']."\n";
+	$adminBody.=$_POST['職業2']."\n";
 	$adminBody.="\n---------------------------------------------------------------------\n\n";
 	$adminBody.="職種"."\n";
 	$adminBody.=$_POST['職種']."\n";
+	$adminBody.=$_POST['職種2']."\n";
 	$adminBody.="\n---------------------------------------------------------------------\n\n";
 	$adminBody.="法人名"."\n";
 	$adminBody.=$_POST['法人名']."\n";
@@ -518,7 +577,7 @@ function mailToAdmin($arr,$subject,$mailFooterDsp,$mailSignature,$encode,$confir
 	$adminBody.=$_POST['お電話番号']."\n";
 	$adminBody.="\n---------------------------------------------------------------------\n\n";
 	$adminBody.="お電話連絡が可能な時間帯"."\n";
-	$adminBody.=$_POST['お電話連']."\n";
+	$adminBody.=$_POST['お電話連絡が可能な時間帯']."\n";
 	$adminBody.="\n---------------------------------------------------------------------\n\n";
 	$adminBody.="ご質問・お問合せ区分"."\n";
 	if (isset($_POST['ご質問・お問合せ区分'])){
@@ -526,11 +585,15 @@ function mailToAdmin($arr,$subject,$mailFooterDsp,$mailSignature,$encode,$confir
 	}else{
 		$adminBody.="\n";
 	};
+	if (isset($_POST['項目に無いお問い合わせ区分'])){
+		$adminBody.=$_POST['項目に無いお問い合わせ区分']."\n";
+	};
 	$adminBody.="\n---------------------------------------------------------------------\n\n";
 	$adminBody.="ご質問内容"."\n";
-	$adminBody.=$_POST['ご質問内容']."\n";
+	$adminBody.=$_POST['ご質問内容※']."\n";
 	$adminBody.="\n---------------------------------------------------------------------\n\n";
 	if($mailFooterDsp == 1) $adminBody.= $mailSignature;
+	// echo $adminBody;die();
 	return mb_convert_encoding($adminBody,"JIS",$encode);
 }
 
@@ -572,9 +635,11 @@ function mailToUser($arr,$dsp_name,$remail_text,$mailFooterDsp,$mailSignature,$e
 	$userBody.="\n---------------------------------------------------------------------\n\n";
 	$userBody.="職業\n";
 	$userBody.=$_POST['職業']."\n";
+	$userBody.=$_POST['職業2']."\n";
 	$userBody.="\n---------------------------------------------------------------------\n\n";
 	$userBody.="職種\n";
 	$userBody.=$_POST['職種']."\n";
+	$userBody.=$_POST['職種2']."\n";
 	$userBody.="\n---------------------------------------------------------------------\n\n";
 	$userBody.="法人名\n";
 	$userBody.=$_POST['法人名']."\n";
@@ -598,7 +663,7 @@ function mailToUser($arr,$dsp_name,$remail_text,$mailFooterDsp,$mailSignature,$e
 	$userBody.=$_POST['お電話番号']."\n";
 	$userBody.="\n---------------------------------------------------------------------\n\n";
 	$userBody.="お電話連絡が可能な時間帯\n";
-	$userBody.=$_POST['お電話連']."\n";
+	$userBody.=$_POST['お電話連絡が可能な時間帯']."\n";
 	$userBody.="\n---------------------------------------------------------------------\n\n";
 	$userBody.="ご質問・お問合せ区分\n";
 	if (isset($_POST['ご質問・お問合せ区分'])){
@@ -606,9 +671,12 @@ function mailToUser($arr,$dsp_name,$remail_text,$mailFooterDsp,$mailSignature,$e
 	}else{
 		$userBody.="\n";
 	};
+	if (isset($_POST['項目に無いお問い合わせ区分'])){
+		$userBody.=$_POST['項目に無いお問い合わせ区分']."\n";
+	};
 	$userBody.="\n---------------------------------------------------------------------\n\n";
 	$userBody.="ご質問内容\n";
-	$userBody.=$_POST['ご質問内容']."\n";
+	$userBody.=$_POST['ご質問内容※']."\n";
 	$userBody.="\n---------------------------------------------------------------------\n\n";
 	$userBody.="内容を確認次第、3営業日以内ご連絡させていただきますので、今しばらくお待ちください。\n";
 	$userBody.="※もし期日を過ぎても連絡がない場合、大変お手数ですが\n";
@@ -620,6 +688,8 @@ function mailToUser($arr,$dsp_name,$remail_text,$mailFooterDsp,$mailSignature,$e
 	$userBody.="URL: http://www.apical.jp/\n";
 	$userBody.="TEL: 092-741-1833(代表)\n";
 	$userBody.="FAX: 092-741-9580\n";
+	// echo $userBody;die();
+
 	if($mailFooterDsp == 1) $userBody.= $mailSignature;
 	return mb_convert_encoding($userBody,"JIS",$encode);
 }
@@ -679,6 +749,206 @@ function refererCheck($Referer_check,$Referer_check_domain){
 }
 function copyright(){
 	echo '<a style="display:block;text-align:center;margin:15px 0;font-size:11px;color:#aaa;text-decoration:none" href="http://www.php-factory.net/" target="_blank">- PHP工房 -</a>';
+}
+function getFooter()
+{
+?>
+	<section id="footer">
+	    <div class="footer-top">
+	        <div class="apical"><img src="assets/images/logo-footer.png" alt=""></div>
+	        <div class="footer-hr-new"></div>
+	        <div class="menu">
+	            <div class="menu-col-1">
+	                <div class="menu-header">
+	                    <a>会社情報</a>
+	                </div>
+	                <div class="menu-content">
+	                    <a href="/reflux/company.html">会社案内</a>
+	                    <a href="/reflux/pp.html">プライバシーポリシー</a>
+	                </div>
+	            </div>
+	            <div class="menu-col-2">
+	                <div class="menu-header">
+	                    <a>事業内容</a>
+	                </div>
+	                <div class="menu-content">
+	                    <a href="/reflux/jigyousyo.html">事業所内託児施設</a>
+	                    <a href="/reflux/tenponai.html">店舗内託児施設</a>
+	                    <a href="/reflux/event.html">イベント保育</a>
+	                    <a href="/reflux/jisseki.html">運営実績</a>
+	                    <a href="/reflux/consul.html">開業・開設コンサル</a>
+	                </div>
+	            </div>
+	            <div class="menu-col-3">
+	                <div class="menu-header">
+	                    <a>お問い合わせ</a>
+	                </div>
+	                <div class="menu-content">
+	                    <a href="/reflux/kyujin.html">求人情報</a>
+	                    <a href="/reflux/contact.html">コンタクト</a>
+	                </div>
+	            </div>
+	        </div>
+	    </div>
+	    <div class="footer-middle">
+	        <div class="middle-menu">
+	            <div class="col-middle-1">
+	                <div class="middle-header">
+	                    <a style="text-decoration: none ;margin-left: -10px; color: #fff">［本社］</a>
+	                </div>
+	                <div class="middle-content">
+	                    <a><p>〒810-0044</p></a>
+	                    <a><p>福岡市中央区六本松2丁目12-25</p></a>
+	                    <a><p>ベルヴィ六本松5Ｆ</p></a>
+	                    <a><p>TEL：092-741-1833（代表）</p></a>
+	                </div>
+	            </div>
+	            <div class="col-middle-2">
+	                <div class="middle-header" style="padding-left: 30px; color: #fff">
+	                    <a style="text-decoration: none;color: #fff">［関西支店］</a>
+	                </div>
+	                <div class="middle-content" style="padding-left: 40px">
+	                    <a><p>〒665-0003</p></a>
+	                    <a><p>兵庫県宝塚市湯本町4-8</p></a>
+	                    <a><p>グランディア ミ・アモーレ402</p></a>
+	                    <a><p>TEL：0797-81-0500</p></a>
+	                </div>
+	            </div>
+	            <div class="col-middle-3">
+	                <div class="middle-header" style="padding-left: 30px; color: #fff">
+	                    <a style=" text-decoration: none;color: #fff">［関東支店］</a>
+	                </div>
+	                <div class="middle-content" style="padding-left: 40px">
+	                    <a><p>〒164-0012</p></a>
+	                    <a><p>東京都中野区本町6-20-9</p></a>
+	                    <a><p>ミツクニ新中野ビル4F</p></a>
+	                    <a><p>TEL：03-5340-7914</p></a>
+	                </div>
+	            </div>
+	            <div class="col-middle-4">
+	                <div class="middle-header">
+	                    <a style="text-decoration: none ;color: #fff; margin-left: -10px">［熊本支店］</a>
+	                </div>
+	                <div class="middle-content">
+	                    <a><p>〒860-0072</p></a>
+	                    <a><p>熊本市西区花園6-38-45</p></a>
+	                    <a><p>TEL：096-356-5453</p></a>
+	                </div>
+	            </div>
+	        </div>
+	    </div>
+	    <div class="footer-last">
+	        <center>Copyright © APICAL. All Rights Reserved.</center>
+	    </div>
+	</section>
+	<a href="#" id="back-to-top" title="Back to top"></a>
+	<!-- Libs Script -->
+	<script type="text/javascript" src="assets/js/jquery-3.2.0.min.js"></script>
+	<script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="assets/js/scroll-top.js"></script>
+	<!-- Scrolling Nav JavaScript -->
+	<script type="text/javascript" src="assets/js/jquery.easing.min.js"></script>
+	<script type="text/javascript" src="assets/js/scrolling-nav.js"></script>
+<?php
+}
+?>
+<?php function getHeader()
+{
+?>
+	<section id="header">
+        <div class="logo">
+            <a href="/reflux/index_reflux.html"><img src="assets/images/logo.png"></a>
+        </div>
+        <div class="main-menu">
+            <a href="/reflux/kyujin.html">
+                <div class="contact">
+                    求人情報
+                </div>
+            </a>
+            <a href="/reflux/contact.html">
+                <div class="contact">
+                    <i class="fa fa-envelope"></i>お問い合わせ
+                </div>
+            </a>
+            <ul class="menu-list">
+                <li class="item">
+                    <img src="assets/images/menu-top.png" width="30" height="10">
+                    <a href="/reflux/company.html">会社案内</a>
+                </li>
+                <li class="item">
+                    <img src="assets/images/menu-top.png" width="30" height="10">
+                    <a href="/reflux/pp.html">プライバシーポリシー</a>
+                </li>
+            </ul>
+        </div>
+        <div class="clearfix"></div>
+        <div class="scroll-menu">
+            <ul>
+                <li class="item-menu">
+                    <i class="fa fa-play"></i>
+                    <a href="/reflux/jigyousyo.html" class="active">事業所内託児施設</a>
+                    <div class="hover-menu"></div>
+                    <span></span>
+                </li>
+                <li class="item-menu">
+                    <i class="fa fa-play" aria-hidden="true"></i>
+                    <a href="/reflux/tenponai.html">店舗内託児施設</a>
+                    <div class="hover-menu"></div>
+                    <span></span>
+                </li>
+                <li class="item-menu">
+                    <i class="fa fa-play" aria-hidden="true"></i>
+                    <a href="/reflux/event.html">イベント保育</a>
+                    <div class="hover-menu"></div>
+                    <span></span>
+                </li>
+                <li class="item-menu">
+                    <i class="fa fa-play" aria-hidden="true"></i>
+                    <a href="/reflux/jisseki.html">運営実績</a>
+                    <div class="hover-menu"></div>
+                    <span></span>
+                </li>
+                <li class="item-menu">
+                    <i class="fa fa-play" aria-hidden="true"></i>
+                    <a href="/reflux/consul.html">開業・開設コンサル</a>
+                    <div class="hover-menu"></div>
+                    <span></span>
+                </li>
+            </ul>
+        </div>
+        <div class="clearfix"></div>
+        <div class="button-header">
+            <a href="personal/index.html">
+                <button class="middle-button">個人のお客様</button>
+            </a>
+            <div class="box-icon">
+                <div class="box-icon-content"><a href=""><i class="fa fa-facebook fa-lg" aria-hidden="true"></i></a></div>
+                <div class="box-icon-content"><a href=""><i class="fa fa-twitter fa-lg" aria-hidden="true"></i></a></div>
+                <div class="box-icon-content"><a href=""><i class="fa fa-instagram fa-lg" aria-hidden="true"></i></a></div>
+            </div>
+        </div>
+        <div class="clearfix"></div>
+        <div class="line-top"></div>
+        <div class="clearfix"></div>
+    </section>
+<?php
+}
+
+function getAsset()
+{
+?>
+<link rel="stylesheet" href="assets/css/style.css">
+<link rel="shortcut icon" href="assets/images/apical_web_favicon_32-32.png">
+<link rel="stylesheet" href="assets/css/bootstrap-theme.min.css">
+<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+<link rel="stylesheet" href="assets/css/font-awesome.min.css">
+<!-- Custom CSS -->
+<link rel="stylesheet" href="assets/css/loc-style.css">
+<link rel="stylesheet" href="assets/css/loi-style.css">
+<link rel="stylesheet" href="assets/css/hung_style.css">
+<link rel="stylesheet" href="assets/css/duong-style.css">
+<link rel="stylesheet" href="assets/css/scrolling-nav.css">
+<?php
 }
 //----------------------------------------------------------------------
 //  関数定義(END)
