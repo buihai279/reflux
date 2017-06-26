@@ -276,6 +276,12 @@ else if($confirmDsp == 1){
 	    opacity: .5;
 	    cursor: pointer;
 	}
+	
+#footer a:hover {
+    text-decoration: none !important;
+    color: #fff;
+    display: block;
+}
 </style>
 </head>
 <body>
@@ -332,6 +338,14 @@ if(($jumpPage == 0 && $sendmail == 1) || ($jumpPage == 0 && ($confirmDsp == 0 &&
     background-color: white !important;
 	margin:0 auto;
 	padding: 40px;
+}
+#footer{
+	line-height: 27px !important;
+}
+#footer a:hover {
+    text-decoration: none !important;
+    color: #fff;
+    display: block;
 }
 </style>
 </head>
